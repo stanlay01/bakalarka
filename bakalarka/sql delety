@@ -1,0 +1,17 @@
+/*
+	1. vymazať usera
+		a) vymazať usera
+		b) vymazať ho z referencie
+		c) vymazať ho z rolí 
+	2. vymaže sa nejaký proces
+		a) vymaže sa proces
+		b) vymažú sa referencie
+		c) vymažú sa role (len ak nie sú zahrnuté v iných procesoch)
+
+*/
+
+1.	A) DELETE * FROM `users` WHERE `id` = 1
+	B) DELETE * FROM `referencia` WHERE `id_user` = 1
+	C) DELETE * FROM `user_role` WHERE `id_user` = 1 
+
+

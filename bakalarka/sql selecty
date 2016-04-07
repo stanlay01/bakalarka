@@ -1,0 +1,15 @@
+/*
+	1. Zobrazenie všetkých userov vo firme
+	2. Zobrazenie všetkých userov, ktorí nemajú priradené role
+	3. Zobraziť všetkých userov, ktorí patria do určitej role
+	
+	4. zobraz všetky procesy, ktoré môže daný user spustiť
+	5. zobraz všetky prechody, ktoré môže daný user spustiť ( prechod je aktívny )
+		a) prechody patriace jemu ako referencii ( hladať podľa referencie )
+		b) prechody ktoré môže spustiť hocikto z jeho role ( nemajú však referenciu )
+*/
+
+
+
+1.  SELECT `users`.* FROM `user_firma`, `users` WHERE ((`user_firma`.`id_user` = users.id_user) AND (`user_firma`.`id_firmy` = 1))
+2.  SELECT firma.nazov,firma.id FROM firma INNER JOIN user_firma ON user_firma.id_firmy = firma.id WHERE user_firma.id_user = $user_id

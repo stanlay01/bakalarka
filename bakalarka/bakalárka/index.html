@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editor rolí</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" media="all" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- fultext search
+SELECT * FROM ADDRESS WHERE
+((NAME LIKE 'Bill%') OR (CITY LIKE 'Bill%') OR (COMPANY LIKE 'Bill%'))
+AND
+((NAME LIKE 'Seattle%') OR (CITY LIKE 'Seattle%') OR (COMPANY LIKE 'Seattle%'))
+
+-->
+
+<script>
+	var oznacene = false;
+
+	function oznacPole(dom){
+		var check = dom.firstChild.nextSibling.childNodes[1];
+		check.checked == true ? check.checked = false: check.checked = true ; 
+	}
+
+	function toggle(source) {
+	  	checkboxes = document.getElementsByName('znacka');
+	  	if(oznacene)
+		  for(var i=0, n=checkboxes.length;i<n;i++) {
+		    checkboxes[i].checked = false;
+		  }
+		else{
+		  	for(var i=0, n=checkboxes.length;i<n;i++) {
+		    	checkboxes[i].checked = true;
+		  	}
+
+		}
+
+		oznacene = !oznacene;
+	}
+	/*
+	$(document).ready(function() {
+		$('input[type=checkbox]').click(function(event) {
+	    			event.stopPropagation();
+	   	});
+	}
+	*/
+</script>
+
+
+
+<header>
+	<h1>Editor rolí</h1>
+</header>
+
+
+
+<div id="wrapper">
+	<h2>Firma : Nejaká firma,s.r.o</h2>
+
+	<div id="search">
+		
+	</div>
+
+
+	<p class="role_options">
+			<span class="role selected">všetci</span>
+			<span class="role">nepriradený</span>
+			<span class="role">zákazník</span>
+			<span class="role">administrátor</span>
+			<span class="role">manažér</span>
+			
+	</p>
+	<br>
+
+
+	<table>
+		<tr  >
+			<th>
+				<input type="text" id="search_column"  placeholder="vyhľadávať...">
+			</th>
+			<th>id</th>
+			<th>meno</th>
+			<th>priezvisko</th>
+			<th>e-mail</th>
+		</tr>
+		<tr onclick="oznacPole(this)">
+			<td>
+				
+				<input type="checkbox"   name="znacka">
+			</td>
+			<td>2</td>
+			<td>Jano</td>
+			<td>Mrkvička</td>
+			<td>jano@gmail.com</td>
+		</tr>
+		<tr onclick="oznacPole(this)">
+			<td>
+				<input type="checkbox" name="znacka">
+			</td>
+			<td>2</td>
+			<td>Jano</td>
+			<td>Mrkvička</td>
+			<td>jano@gmail.com</td>
+		</tr>
+		<tr onclick="oznacPole(this)">
+			<td>
+				
+				<input type="checkbox" name="znacka">
+			</td>
+			<td>2</td>
+			<td>Jano</td>
+			<td>Mrkvička</td>
+			<td>jano@gmail.com</td>
+		</tr>
+		<tr onclick="toggle()">
+			<td style="text-align:center; cursor:pointer">
+				<span style="color:#404040 ">označiť všetko</span>
+			</td>
+		</tr>
+
+
+	</table>
+
+
+	<div id="role_actions">
+		Akcia: 
+		<select>
+		  	<option value="addToRole">priradiť do role</option>
+		  	<option value="DeleteFromRole">vymazať z role</option>
+		</select>
+
+		<select>
+			<option value="volvo">----</option>
+		  	<option value="zakaznik">zákazník</option>
+		  	<option value="mechanik">mechanik</option>
+		  	<option value="instalater">inštalatér</option>
+		</select>
+
+		<button> vykonaj </button>
+
+	</div>
+
+</div>
+
+<footer> Bakalárska práca 2015/16 </footer>
+
+
+</body>
+</html>
