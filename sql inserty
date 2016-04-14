@@ -1,0 +1,18 @@
+/*	1. pridanie usera/role
+	2. pridanie usera do firmy //rola je automaticky vo firme (nemáme jednu rolu vo viacerých firmách)	
+	3. pridanie usera do role
+*/
+
+
+//vloženie role
+INSERT INTO `rola`(`role_name`, `admin_pernmission`, `needOfInvitation`, `id_firmy`) VALUES ("zakaznik",0,0,1)
+
+//vloženie usera
+INSERT INTO `users`(`meno`, `priezvisko`, `mail`) VALUES ("Jožko","Mrkvicka",jozo@mrkva.sk)
+
+
+//pridanie usera do firmy
+INSERT INTO `user_firma`(`id_user`, `id_firmy`) VALUES ([value-2],[value-3])
+
+//pridanie usera do rolí
+INSERT INTO `user_role`(`id_user`, `id_rola`) VALUES ([value-2],[value-3])

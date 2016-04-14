@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.custom.Taxonomy_of_Actors</type>
+    <coordinates>
+      <x>430</x>
+      <y>0</y>
+      <w>330</w>
+      <h>530</h>
+    </coordinates>
+    <panel_attributes>Kontrolór
+	Personálne oddelenie
+	Ekonomické oddelenie 
+	Právnické oddelenie
+Manažér
+	komunikácie
+	ceo</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

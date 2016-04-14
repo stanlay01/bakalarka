@@ -1,0 +1,51 @@
+#popup {
+    padding-top:10px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding-bottom: 20px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #cecece;
+    z-index: 20;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+#popup_heading {
+    width: 100%;
+    padding: 2px 10px 10px 30px;
+    height: 20px;
+    border-bottom: 1px solid #cecece;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: $blue;
+    text-transform: uppercase;
+}
+
+
+#popup_error{
+    color:#ff4d4d;
+}
+
+#popup_wrapper{
+    padding: 30px;
+}
+
+#popup_buttons{
+   text-align:center;
+   width :100%
+
+}
+ #popup_ok {
+        @include button(155px,$blue ,$white, $blue2,45px);
+
+}
+
+#popup_cancel{
+    
+    @include button(155px,$gray ,$white, $gray3,45px);
+}
+

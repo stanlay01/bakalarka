@@ -1,0 +1,44 @@
+	/*
+	1. Zobrazenie všetkých userov vo firme
+	2. Zobrazenie všetkých userov, ktorí nemajú priradené role
+	3. Zobraziť všetkých userov, ktorí patria do určitej role
+	
+	4. zobraz všetky procesy, ktoré môže daný user spustiť
+	5. zobraz všetky prechody, ktoré môže daný user spustiť ( prechod je aktívny )
+		a) prechody patriace jemu ako referencii ( hladať podľa referencie )
+		b) prechody ktoré môže spustiť hocikto z jeho role ( nemajú však referenciu )
+*/
+
+
+
+1.  SELECT `users`.* FROM `user_firma`, `users` WHERE ((`user_firma`.`id_user` = users.id_user) AND (`user_firma`.`id_firmy` = 1))
+
+
+
+
+      	SELECT a.user_id,a.meno,a.priezvisko,a.email FROM 
+        (	SELECT USERS.user_id,first_name AS meno,last_name AS priezvisko,email FROM USERS 
+    
+        	INNER JOIN USERS_X_FIRM ON USERS.user_id = USERS_X_FIRM.user_id 
+           
+        	WHERE USERS_X_FIRM.firm_id=1 
+   		) a
+            
+        LEFT JOIN 
+        
+         ( SELECT user_id, role_id  FROM USERS_X_ROLE) b
+        
+        ON a.user_id = b.user_id
+
+        WHERE b.role_id IS NULL
+        
+
+
+
+
+SELECT USERS.user_id,first_name AS meno,last_name AS priezvisko,email,USERS_X_ROLE.role_id FROM USERS 
+				INNER JOIN USERS_X_FIRM ON USERS.user_id = USERS_X_FIRM.user_id 
+   				LEFT JOIN USERS_X_ROLE ON USERS_X_ROLE.user_id = USERS.user_id     
+        		WHERE USERS_X_FIRM.firm_id = '$idcko_firmy'   AND NOT EXISTS (SELECT ROLES.role_id FROM ROLES INNER JOIN ROLES_X_FIRM ON ROLES.role_id = ROLES_X_FIRM.role_id
+				WHERE ROLES_X_FIRM.firm_id = '$idcko_firmy'   AND USERS_X_ROLE.role_id=ROLES.role_id )
+        		GROUP BY  USERS.user_id

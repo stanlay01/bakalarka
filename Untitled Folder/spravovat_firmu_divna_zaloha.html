@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bakalarka-prihlasenie</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/footer-distributed.css">
+	<link rel="stylesheet" href="css/header-fixed.css">
+		<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<?php require_once "header.php" ?>
+
+<?php
+	/* $isAdmin .... premenná v ktorej je uložšné, či je užívateľ administrátor
+	   $referenceTasks ... prechody, ktoré môže spustiť iba daný užívateľ
+	   $roleTasks ... prechody, ktoré môže spustiť rola v ktorej sa anchádza
+	   $cases ... nové casy, ktoré môže daná rola vytvoriť
+	 */
+
+	session_start();
+
+	include "connect.php";
+
+	$referenceTasks = Array();
+	$roleTasks = Array();
+	$cases = Array();
+
+ 	$user_id = $_SESSION['user_id'];
+ 	$id_firmy = $_GET['firma'];
+
+	$query = "	SELECT admin_permission FROM ROLES 
+				INNER JOIN USERS_X_ROLE ON USERS_X_ROLE.role_id = ROLES.role_id
+				INNER JOIN ROLES_X_FIRM ON ROLES_X_FIRM.
+				WHERE USERS_X_ROLE.user_id = '$user_id' AND ROLES.firm_id = '$id_firmy'
+			";
+
+
+	$result = $conn->query($query);
+
+		//má administrátorské povolenia
+	if ($result->num_rows > 0) {
+			$isAdmin = true;
+	}else
+	 	$isAdmin = false;
+
+
+	//referencie
+	$query = "	SELECT nazov FROM prechod 
+	    		INNER JOIN `REFERENCES` ON `REFERENCES`.id_prechod = prechod.id
+				WHERE `REFERENCES`.id_user =  1
+	";
+
+
+	$result = $conn->query($query);
+	while($row =$result->fetch_assoc()	)
+	{
+		$referenceTasks[] = $row;
+	}
+
+	//role
+	$query = "	SELECT nazov FROM prechod 
+    				INNER JOIN prechod_rola ON prechod_rola.id_prechod = prechod.id
+					WHERE prechod_rola.id_role IN 
+                
+                (SELECT ROLES.role_id FROM ROLES INNER JOIN
+				USERS_X_ROLE ON USERS_X_ROLE.role_id = ROLES.role_id
+				WHERE USERS_X_ROLE.user_id = 1 )
+			";
+
+
+	$result = $conn->query($query);
+	while($row =$result->fetch_assoc()	)
+	{
+		$roleTasks[] = $row;
+	}
+
+	//procesy
+	$query = "	SELECT nazov FROM prechod 
+	    				INNER JOIN prechod_rola ON prechod_rola.id_prechod = prechod.id
+						WHERE prechod_rola.id_role IN 
+	                
+	                (SELECT ROLES.role_id  FROM ROLES INNER JOIN
+					USERS_X_ROLE ON USERS_X_ROLE.role_id = ROLES.role_id
+					WHERE USERS_X_ROLE.user_id = 1 )
+				";
+
+
+	$result = $conn->query($query);
+	while($row =$result->fetch_assoc()	)
+	{
+		$referenceTasks[] = $row;
+	}
+
+
+	$query = "		SELECT nazov FROM proces 
+		    					INNER JOIN proces_role ON proces_role.id_proces = proces.id
+								WHERE proces_role.id_role IN 
+		                
+		                (SELECT ROLES.role_id  FROM ROLES INNER JOIN
+						USERS_X_ROLE ON USERS_X_ROLE.role_id = ROLES.role_id
+						WHERE USERS_X_ROLE.user_id = 1 )
+					";
+
+
+	$result = $conn->query($query);
+	while($row =$result->fetch_assoc()	)
+	{
+		$cases[] = $row;
+	}
+
+
+?>
+
+	
+
+	<div id="left_panel">
+		
+
+		
+		<h2>Moje hlavné úlohy</h2>
+		<?php 
+			foreach ($referenceTasks as $row) 
+			{
+				echo "<div class='riadok'>".$row['nazov']."<button>spustiť</button></div>";
+
+			}
+		?>
+
+		<h2> Ďaľšie úlohy</h2>
+		<?php
+
+			foreach ($roleTasks as $row) 
+			{
+				echo "<div class='riadok'>".$row['nazov']."<button>spustiť</button></div>";
+
+			}
+		?>
+
+		<h2>Create new tasks</h2>
+		
+		<?
+			foreach ($cases as $row) 
+			{
+				echo "<div class='riadok'>".$row['nazov']."<button>spustiť</button></div>";
+
+			}
+		?>
+		</div>
+
+		<div id="right_panel">
+			<?php
+
+
+			
+				echo " <a href='sprava_roli.php?firma=". $_GET['firma'] ." '  > Správa rolí a užívateľov  </a><br><br>";
+			
+			?>
+		</div>
+		
+
+
+<?php require_once "footer.php" ?>
+
+
+
+</body>
+</html>

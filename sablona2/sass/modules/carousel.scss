@@ -1,0 +1,110 @@
+
+#carousel-background{
+  overflow:hidden;
+  display:inline-block;
+  width:100%;
+  height: $carousel-height;
+    transition: all .2s ease;
+    vertical-align: middle;
+    position:absolute;
+    top: 0;
+}
+
+
+#carousel-image{
+  z-index:99;
+  width: 100%;
+  position:absolute
+  
+}
+
+#carousel{
+  position:relative;
+  height:  $carousel-height;
+}
+
+
+.carousel .container .drop-buttons {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 270px;
+}
+
+
+.carousel-wrapper{
+  z-index:100;
+  position:absolute;
+  height:100%;
+  max-width:1160px;
+   background:rgba(255,255,255,0.5);
+  
+  display: block;
+  left:0;
+  right:0;
+  top:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.carousel-content{
+
+    height: $carousel-height;
+
+    .col{
+      height:100%;
+    }
+
+    .drop-buttons{
+      position: relative;
+      top:0;
+      left: 0px;
+      width: 270px;
+
+      .button{
+        height: 40px;
+        padding: 10px 20px;
+        border-radius: 0 0 5px 5px;
+        font-size: 15px;
+        box-sizing: border-box;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+
+        i{
+          margin-right: 15px;
+          font-size: 15px;
+          padding-bottom: 2px;
+        }
+
+        &:hover{
+          -moz-border-radius-bottomleft: 0;
+          -webkit-border-bottom-left-radius: 0;
+          .drop-card{
+            display: block;
+          }
+        }
+      }
+      .process{
+        left:0;
+        background-color: $blue;
+        color:white;
+        &:hover{
+          background-color: $blue2;
+        }
+      }
+
+      .firm{
+        background-color: $purple;
+        color:white;
+        &:hover{
+          background-color: $purple2;
+        }
+      }
+    }
+  
+
+
+}

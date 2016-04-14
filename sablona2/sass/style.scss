@@ -1,0 +1,32 @@
+
+$shadowcolor: #000;
+
+
+$carousel-height: 120px;
+
+
+//aby sa to zobrazovalo
+@import "modules/mixins";
+@import "modules/variables";
+@import "modules/normalize";
+
+
+
+
+//zmenené veci 
+@import "modules/carousel";
+@import "modules/dropcard";
+@import "modules/quickregistration";
+
+
+
+
+header{
+	width: 100%;
+	height: 65px;
+	background-color: $white;
+}
+
+
+
+.full-height{height:100%}

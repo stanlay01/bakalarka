@@ -1,0 +1,124 @@
+$large-desktop : 1200px;
+$desktop: 960px;
+$tablet : 720px;
+$mobile :  480px;
+
+@mixin xlarge {
+  @media screen and (min-width: #{$large-desktop}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: #{$desktop}) and (max-width: #{$large-desktop - 1}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$tablet}) and (max-width: #{$desktop - 1}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$mobile - 1}) {
+    @content;
+  }
+}
+
+@mixin button($width:155px,$background:black ,$color:white, $hover:black,$height:38px){
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: $width ;
+  height: $height;
+  margin-right: 20px;
+  margin-bottom: 12px;
+  background-color: $background;
+  color : $color;
+  line-height: $height;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0 10px;
+  line-height: $height;
+
+  &:hover{
+    background-color: $hover;
+  }
+  .button-icon{
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+@mixin gradient ($start-colour, $end-colour) {
+  background-color: $start-colour;
+  background-image: -webkit-gradient(linear, left top, right top, from($start-colour), to($end-colour));
+  background-image: -webkit-linear-gradient(left, $start-colour, $end-colour);
+  background-image:    -moz-linear-gradient(left, $start-colour, $end-colour);
+  background-image:     -ms-linear-gradient(left, $start-colour, $end-colour);
+  background-image:      -o-linear-gradient(left, $start-colour, $end-colour);
+  background-image:         linear-gradient(left, $start-colour, $end-colour);
+  filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}', gradientType='1');
+}
+
+@mixin shadow($opacity:0.2, $left:0, $top:2px, $blur:10px,$color:#000){
+  -moz-box-shadow: $left $top $blur rgba(0,0,0,$opacity);
+  -webkit-box-shadow: $left $top $blur rgba(0,0,0,$opacity);
+  box-shadow: $left $top $blur rgba(red($color),green($color),blue($color),$opacity);
+}
+
+@mixin shadowBottom($opacity:0.24, $left:0, $top:2px, $blur:3px,$color:#000){
+    -webkit-box-shadow: 0 $top $blur 0px rgba(0,0,0,$opacity);
+    -moz-box-shadow: 0 $top $blur 0px rgba(0,0,0,$opacity);;
+    box-shadow: 0 $top $blur 0px rgba(0,0,0,$opacity);;
+}
+
+@mixin inputfield($background:black ,$color:white , $hovercolor:gray ,$height:60px){
+  box-sizing: border-box;
+  display: block;
+  width: 100% ;
+  height: $height;
+  position: relative;
+  margin-bottom: 10px;
+  background-color: $background;
+  color : $color;
+  padding: 0 40px;
+  vertical-align: middle;
+  line-height: $height;
+  border-radius: 2px;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  &:hover{
+    background-color: $hovercolor;
+  }
+  &.dragged{
+    background-color: $hovercolor;
+  }
+  &:last-child{
+    //margin-bottom: 0;
+  }
+  .input-icon{
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+
+  }
+  .input-remove-icon{
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+  }
+
+}
+
