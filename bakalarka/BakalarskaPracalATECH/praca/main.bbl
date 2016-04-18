@@ -1,0 +1,33 @@
+\newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1}
+  \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
+\begin{thebibliography}{1}
+
+\bibitem{gabova_kniha}
+Hartmut Ehrig, Gabriel Juhás, Julia Padberg, and Grzegorz~Rozenberg (Eds.).
+\newblock {\em Unifying Petri Nets: Advances in Petri Nets}.
+\newblock Springer, 2003.
+
+\bibitem{kuhn}
+David~F. Ferraiolo, D.~Richard Kuhn, and Ramaswamy Chandramouli.
+\newblock {\em ROLE-BASED ACCESS CONTROL}.
+\newblock Artech Print on Demand; 2 edition, 2007.
+
+\bibitem{ekonomika}
+Michael~P. Gallaher, Alan~C. O’Connor, and Brian Kropp.
+\newblock {\em The Economic Impact of Role-Based Access Control}.
+\newblock National Institute of Standards and Technology, 2002.
+
+\bibitem{workflow_systemy}
+W.M.P. van~der Aalst.
+\newblock {\em The Application of Petri Nets to Workflow Management}.
+\newblock Department of Mathematics and Computing Science, Eindhoven University
+  of Technology, 1998.
+
+\bibitem{autorizacia}
+Shengli Wu, University of~Georgia Amit ShethAffiliated~with LSDIS~Lab, John
+  Miller, and Zongwei Luo.
+\newblock {\em Authorisation and Access Control of Application Data in Workflow
+  Systems}, volume~18.
+\newblock Kluwer Academic Publishers, 2002.
+
+\end{thebibliography}

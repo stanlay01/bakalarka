@@ -1,0 +1,18 @@
+\select@language {slovak}
+\contentsline {chapter}{\IeC {\'U}vod}{1}
+\contentsline {chapter}{Anal\IeC {\'y}za}{3}
+\contentsline {section}{\numberline {1.1}Workflow management syst\IeC {\'e}m}{3}
+\contentsline {subsection}{\numberline {1.1.1}Zdroje vo workflow management syst\IeC {\'e}moch}{4}
+\contentsline {section}{\numberline {1.2}RBAC}{4}
+\contentsline {section}{\numberline {1.3}Petriho siete}{4}
+\contentsline {subsection}{\numberline {1.3.1}Implementovanie Petriho siet\IeC {\'\i } na workflow management syst\IeC {\'e}m}{5}
+\contentsline {chapter}{Opis rie\IeC {\v s}enia}{6}
+\contentsline {section}{\numberline {2.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek}{6}
+\contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{6}
+\contentsline {subsection}{\numberline {2.2.1}Model fungovania aplik\IeC {\'a}cie}{6}
+\contentsline {section}{\numberline {2.3}Implement\IeC {\'a}cia}{6}
+\contentsline {subsection}{\numberline {2.3.1}Grafick\IeC {\'y} design}{6}
+\contentsline {subsection}{\numberline {2.3.2}Datab\IeC {\'a}zov\IeC {\'y} model}{6}
+\contentsline {subsection}{\numberline {2.3.3}title}{6}
+\contentsline {section}{\numberline {2.4}Overenie rie\IeC {\v s}enie}{6}
+\contentsline {chapter}{Z\IeC {\'a}ver}{8}

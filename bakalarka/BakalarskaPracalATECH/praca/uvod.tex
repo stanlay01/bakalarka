@@ -1,23 +1,51 @@
-\chapter*{Úvod}
-\addcontentsline{toc}{chapter}{Úvod}
+\mychapter{0}{Úvod}
+Systém vývoja aplikačných programov sa veľmi rýchlo mení. So stúpajúcou zložitosťou počítačových systémov a zvyšovaním počtu užívateľov sa vynára potreba rozložiť aplikácie do viacerých navzájom nezávislých modulov. Najprv sa vytvorili databázy , ktoré umožnili oddeliť dáta od aplikácie. Následne sa v 80-ych rokoch analogickým spôsobom  oddelilo užívateľské rozhranie od samotnej aplikácie. Vznikla tak MVC (model-view-controller) architektúra. Ďalším stupňom vývoja je potreba oddeliť všeobecnú funkcionalitu od aplikácie. Odčlení sa tak procesná, aplikačná a dátová časť. Túto myšlienku poskytuje workflow management systém (WFMS).
 
-Cieľom tejto práce je poskytnúť študentom posledného ročníka
-bakalárskeho štúdia informatiky kostru práce v systéme LaTeX a ukážku
-užitočných príkazov, ktoré pri písaní práce môžu potrebovať. Začneme
-stručnou charakteristikou úvodu práce podľa smernice o záverečných
-prácach \cite{smernica}, ktorú uvádzame ako doslovný citát.
+Workflow management systém umožňuje  ľahko oddeliť procesy od vizuálnej a dátovej časti, vďaka čomu je upravovanie a znovupoužitie daných procesov jednoduchšie. Je možné si teda predstaviť, že dve rôzne firmy v rovnakej oblasti by využívali rovnaké procesy, pričom by mali osobitnú databázovú aj vizuálnu stránku.
 
-\begin{quote}
-Úvod je prvou komplexnou informáciou o práci, jej cieli, obsahu a štruktúre. Úvod sa 
-vzťahuje na spracovanú tému konkrétne, obsahuje stručný a výstižný opis 
-problematiky, charakterizuje stav poznania alebo praxe v oblasti, ktorá je predmetom 
-školského diela a oboznamuje s významom, cieľmi a zámermi školského diela. Autor 
-v úvode zdôrazňuje, prečo je práca dôležitá a prečo sa rozhodol spracovať danú tému. 
-Úvod ako názov kapitoly sa nečísluje a jeho rozsah je spravidla 1 až 2 strany.
-\end{quote}
+Dôležitou otázkou pri tvorbe workflow management systémou je správa zdrojov. Treba určiť kto môže a naopak kto nesmie pristupovať ku konkrétnym prostriedkom, aby sa zachovala dôvernosť informácii a nemohol byť narušený systém.
+Vo WFSM je najpoužívanejší spôsob správa zdrojov na základe systému rolí Role-based access control (RBAC). Tento model sa využíva kvôli tomu, že je založený na organizačnej štruktúre podnikov a poskytuje efektívne riadenie a údržbu právomocí. Vo WFSM je potreba oddeliť  tvorbu procesov od jej používania. RBAC dokáže zabezpečiť previazanie medzi procesmi a konkrétnymi používateľmi. Okrem toho má RBAC ďaľšie výhody ako napríklad uľahčenie administrácie priradením užívateľov k jednotlivým roliam v porovnaní so správou práv pre každého jednotlivého užívateľa osobitne. 
 
-V nasledujúcej kapitole nájdete ukážku členenia kapitoly na menšie
-časti a v kapitole \ref{kap:latex} nájdete príkazy na prácu s
-tabuľkami, obrázkami a matematickými výrazmi. V kapitole
-\ref{kap:lorem} uvádzame klasický text Lorem Ipsum a na koniec sa
-budeme venovať záležitostiam záveru bakalárskej práce. 
+Jedna z možností ako modelovať WFMS je prostredníctvom Petriho sietí. Petriho sieť je matematický nástroj na modelovanie a simulovanie diskrétnych procesov.  Hlavné výhody Petriho sietí sú:
+\begin{itemize}
+	\item formálna sémantika – proces špecifikovaný Petriho sieťou má precíznu definíciu
+	\item grafické zobrazenie – Petriho sieť je grafický jazyk. Dôsledkom tohto Petriho siete
+	sú intuitívne a ľahko pochopiteľné, preto sú vhodné aj pri komunikácii
+	s koncovými užívateľmi.
+	\item expresivita – Petriho siet podporuje všetky primitíva potrebné pre modelovanie
+	workflow procesov. Keďže stavy sú reprezentované explicitne, umožňujú
+	modelovanie závislostí a implicitné voľby.
+	\item analýza – Umožňujú overiť vlastnosti (bezpečnosť, invariantnosť, deadlocky, atď.)
+	a vyčísliť výkonové merania (čas odozvy, čas čakania, podiel obsadenosti, atď.)
+\end{itemize}
+
+
+
+Cieľom tejto práce je na základe štúdia a analýzy workflow managemantu  a Petriho sietí vytvoriť modul na správu rolí a užívateľov pre webovú aplikáciu, ktorá bude poskytovať WFMS na základe Petriho sietí. 
+
+Bakalárska práca pozostáva z 2 hlavných kapitol. Prvá kapitola je zameraná na analýzu workflow systému, Petriho siete a riadenie prístupu vo WFMS. Kapitola sa bližšie zameriava na možné prístupy 
+
+Druhá kapitola je zameraná na opis riešenia celej aplikácie, pričom bližšie rozoberá návrh a implementáciu modulu na priraďovanie rolí k užívateľom a jej nadväznosti k ostatným častiam aplikácie. 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
