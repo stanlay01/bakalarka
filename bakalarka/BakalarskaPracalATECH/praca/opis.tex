@@ -1,3 +1,4 @@
+% !TeX spellcheck = de_DE
 \mychapter{2}{Opis riešenia}
 
 %\centerline{\includegraphics[width=0.4\textwidth]{images/cervik}}
@@ -55,10 +56,10 @@ V nasledujúcej kapitole podrobne opíšeme fungovanie celého systému, pričom
 	
 
 \section{Implementácia}
-V tejto časti sa zameriame podrobný opis implementácie modulu na správu a priraďovanie rolí k užívateľom. Podrobne si vysvetlíme fungovanie rolí v systéme, vysvetlíme databázový model a popíšeme celkovú architektúru a spôsob implementácie rolí v našom systéme. Rozoberieme možné bezpečnostné riziká a spôsob ich riešenia.
+V tejto časti sa zameriame na podrobný opis implementácie modulu na správu a priraďovanie rolí k užívateľom. Podrobne si vysvetlíme fungovanie rolí v systéme, vysvetlíme databázový model a popíšeme celkovú architektúru a spôsob implementácie rolí v našom systéme. Rozoberieme možné bezpečnostné riziká a spôsob ich riešenia.
 
 	\subsection{Popis architektúry}
-	Základnou myšlienkou RBAC architektúry je odstrániť priame priraďovanie práv k užívateľom. Tento výsledok sa zabezpečí pridaním medzikroku a teda rolí medzi samotných užívateľov a ich právomocii .Samotná implementácia tejto architektúry závisí od konkrétneho systému a jeho architektúry. Naša aplikácia sa zameriava na vytvorenie WfMS za pomoci Petriho sietí. Ako prvé si definujeme základnú architektúru. Na Obr. \ref{fig:model_rbac_v_aplikacii} môžeme zreteľne vidieť dve nezávislé časti fungovania workflow systému. V ľavej časti ilustácie vidíme sekciu, ktorá sa zaoberá  prideľovaním  užívateľou k roliam, zatiaľ čo pravá časť znázorňuje proces samotný. Vo firme je vďaka tomu zabezpečené, aby sa procesy mohli vytvárať nezávisle od užívateľov. Priraďovanie práv je zabezpečené väzbou medzi rolami a procesmi. Pre správnu funkcionalitu je však potrebné, aby firma mala priradené tie role, ktoré sú použité v jednotlivých procesoch, ktoré firma využíva. Definovanie prístupových práv je zabezbečené nad samotnými prechodmi v sieti.
+	Základnou myšlienkou RBAC architektúry je odstrániť priame priraďovanie práv k užívateľom. Tento výsledok sa zabezpečí pridaním medzikroku a teda rolí medzi samotných užívateľov a ich právomoci .Samotná implementácia tejto architektúry závisí od konkrétneho systému a jeho architektúry. Naša aplikácia sa zameriava na vytvorenie WfMS za pomoci Petriho sietí. Ako prvé si definujeme základnú architektúru. Na Obr. \ref{fig:model_rbac_v_aplikacii} môžeme zreteľne vidieť dve nezávislé časti fungovania workflow systému. V ľavej časti ilustácie vidíme sekciu, ktorá sa zaoberá  prideľovaním  užívateľou k roliam, zatiaľ čo pravá časť znázorňuje proces samotný. Vo firme je vďaka tomu zabezpečené, aby sa procesy mohli vytvárať nezávisle od užívateľov. Priraďovanie práv je zabezpečené väzbou medzi rolami a procesmi. Pre správnu funkcionalitu je však potrebné, aby firma mala priradené tie role, ktoré sú použité v jednotlivých procesoch, ktoré firma využíva. Definovanie prístupových práv je zabezbečené nad samotnými prechodmi v sieti.
 	
 	\begin{figure}[h]
 		\centering
@@ -67,7 +68,7 @@ V tejto časti sa zameriame podrobný opis implementácie modulu na správu a pr
 		\label{fig:model_rbac_v_aplikacii}
 	\end{figure}
 	
-	\subsubsection{Priraďovanie užívateľou k roliam}
+	\subsection{Priraďovanie užívateľou k roliam}
 	V našej aplikácii nechceme aby bol užívateľ viazaný len na jednu firmu. Chceme aby pod rovnakým účtom mohol figurovať vo viacerých firmách, prípadne mal možnosť si založiť vlastnú. Preto je potrebné, aby sa užívatelia neviazali len na samotnú rolu. V aplikácii bude väzba užívateľa na rolu závislá od konkrétnej firmy. V každej firme bude môcť administrátor, užívateľ s právami na riadenie rolí, mať možnosť priradiť užívateľa ku konkrétnej role, ktorá je vo firme obsiahnutá. Samotný užívateľ môže byť tým pádom priradený vo viacerých firmách, pričom v každej firme bude mať iné práva. Na obrázku  \ref{fig:user_to_roles} môžeme vidieť zjednodušený model mapovania právomocí užívateľa prostredníctvom systému rolí.
 	Šedé pozadie v roli znamená, že užívateľ je k roli priradený.  V rovnakom procese vidíme, že užívateľ, ktorý môže vo firme 1 spustiť prechod 1 , nie je oprávnený vykonať prechod 1 aj vo firme 2, pretože v nej nemá priradenú rolu. Vo firme 2 môže spustiť iba prechod 2.
 	
@@ -79,19 +80,41 @@ V tejto časti sa zameriame podrobný opis implementácie modulu na správu a pr
 		\end{figure}
 	
 	
-	\subsubsection{Riadenie právomocí}	
+	\subsection{Riadenie právomocí}	
 	Zadefinovali sme si ako sa v aplikácii mapujú užívatelia na role. V nasledujúcej časti si bližšie definujeme pravidlá pre spúšťanie prechodov v sieti, rovnako ako aj samotné právomoci ktoré daná rola v procese nadobudne. 
 	
-	V kapitole \ref{kap:teoria_petriho_siete_na_workflow} sme zistili, že Petriho sieť musí obsahovať dva špeciálne prechody (začiatočný a konečný) aby mohla spĺnať požiadavky na vykonávanie funkcie Workflow management systému. Začiatočný stav je dôležitý aby bolo možné určiť začiatok 
 
-	V procese je jasne definované, ktorá rola môže vytvoriť nový prípad, pričom ku každému prechodu je pridelená práve jedna rola . Ak chce firma takýto proces používať,  musí mat tieto role  obsiahnuté vo svojej organizačnej štruktúre. Je preto potrebné, aby zakaždým , čo firma preberie proces na používanie, sa do firmy pridali tie role, ktoré sú v procese obsiahnuté. 	
+
+	\subsubsection{Priradenie práv k roliam}
+	Priradenie práv k roliam je definované nepriamo prostredníctvom jednotlivých prechodov. Hlavnou úlohou role v procese je zadefinovať práva na vytváranie nových prípadov a takisto určiť právomoci na spúšťanie prechodov v procese. Schopnosť spustiť nový prechod je však vymedzená referenciami, návrhom petriho siete a stave v akom sa tokeny momentálne nachádzajú.  
+
 	
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=0.9\linewidth]{images/roles_permissions}
-			\caption{ Model RBAC v aplikácii}
+			\caption{ Právomoci rolí v sieti }
 			\label{fig:roles_permissions}
-		\end{figure}		
+		\end{figure}
+		
+	\subsubsection{Definovanie prístupových práv ku prechodu}
+
+	Osoba môže v jednotlivom prípade spustiť prechod, ak spĺňa nasledovné požiadavky:
+	\begin{enumerate}
+		\item prechod je spustiteľný
+		\item osoba je priradená k roli, ktorej daný prechod prináleží
+		\item osoba spľňa požiadavky referencie
+	\end{enumerate}
+	
+	Spustiteľnosť prechodu je zadefinovaná prostredníctvom Petriho siete. Prechod v sieti je spustiteľný len vtedy, ak každé  miesto vstupujúce do prechodu obsahuje minimálne toľko tokenov, aká je násobnosť hrany medzi daným miestom a prechodom.
+	V aplikácii máme dva typy referencii: \textbf{referenciu na prechod} a \textbf{referenciu na prvú rolu}
+	Ak má prechod nastavenú referenciu na prechod, v databáze sa porovná užívateľove id s id užívateľa , ktorý spustil referencovaný prechod. V prípade, že tieto dáta súhlasia, užívateľ je oprávnený spustiť prechod.
+
+	Ak má prechod nastavenú referenciu na prvého užívateľa, overí sa ,či sa v procese už daná rola nevyskytla. Ak prechod s danou rolou v danom prípade ešte nebol spustený, užívateľ je oprávnený tento prechod spustiť. V opačnom prípade je potrebné overiť id užívateľa s užívateľom ktorý ako prvý spustil prechod s touto rolou. Ak sa zistí zhoda, užívateľ može daný prechod spustiť.
+	
+	
+			
+	\subsubsection{Operácie nad prechodm}	
+	
 	
 	
 	\subsection{Databázový model}

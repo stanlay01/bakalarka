@@ -28,9 +28,12 @@
 \contentsline {subsection}{\numberline {2.2.2}\IeC {\v Z}ivotn\IeC {\'y} cyklus}{10}
 \contentsline {section}{\numberline {2.3}Implement\IeC {\'a}cia}{10}
 \contentsline {subsection}{\numberline {2.3.1}Popis architekt\IeC {\'u}ry}{10}
-\contentsline {subsubsection}{Prira\IeC {\v d}ovanie u\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ou k roliam}{11}
-\contentsline {subsubsection}{Riadenie pr\IeC {\'a}vomoc\IeC {\'\i }}{12}
-\contentsline {subsection}{\numberline {2.3.2}Datab\IeC {\'a}zov\IeC {\'y} model}{13}
-\contentsline {subsection}{\numberline {2.3.3}Grafick\IeC {\'y} model}{13}
+\contentsline {subsection}{\numberline {2.3.2}Prira\IeC {\v d}ovanie u\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ou k roliam}{11}
+\contentsline {subsection}{\numberline {2.3.3}Riadenie pr\IeC {\'a}vomoc\IeC {\'\i }}{12}
+\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{12}
+\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{13}
+\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodm}{13}
+\contentsline {subsection}{\numberline {2.3.4}Datab\IeC {\'a}zov\IeC {\'y} model}{13}
+\contentsline {subsection}{\numberline {2.3.5}Grafick\IeC {\'y} model}{13}
 \contentsline {section}{\numberline {2.4}Overenie rie\IeC {\v s}enia}{13}
 \contentsline {chapter}{Z\IeC {\'a}ver}{14}
