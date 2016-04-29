@@ -17,6 +17,11 @@ Michael~P. Gallaher, Alan~C. O’Connor, and Brian Kropp.
 \newblock {\em The Economic Impact of Role-Based Access Control}.
 \newblock National Institute of Standards and Technology, 2002.
 
+\bibitem{aalst}
+Wil Van Der~Aalst and Kees~Max Van~Hee.
+\newblock {\em Workflow management: models, methods, and systems}.
+\newblock MIT press.
+
 \bibitem{workflow_systemy}
 W.M.P. van~der Aalst.
 \newblock {\em The Application of Petri Nets to Workflow Management}.

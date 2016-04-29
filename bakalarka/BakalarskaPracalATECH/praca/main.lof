@@ -1,9 +1,10 @@
 \select@language {slovak}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces smerovacie kon\IeC {\v s}trukcie}}{4}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces smerovacie kon\IeC {\v s}trukcie}}{5}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Framework RBAC96 pod\IeC {\v l}a Sandhu a spol.}}{11}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Vz\IeC {\v t}ahy RBAC pod\IeC {\v l}a \cite {kuhn}}}{12}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Roz\IeC {\v s}\IeC {\'\i }ren\IeC {\'e} vz\IeC {\v t}ahy RBAC pod\IeC {\v l}a \cite {kuhn}}}{12}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Pr\IeC {\'\i }klad hierarchie rol}}{12}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Model RBAC v aplik\IeC {\'a}cii}}{18}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Model RBAC v aplik\IeC {\'a}cii}}{19}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Pr\IeC {\'a}vomoci rol\IeC {\'\i } v sieti }}{20}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Pr\IeC {\'\i }klad hierarchie rol}}{13}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Ekonomick\IeC {\'a} n\IeC {\'a}vratnos\IeC {\v t} RBAC pod\IeC {\v l}a \cite {ekonomika}}}{15}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Model RBAC v aplik\IeC {\'a}cii}}{20}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Model RBAC v aplik\IeC {\'a}cii}}{21}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Pr\IeC {\'a}vomoci rol\IeC {\'\i } v sieti }}{22}
