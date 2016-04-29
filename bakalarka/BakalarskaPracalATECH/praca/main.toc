@@ -1,39 +1,45 @@
 \select@language {slovak}
 \contentsline {chapter}{\IeC {\'U}vod}{1}
 \contentsline {chapter}{Anal\IeC {\'y}za}{3}
-\contentsline {section}{\numberline {1.1}Workflow management syst\IeC {\'e}m}{3}
-\contentsline {subsection}{\numberline {1.1.1}Dopyt po WfMS}{4}
-\contentsline {subsection}{\numberline {1.1.2}V\IeC {\'y}hody pou\IeC {\v z}itia WfMS}{4}
-\contentsline {subsection}{\numberline {1.1.3}Riadenie zrojov vo WfMS}{4}
+\contentsline {section}{\numberline {1.1}Workflow management syst\IeC {\'e}m}{4}
+\contentsline {subsection}{\numberline {1.1.1}Dopyt po WfMS}{5}
+\contentsline {subsection}{\numberline {1.1.2}V\IeC {\'y}hody pou\IeC {\v z}itia WfMS}{5}
+\contentsline {subsection}{\numberline {1.1.3}Riadenie zrojov vo WfMS}{5}
 \contentsline {section}{\numberline {1.2}Petriho siete}{5}
-\contentsline {subsection}{\numberline {1.2.1}Implementovanie Petriho siet\IeC {\'\i } na workflow management syst\IeC {\'e}m}{5}
-\contentsline {section}{\numberline {1.3}DAC}{6}
-\contentsline {section}{\numberline {1.4}MAC}{6}
-\contentsline {subsection}{\numberline {1.4.1}Model Bell and LaPadula}{6}
-\contentsline {section}{\numberline {1.5}RBAC}{6}
-\contentsline {subsection}{\numberline {1.5.1}Popis modelu}{6}
-\contentsline {section}{\numberline {1.6}V\IeC {\'y}hody RBAC}{6}
-\contentsline {subsection}{\numberline {1.6.1}Z\IeC {\'a}kladn\IeC {\'e} po\IeC {\v z}iadavky}{6}
-\contentsline {subsection}{\numberline {1.6.2}Jadro RBAC}{6}
-\contentsline {subsection}{\numberline {1.6.3}Hierarchick\IeC {\'e} \IeC {\v s}trukt\IeC {\'u}ry}{6}
-\contentsline {chapter}{Opis rie\IeC {\v s}enia}{7}
-\contentsline {section}{\numberline {2.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek}{7}
-\contentsline {subsection}{\numberline {2.1.1}Z\IeC {\'a}kladn\IeC {\'y} opis aplik\IeC {\'a}cie}{7}
-\contentsline {subsection}{\numberline {2.1.2}Funkcia rol\IeC {\'\i } v aplik\IeC {\'a}cii}{8}
-\contentsline {subsection}{\numberline {2.1.3}Referencie}{8}
-\contentsline {subsection}{\numberline {2.1.4}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{9}
-\contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{10}
-\contentsline {subsection}{\numberline {2.2.1}Model fungovania aplik\IeC {\'a}cie}{10}
-\contentsline {subsubsection}{Schva\IeC {\v l}ovanie bakal\IeC {\'a}rskych pr\IeC {\'a}c}{10}
-\contentsline {subsection}{\numberline {2.2.2}\IeC {\v Z}ivotn\IeC {\'y} cyklus}{10}
-\contentsline {section}{\numberline {2.3}Implement\IeC {\'a}cia}{10}
-\contentsline {subsection}{\numberline {2.3.1}Popis architekt\IeC {\'u}ry}{10}
-\contentsline {subsection}{\numberline {2.3.2}Prira\IeC {\v d}ovanie u\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ou k roliam}{11}
-\contentsline {subsection}{\numberline {2.3.3}Riadenie pr\IeC {\'a}vomoc\IeC {\'\i }}{12}
-\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{12}
-\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{13}
-\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodm}{13}
-\contentsline {subsection}{\numberline {2.3.4}Datab\IeC {\'a}zov\IeC {\'y} model}{13}
-\contentsline {subsection}{\numberline {2.3.5}Grafick\IeC {\'y} model}{13}
-\contentsline {section}{\numberline {2.4}Overenie rie\IeC {\v s}enia}{13}
-\contentsline {chapter}{Z\IeC {\'a}ver}{14}
+\contentsline {subsection}{\numberline {1.2.1}Implementovanie Petriho siet\IeC {\'\i } na workflow management syst\IeC {\'e}m}{6}
+\contentsline {section}{\numberline {1.3}Riadenie pr\IeC {\'\i }stupu}{6}
+\contentsline {subsection}{\numberline {1.3.1}Princ\IeC {\'\i }py bezpe\IeC {\v c}n\IeC {\'e}ho dizajnu}{7}
+\contentsline {subsection}{\numberline {1.3.2}Model Bell-LaPadula}{8}
+\contentsline {subsection}{\numberline {1.3.3}Separetion of duties (SoD)}{9}
+\contentsline {subsection}{\numberline {1.3.4}DAC}{9}
+\contentsline {subsection}{\numberline {1.3.5}MAC}{9}
+\contentsline {section}{\numberline {1.4}RBAC}{10}
+\contentsline {subsection}{\numberline {1.4.1}Popis modelu}{10}
+\contentsline {subsection}{\numberline {1.4.2}Dizajn}{10}
+\contentsline {subsubsection}{Jadro RBAC}{11}
+\contentsline {subsubsection}{Hierarchick\IeC {\'e} \IeC {\v s}trukt\IeC {\'u}ry}{12}
+\contentsline {subsubsection}{Obmedzenia}{13}
+\contentsline {subsection}{\numberline {1.4.3}Porovnanie RBAC s DAC a MAC}{13}
+\contentsline {subsection}{\numberline {1.4.4}V\IeC {\'y}hody RBAC}{13}
+\contentsline {chapter}{Opis rie\IeC {\v s}enia}{14}
+\contentsline {section}{\numberline {2.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek}{14}
+\contentsline {subsection}{\numberline {2.1.1}Z\IeC {\'a}kladn\IeC {\'y} opis aplik\IeC {\'a}cie}{14}
+\contentsline {subsection}{\numberline {2.1.2}Funkcia rol\IeC {\'\i } v aplik\IeC {\'a}cii}{15}
+\contentsline {subsection}{\numberline {2.1.3}Referencie}{15}
+\contentsline {subsection}{\numberline {2.1.4}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{16}
+\contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{17}
+\contentsline {subsection}{\numberline {2.2.1}Model fungovania aplik\IeC {\'a}cie}{17}
+\contentsline {subsubsection}{Schva\IeC {\v l}ovanie bakal\IeC {\'a}rskych pr\IeC {\'a}c}{17}
+\contentsline {subsection}{\numberline {2.2.2}\IeC {\v Z}ivotn\IeC {\'y} cyklus}{17}
+\contentsline {section}{\numberline {2.3}Implement\IeC {\'a}cia}{17}
+\contentsline {subsection}{\numberline {2.3.1}Popis architekt\IeC {\'u}ry}{17}
+\contentsline {subsection}{\numberline {2.3.2}Prira\IeC {\v d}ovanie u\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ou k roliam}{18}
+\contentsline {subsection}{\numberline {2.3.3}Riadenie pr\IeC {\'a}vomoc\IeC {\'\i }}{19}
+\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{19}
+\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{19}
+\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{20}
+\contentsline {subsection}{\numberline {2.3.4}Datov\IeC {\'y} model}{20}
+\contentsline {subsection}{\numberline {2.3.5}Ukladanie rol\IeC {\'\i } a referencii k Petriho sieti}{21}
+\contentsline {subsection}{\numberline {2.3.6}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} rozhranie}{21}
+\contentsline {section}{\numberline {2.4}Overenie rie\IeC {\v s}enia}{21}
+\contentsline {chapter}{Z\IeC {\'a}ver}{22}
