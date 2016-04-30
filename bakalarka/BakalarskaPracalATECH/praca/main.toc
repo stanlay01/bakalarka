@@ -4,44 +4,49 @@
 \contentsline {section}{\numberline {1.1}Workflow management syst\IeC {\'e}m}{4}
 \contentsline {subsection}{\numberline {1.1.1}\IeC {\'U}loha}{5}
 \contentsline {subsection}{\numberline {1.1.2}Proces}{5}
-\contentsline {subsection}{\numberline {1.1.3}Dopyt po WfMS}{5}
-\contentsline {subsection}{\numberline {1.1.4}V\IeC {\'y}hody pou\IeC {\v z}itia WfMS}{6}
+\contentsline {subsection}{\numberline {1.1.3}Smerovacie kon\IeC {\v s}trukcie}{5}
+\contentsline {subsection}{\numberline {1.1.4}V\IeC {\'y}hody pou\IeC {\v z}itia WfMS}{5}
 \contentsline {subsection}{\numberline {1.1.5}Riadenie zrojov vo WfMS}{6}
-\contentsline {section}{\numberline {1.2}Petriho siete}{6}
-\contentsline {subsection}{\numberline {1.2.1}Implementovanie Petriho siet\IeC {\'\i } na workflow management syst\IeC {\'e}m}{6}
-\contentsline {section}{\numberline {1.3}Riadenie pr\IeC {\'\i }stupu}{7}
-\contentsline {subsection}{\numberline {1.3.1}Princ\IeC {\'\i }py bezpe\IeC {\v c}n\IeC {\'e}ho dizajnu}{8}
-\contentsline {subsection}{\numberline {1.3.2}Model Bell-LaPadula}{9}
-\contentsline {section}{\numberline {1.4}RBAC}{10}
-\contentsline {subsection}{\numberline {1.4.1}Popis modelu}{10}
-\contentsline {subsection}{\numberline {1.4.2}Dizajn}{10}
-\contentsline {subsubsection}{Jadro RBAC}{11}
-\contentsline {subsubsection}{Hierarchick\IeC {\'e} \IeC {\v s}trukt\IeC {\'u}ry}{12}
-\contentsline {subsubsection}{Obmedzenia}{12}
-\contentsline {subsection}{\numberline {1.4.3}Porovnanie RBAC s alternat\IeC {\'\i }vnymi met\IeC {\'o}dami riadenia}{13}
-\contentsline {subsubsection}{ACL}{13}
-\contentsline {subsubsection}{volite\IeC {\v l}n\IeC {\'e} riadenie pr\IeC {\'\i }stupu DAC}{14}
-\contentsline {subsubsection}{povinn\IeC {\'e} riadenie pr\IeC {\'\i }stupu MAC}{14}
-\contentsline {subsection}{\numberline {1.4.4}V\IeC {\'y}hody RBAC}{15}
-\contentsline {chapter}{Opis rie\IeC {\v s}enia}{16}
-\contentsline {section}{\numberline {2.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek}{16}
-\contentsline {subsection}{\numberline {2.1.1}Z\IeC {\'a}kladn\IeC {\'y} opis aplik\IeC {\'a}cie}{16}
-\contentsline {subsection}{\numberline {2.1.2}Funkcia rol\IeC {\'\i } v aplik\IeC {\'a}cii}{17}
-\contentsline {subsection}{\numberline {2.1.3}Referencie}{17}
-\contentsline {subsection}{\numberline {2.1.4}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{18}
-\contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{19}
-\contentsline {subsection}{\numberline {2.2.1}Model fungovania aplik\IeC {\'a}cie}{19}
-\contentsline {subsubsection}{Schva\IeC {\v l}ovanie bakal\IeC {\'a}rskych pr\IeC {\'a}c}{19}
-\contentsline {subsection}{\numberline {2.2.2}\IeC {\v Z}ivotn\IeC {\'y} cyklus}{19}
-\contentsline {section}{\numberline {2.3}Implement\IeC {\'a}cia}{19}
-\contentsline {subsection}{\numberline {2.3.1}Popis architekt\IeC {\'u}ry}{19}
-\contentsline {subsection}{\numberline {2.3.2}Prira\IeC {\v d}ovanie u\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ou k roliam}{20}
-\contentsline {subsection}{\numberline {2.3.3}Riadenie pr\IeC {\'a}vomoc\IeC {\'\i }}{21}
-\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{21}
-\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{21}
-\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{22}
-\contentsline {subsection}{\numberline {2.3.4}Datov\IeC {\'y} model}{22}
-\contentsline {subsection}{\numberline {2.3.5}Ukladanie rol\IeC {\'\i } a referencii k Petriho sieti}{23}
-\contentsline {subsection}{\numberline {2.3.6}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} rozhranie}{23}
-\contentsline {section}{\numberline {2.4}Overenie rie\IeC {\v s}enia}{23}
-\contentsline {chapter}{Z\IeC {\'a}ver}{24}
+\contentsline {section}{\numberline {1.2}Petriho siete}{7}
+\contentsline {subsection}{\numberline {1.2.1}Hist\IeC {\'o}ria}{7}
+\contentsline {subsection}{\numberline {1.2.2}V\IeC {\v s}eobecn\IeC {\'a} defin\IeC {\'\i }cia Petriho siete}{7}
+\contentsline {subsection}{\numberline {1.2.3}Pravidl\IeC {\'a} pre sp\IeC {\'u}\IeC {\v s}\IeC {\v t}anie prechodov}{8}
+\contentsline {subsection}{\numberline {1.2.4}Pr\IeC {\'\i }klad}{8}
+\contentsline {subsection}{\numberline {1.2.5}Implementovanie Petriho siet\IeC {\'\i } na workflow management syst\IeC {\'e}m}{9}
+\contentsline {subsubsection}{Smerovacie kon\IeC {\v s}trukcie}{10}
+\contentsline {section}{\numberline {1.3}Riadenie pr\IeC {\'\i }stupu}{10}
+\contentsline {subsection}{\numberline {1.3.1}Princ\IeC {\'\i }py bezpe\IeC {\v c}n\IeC {\'e}ho dizajnu}{11}
+\contentsline {subsection}{\numberline {1.3.2}Model Bell-LaPadula}{12}
+\contentsline {section}{\numberline {1.4}RBAC}{13}
+\contentsline {subsection}{\numberline {1.4.1}Popis modelu}{13}
+\contentsline {subsection}{\numberline {1.4.2}Dizajn}{13}
+\contentsline {subsubsection}{Jadro RBAC}{14}
+\contentsline {subsubsection}{Hierarchick\IeC {\'e} \IeC {\v s}trukt\IeC {\'u}ry}{15}
+\contentsline {subsubsection}{Obmedzenia}{15}
+\contentsline {subsection}{\numberline {1.4.3}Porovnanie RBAC s alternat\IeC {\'\i }vnymi met\IeC {\'o}dami riadenia}{16}
+\contentsline {subsubsection}{ACL}{17}
+\contentsline {subsubsection}{volite\IeC {\v l}n\IeC {\'e} riadenie pr\IeC {\'\i }stupu DAC}{17}
+\contentsline {subsubsection}{povinn\IeC {\'e} riadenie pr\IeC {\'\i }stupu MAC}{17}
+\contentsline {subsection}{\numberline {1.4.4}V\IeC {\'y}hody RBAC}{18}
+\contentsline {chapter}{Opis rie\IeC {\v s}enia}{19}
+\contentsline {section}{\numberline {2.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek}{19}
+\contentsline {subsection}{\numberline {2.1.1}Z\IeC {\'a}kladn\IeC {\'y} opis aplik\IeC {\'a}cie}{19}
+\contentsline {subsection}{\numberline {2.1.2}Funkcia rol\IeC {\'\i } v aplik\IeC {\'a}cii}{20}
+\contentsline {subsection}{\numberline {2.1.3}Referencie}{20}
+\contentsline {subsection}{\numberline {2.1.4}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{21}
+\contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{22}
+\contentsline {subsection}{\numberline {2.2.1}Model fungovania aplik\IeC {\'a}cie}{22}
+\contentsline {subsubsection}{Schva\IeC {\v l}ovanie bakal\IeC {\'a}rskych pr\IeC {\'a}c}{22}
+\contentsline {subsection}{\numberline {2.2.2}\IeC {\v Z}ivotn\IeC {\'y} cyklus}{22}
+\contentsline {section}{\numberline {2.3}Implement\IeC {\'a}cia}{22}
+\contentsline {subsection}{\numberline {2.3.1}Popis architekt\IeC {\'u}ry}{22}
+\contentsline {subsection}{\numberline {2.3.2}Prira\IeC {\v d}ovanie u\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ou k roliam}{23}
+\contentsline {subsection}{\numberline {2.3.3}Riadenie pr\IeC {\'a}vomoc\IeC {\'\i }}{24}
+\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{24}
+\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{24}
+\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{25}
+\contentsline {subsection}{\numberline {2.3.4}Datov\IeC {\'y} model}{25}
+\contentsline {subsection}{\numberline {2.3.5}Ukladanie rol\IeC {\'\i } a referencii k Petriho sieti}{26}
+\contentsline {subsection}{\numberline {2.3.6}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} rozhranie}{26}
+\contentsline {section}{\numberline {2.4}Overenie rie\IeC {\v s}enia}{26}
+\contentsline {chapter}{Z\IeC {\'a}ver}{27}

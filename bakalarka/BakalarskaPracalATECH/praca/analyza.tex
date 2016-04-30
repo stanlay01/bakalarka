@@ -41,7 +41,7 @@ Každý prípad vo WfMS má svoj začiatok a koniec. Medzitým sa proces nachád
 Proces definuje spôsob, akým sa vykonajú určité úlohy v konkrétnom prípade. Proces môže byť vo viacerých prípadoch rovnaký ale môže sa takisto odlišovať. Tieto odlišnosti v procese môžu byť napríklad spôsobené smerovacími konštrukciami, za pomoci ktorých je prípad namodelovaný. V prípade vybavovanie pôžičky môže byť žiadosť pre Ferka zamietnutá, zatiaľ čo taká istá žiadosť bude pre Janka schválená.
 
 \subsection{Smerovacie konštrukcie}
-	Definovanie procesu sa stanovuje na základe
+	Postupnosť vykonávania  úloh v systéme je určená na základe smerovania prípadu. V jednotlivých vetvách určujeme pre každú úlohu smerovacie konštrukcie, čím umožňujeme vytvoriť  pre prípad odlišné životné cykly. Využívame štyri základné: 
 \begin{itemize}
 	\item sekvenčné - úlohy sa vykonávajú za sebou v poradí,v akom nasledujú
 	\item paralelné – úlohy sa vykonávajú paralelne nezávisle na sebe za pomoci AND-splitov a AND-joinov.
@@ -56,12 +56,16 @@ Proces definuje spôsob, akým sa vykonajú určité úlohy v konkrétnom prípa
 \end{figure}
 
 
-
-\subsection{Dopyt po WfMS}
-TODO
-
 \subsection{Výhody použitia WfMS}
-TODO
+Workflow management systém ponúka možnosť oddeliť procesnú časť, čím sa zabezpečia nasledovné výhody:
+\begin{itemize}
+	\item zabezpečí sa tak jednotná funkcionalita manažmentu a oddelí sa od zvyšku systému. Tradične sa táto funkcionalita rozprestiera v celom systéme. Vďaka tejto separácii je možné rovnakú funkcionalitu použiť na viac ako jednu úlohu.
+	\item aplikácie sú nezávislé od manažmentu , čo umožňuje upravovať logiku aj po implementovaní systému
+	\item k logickej vrstve je možné pridávať rôzne aplikácie a rozšíriť tak funkcionalitu systému
+	\item definovanie a návrh procesu je možné diagnostikovať a vopred tak zabrániť nežiaducim chybám
+	\item z pohľadu manažmentu je možné v konkrétnom prípade identifikovať, v akom stave sa prípad nachádza. Celý proces sa tak ľahšie monitoruje. Dá sa zistiť, kto má v danom prípade a čase čo vykonávať. Celé vykonávanie procesu je pod drobnohľadom, čím sa urýchli čas vykonania celého procesu. V prípade problému vo vykonávaní prípadu, je možné rýchlo identifikovať zdroj
+	
+\end{itemize}
 
 \subsection{Riadenie zrojov vo WfMS}
 Pod pojmom zdroj rozumieme jednotku, ktorá je určená na vykonávanie úlohy. Môžme si pod tým predstaviť počítač (server, tlačiareň, fax ... ) alebo človeka ako pracovnú jednotku. V business prostredí väčšina zdrojov tvoria jednotliví pracovníci a zákazníci, nie je to však pravidlo.
@@ -78,36 +82,117 @@ Ako príklad role si môžeme predstaviť akúkoľvek pracovnú pozíciu a pod s
 %----------------------------------Začiatok sekcie Petriho siete----------------------------------------
 
 \section{Petriho siete}
-
-//TODO
-Definícia \cite{workflow_systemy} :
-\begin{quote}
-	Petriho sieť orientovaný bipartitný graf s dvoma typmi uzlov nazývaných miesta (places) a prechody (transitions). Uzly sú spojené cez orientované hrany (arcs). Spojenia medzi uzlami rovnakého typu nie sú povolené.
-\end{quote}
-//TODO
+%PETRI, C.A. - REISIG, W. 2008 Petri net. [online] [cit. 27.04.2016]. Dostupné na
+%internete: <http://www.scholarpedia.org/article/Petri_net>
 
 
 
-Petriho siete slúžia na matematické modelovanie a simuláciu procesov. Ich hlavná výhoda spočíva v jednoduchosti a grafickej reprezentácii. 
+
+%Prof. Dr. Carl Adam Petri [online] [cit. 27.04.2016].
+%Dostupné na internete: <http://www.informatik.unihamburg.
+%de/TGI/mitarbeiter/profs/petri_eng.html>
+\subsection{História}
+Petriho siete vymyslel nemecký matematik Carl Adam Petri už ako 13 ročný na modelovanie chemických procesov. Neskôr ich popísal vo svojej dizertačnej práci "Communication with Automata" \cite{petri} v roku 1962. Časom sa však Petriho siete menili a dopĺňali. Dnes už podľa \cite{gabova_kniha} poznáme viacero definícii Petriho sietí. 
 
 
-.  V Petriho sieti sa používajú najmä miesta, prechody a tokeny. Miesta určujú stav, v akom sa proces nachádza, prechody slúžia ako prostriedok, ako sa medzi nimi pohybovať. Logiku systému dotvárajú tokeny a hrany. Tokeny určujú, v akom stave sa systém práve nachádza. Podľa typu a násobnosti hrany vieme ,  aké množstvo tokenov je potrebné, aby sa spustil prechod na danú hranu nadväzujúci.
+\subsection{Všeobecná definícia Petriho siete}
+Petriho sieť je podľa 
+%\cite{desel} 
+ zvláštny typ orientovaného grafu spolu so začiatočným stavom (začiatočným značkovaním) - PN = ( $N, M_{0}$ ). 
+Obsahuje dva typy uzlov nazývanými: \emph{place}  (miesto) a \emph{transition} (prechod). Tieto uzly môžu byť spolu prepojené prostredníctvom orientovanej hrany (arc). Spojenie medzi dvoma uzlami rovnakého typu nie je povolené.
+\\
+\\
+Graf petriho siete obsahuje: 
+\begin{itemize}
+	\item miesta - označované krúžkom 
+	\item prechody - označené obdĺžnikom
+	\item hrany - spájajú jednotlivé uzly. Hrany môžu mať určitú násobnosť. Poznáme tieto typy hrán: 
+		\begin{itemize}
+			\item hrana z miesta do prechodu
+			\item hrana z prechodu do miesta
+		\end{itemize}
+	\item váha hrany - reprezentuje násobnosť hrany
+	\item značkovanie - priraďuje každému miestu počet značiek (tokenov) - m-rozmerný vektor nezáporných celých M, M(p)- počet značiek v mieste p 
+\end{itemize}
+
+\subsubsection*{Formálna definícia}
+Pre formálne opísanie Petriho sietí použijeme definíciu z 
+%\cite{}
+.\\
+	Petriho sieť je orientovaný bipartitný graf reprezentovaný päticou (P,T,F,W,m0), kde:\\
+\begin{quotation}
+	\noindent P = \{$ p_{1}, ... ,p_{n}$ \} - konečná neprázdna množina miest;\\
+	P = \{$ t_{1}, ... ,t_{n}$ \} - konečná neprázdna množina prechodov;\\
+	{$ P \cap T = \emptyset,P \cup T \neq \emptyset $ }; \\
+	{$ F\subseteq ( P x T ) \cup (T x P)$}  - množina hrán (toková relácia);\\
+	{$ W : F \rightarrow N \cup \{ 0\}$} - váhová funkcia ;\\
+	{$ m_{0} : P \rightarrow N \cup \{ 0\}$} - počiatočné značkovanie;\\
+\end{quotation}
+
+\subsection{Pravidlá pre spúšťanie prechodov}
+\begin{enumerate}
+	\item Prechod je aktivovaný , ak každé z jeho vstupných miest obsahuje aspoň w(p,t) značiek
+	\item Spustenie prechodu t spôsobí zrušenie w(p,t) značiek v každom vstupnom mieste p prechodu t a pridanie w(t,p) značiek do každého výstupného miesta p prechodu t;	
+\end{enumerate}
+
+\subsection{Príklad}
+Na obrázku môžeme vidieť jednoduchú Petriho sieť ktorá znázorňuje spojenie dvoch prvkov vodíka a kyslíka na vytvorenie vody. Máme tri miesta. Dve z nich nám predstavujú jednotlivé prvky a tretie predstavuje molekulu vody H20. Medzi nimi je prechod ktorý v tejto sieti znázorňuje spojenie dvoch prvkov do jednej molekuly. Medzi miestom ''O'' a prechodom máme jednoduchú hranu, zatiaľ čo z miesta ''H'' do prechodu máme hranu násobnosti dva. Jednotlivé násobnosti znázorňujú, koľko prvkov (tokenov) treba skonzumovať z každého miesta, aby bolo možné prechod spustiť. Na druhej strane vidíme jednoduchú hranu z prechodu do miesta H20, ktorá nám značí, že po skonzumovaní značiek z miest ''O'' a ''H'' sa vytvorí práve jedna značka v mieste ''H20'' (vyprodukuje sa práve jedna molekula ). 
+
+\begin{figure}[h]
+	\centerline{\includegraphics[width=0.4\textwidth]{images/vojvoda}}
+	\caption{Petriho sieť na ''vytvorenie'' vody}
+	\label{obr:voda}
+\end{figure}
+
+
+Pre spustenie tohto procesu je potrebné aby bola v mieste ''O'' minimálne jedna značka a v mieste ''H'' značiek minimálne dve. Po spustení prechodu sa v miestach vstupujúcich do prechodu odoberie počet tokenov daný násobnostou hrany. Naopak vo výstupnom mieste sa značky podľa násobnosti hrany pridajú pridajú.  
+
+\begin{figure}[h]
+	\centerline{\includegraphics[width=0.9\textwidth]{images/vojvoda2}}
+	\caption{Spustenie siete s jedným žetónom v mieste ''O'' a troma žetónmi v mieste ''H''}
+	\label{obr:voda2}
+\end{figure}
+
+
+
 
 
 \subsection{Implementovanie Petriho sietí na workflow management systém}
 \label{kap:teoria_petriho_siete_na_workflow}
+V minulosti sa objavilo niekoľko systémov , ktoré sa snažili implementovať WfMS, ale po čase narazili na problémy, lebo ich architektúra nespĺňala náležité požiadavky. Mnohé z nich nedokázali súčasne implementovať paralelné a alternatívne smerovanie, ostatné narazili na problémy, keď ich aplikácia modelovala WfMS len pomocou udalostí (pri vykonaní úlohy sa systém nedostal do určitého stavu, ale na udalosť nasledovalo okamžité spustenie ďalšej udalosti).
+W.M.P. van der Aalst v DOPLN
+vysvetlil 3 hlavné výhody použitia Petriho sietí na modelovanie workflow management systému:
+\begin{itemize}
+	\item formálna sémantika spolu s grafickou reprezentáciu
+	\item stavové modelovanie namiesto udalostného - toto riešenie umožňuje vidieť stav v akom sa proces nachádza a takisto rozlišuje medzi povolenín a vykonaním úlohy  %(Porovnanie na obr. ----DOPLNIŤ-----)
+	\item analýza – vďaka tomu, že sú Petriho siete dobre matematicky popísané, umožňujú dobre analyzovať workflow sieť, čo umožní získať štatistické dáta, prípadne zamedziť problémom
+\end{itemize}
 
-Implementovanie Petriho sietí na workflow management systém je veľmi jednoduché.
-Na úrovni procesov sa určuje,  aké úlohy budú za sebou nasledovať a v akom poradí. Modelovanie workflow procesu v Petriho sieti je priamočiare . Úlohy sú reprezentované pomocou prechodou , podmienky sú modelované prostredníctvom  miest a jednotlivé prípady sú zaznačené pomocou tokenov.  Ak chceme Petriho sieť namapovať na workflow systém , musíme zabezpečiť dve konkrétne požiadavky:
+Mapovanie WfMS na Petriho siete je možné ľahko ukázať. Úlohy sú mapované na prechody. Závislosti sa mapujú prostredníctvom miest a hrán. Jednotlivé prípady môžu byť odlíšené rôznou farbou tokenov v rozšírených Petriho sieťach. Stav, v akom sa prípad nachádza definuje rozloženie tokenov
+Petriho sieť, ktorá modeluje WfMS sa nazýva WorkFlow sieť (WF-sieť). Aby Petriho sieť bola súčasne WF-sieťou, musí spĺnať tieto podmienky
+\begin{itemize}
+	\item PN má dve špeciálne miesta: miesto ''I'' a miesto ''O'', ktoré reprezentujú počiatočný a koncový stav 
+	\item  ak pridáme prechod ''t'' do PN , ktorý spája miesto ''I'' a ''O'', potom je PN silno spojená. To znamená, že pre každý pár uzlov X a Y  existuje priama cesta od X do Y. 
+\end{itemize}
 
-a) PN má dve špeciálne miesta: miesto „i“ a miesto „o“, ktoré reprezentujú počiatočný a koncový stav
-b) ak pridáme prechod t do PN , ktorý spája miesto „i“ a „o“, potom je PN silno spojená a to znamená, že pre každý pár uzlov x a y  existuje priama cesta od x do y. 
+\subsubsection{Smerovacie konštrukcie}
+\begin{figure}[h]
+	\centerline{\includegraphics[width=0.7\textwidth]{images/and}}
+	\caption[and]{AND konštrukcia v Petriho sieti}
+	\label{obr:cursus}
+\end{figure}
 
-Na obrázku referencia môžeme vidieť jednoduchú implementáciu smerovacích konštrukcii na Petriho sieťach.
-Prvá Petriho sieť (a) zobrazuje jednoduché sekvenčné spúšťanie prechodov. V danej sieti  môžeme spúšťať prechody len jednotlivo, v určenom poradí za sebou.
-Druhá Petriho sieť (b) predstavuje podmienené spúšťanie úloh. V danej sieti máme na výber z dvoch prechodov, ktoré je možné spustiť.
-Tretia Petriho sieť znázorňuje paralelné vykonanie úloh. Po spustení prechodu sa začnú vykonávať dva procesy nezávisle, pričom na konci sa spoja dokopy.
-Štvrtá Petriho sieť predstavuje iteračnú konštrukciu, ktorá umožní vrátiť token na predchádzajúci stav.
+\begin{figure}[h]
+	\centerline{\includegraphics[width=0.7\textwidth]{images/or}}
+	\caption[or]{OR konštrukcia v Petriho sieti}
+	\label{obr:cursus}
+\end{figure}
+
+\begin{figure}[h]
+	\centerline{\includegraphics[width=0.7\textwidth]{images/iteracia}}
+	\caption[sekvencne a iteračné]{Iteračné (vľavo) a sekvenčné(vpravo) konštrukcie v Petriho sieti}
+	\label{obr:cursus}
+\end{figure}
 
 %----------------------------------Koniec sekcie Petriho siete----------------------------------------
 
@@ -248,10 +333,6 @@ Do modelu RBAC je možné pridať ďalšie obmedzenia, ktoré bližšie definuj�
 
 
 
-
-
-
-
 \subsection{Porovnanie RBAC s alternatívnymi metódami riadenia}
 Okrem modelu RBAC existuje na trhu mnoho alternatívnych riešení riadenia prístupu. Zatiaľ čo RBAC rieši politiku prístupu na základe organizačnej štruktúry , ostatné metódy sa viac zameriavajú na bezpečnosť prístupu z pohľadu používateľa alebo administrátora. Zabezpečenie práv je definované až k používateľom.
 V tejto časti si ukážeme tri časté modely: access control list (ACL), DAC (discretionary access control) a MAC (mandatory access control) .
@@ -316,14 +397,9 @@ V podnikovej oblasti prináša RBAC model revolúciu pre riadenie prístupu. Ten
 	\item nové možnosti bezpečnosti - statické a dynamické vylúčenie práv
 \end{itemize} 
 
-
-
-
-	
-
 %net cash
 \begin{figure}[h]
-	\centerline{\includegraphics[width=0.7\textwidth]{images/rbac_net_cash}}
+	\centerline{\includegraphics[width=0.6\textwidth]{images/rbac_net_cash}}
 	\caption{Ekonomická návratnosť RBAC podľa \cite{ekonomika}}
 	\label{obr:rbac_net_cash}
 \end{figure}
