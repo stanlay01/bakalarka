@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  30 APR 2016 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  1 MAY 2016 00:40
 entering extended mode
 **./main.tex
 (main.tex
@@ -522,33 +522,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
 [4] <images/smerovacie_konstrukcie.png, id=71, 472.76625pt x 344.28625pt>
 File: images/smerovacie_konstrukcie.png Graphic file (type png)
 
 <use images/smerovacie_konstrukcie.png>
-Package pdftex.def Info: images/smerovacie_konstrukcie.png used on input line 5
-3.
-(pdftex.def)             Requested size: 308.71106pt x 224.81831pt.
+Package pdftex.def Info: images/smerovacie_konstrukcie.png used on input line 4
+9.
+(pdftex.def)             Requested size: 264.61333pt x 192.70442pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5]
 
-LaTeX Warning: Citation `petri' on page 6 undefined on input line 95.
+LaTeX Warning: Citation `petri' on page 6 undefined on input line 90.
 
 [6 <./images/smerovacie_konstrukcie.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 99--106
+Underfull \hbox (badness 10000) in paragraph at lines 94--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--123
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--130
+Underfull \hbox (badness 10000) in paragraph at lines 119--125
 
  []
 
@@ -556,13 +561,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--130
 File: images/vojvoda.png Graphic file (type png)
 
 <use images/vojvoda.png>
-Package pdftex.def Info: images/vojvoda.png used on input line 142.
+Package pdftex.def Info: images/vojvoda.png used on input line 137.
 (pdftex.def)             Requested size: 176.40439pt x 107.17188pt.
  <images/vojvoda2.png, id=90, 504.284pt x 146.949pt>
 File: images/vojvoda2.png Graphic file (type png)
 
 <use images/vojvoda2.png>
-Package pdftex.def Info: images/vojvoda2.png used on input line 151.
+Package pdftex.def Info: images/vojvoda2.png used on input line 146.
 (pdftex.def)             Requested size: 396.91325pt x 115.66016pt.
 
 
@@ -572,23 +577,23 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/and.png Graphic file (type png)
 
 <use images/and.png>
-Package pdftex.def Info: images/and.png used on input line 180.
+Package pdftex.def Info: images/and.png used on input line 175.
 (pdftex.def)             Requested size: 308.71106pt x 89.49843pt.
  [9 <./images/vojvoda2.png>]
 <images/or.png, id=101, 455.301pt x 122.859pt>
 File: images/or.png Graphic file (type png)
  <use images/or.png>
-Package pdftex.def Info: images/or.png used on input line 186.
+Package pdftex.def Info: images/or.png used on input line 181.
 (pdftex.def)             Requested size: 308.71106pt x 83.3049pt.
 
 <images/iteracia.png, id=102, 533.192pt x 109.208pt>
 File: images/iteracia.png Graphic file (type png)
  <use images/iteracia.png>
-Package pdftex.def Info: images/iteracia.png used on input line 192.
+Package pdftex.def Info: images/iteracia.png used on input line 187.
 (pdftex.def)             Requested size: 308.71106pt x 63.22902pt.
 
 [10 <./images/and.png> <./images/or.png> <./images/iteracia.png>] [11]
-Overfull \hbox (1.60175pt too wide) in paragraph at lines 225--226
+Overfull \hbox (3.92062pt too wide) in paragraph at lines 218--219
 []\T1/cmr/m/n/12 Bezpe£nos´ au-to-ri-zá-
  []
 
@@ -596,7 +601,7 @@ Overfull \hbox (1.60175pt too wide) in paragraph at lines 225--226
 File: images/rbac012.png Graphic file (type png)
 
 <use images/rbac012.png>
-Package pdftex.def Info: images/rbac012.png used on input line 288.
+Package pdftex.def Info: images/rbac012.png used on input line 281.
 (pdftex.def)             Requested size: 308.71106pt x 233.11398pt.
 
 
@@ -606,7 +611,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/rbac_kuhn.png Graphic file (type png)
 
 <use images/rbac_kuhn.png>
-Package pdftex.def Info: images/rbac_kuhn.png used on input line 300.
+Package pdftex.def Info: images/rbac_kuhn.png used on input line 293.
 (pdftex.def)             Requested size: 308.71106pt x 88.95331pt.
 
 
@@ -616,7 +621,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/rbac_kuhn_full.png Graphic file (type png)
 
 <use images/rbac_kuhn_full.png>
-Package pdftex.def Info: images/rbac_kuhn_full.png used on input line 307.
+Package pdftex.def Info: images/rbac_kuhn_full.png used on input line 300.
 (pdftex.def)             Requested size: 308.71106pt x 101.49342pt.
 
 
@@ -626,11 +631,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/hierarchia_priklad.png Graphic file (type png)
 
 <use images/hierarchia_priklad.png>
-Package pdftex.def Info: images/hierarchia_priklad.png used on input line 319.
+Package pdftex.def Info: images/hierarchia_priklad.png used on input line 312.
 (pdftex.def)             Requested size: 164.57562pt x 198.45662pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `telecom' on page 15 undefined on input line 325.
 
 [15 <./images/rbac012.png (PNG copy)> <./images/rbac_kuhn.png (PNG copy)>]
 
@@ -641,7 +649,7 @@ PNG copy)>] [17] <images/rbac_net_cash.png, id=135, 1174.3875pt x 721.69624pt>
 File: images/rbac_net_cash.png Graphic file (type png)
 
 <use images/rbac_net_cash.png>
-Package pdftex.def Info: images/rbac_net_cash.png used on input line 402.
+Package pdftex.def Info: images/rbac_net_cash.png used on input line 395.
 (pdftex.def)             Requested size: 264.61333pt x 162.6059pt.
 ) (opis.tex [18 <./images/rbac_net_cash.png>]
 [19
@@ -674,15 +682,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24 <./images/user_to_roles.png (PNG copy)>] [25 <./images/roles_permissions.pn
 g (PNG copy)>]) (zaver.tex [26]
-
-LaTeX Warning: Citation `smernica' on page 27 undefined on input line 4.
-
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )) [27
 
-] (main.bbl) [28
+] (main.bbl
+! Missing } inserted.
+<inserted text> 
+                }
+l.64 \end{thebibliography}
+                          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) [28
 
 
 
@@ -697,10 +715,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3146 strings out of 493634
- 40561 string characters out of 3141314
- 111887 words of memory out of 3000000
- 6455 multiletter control sequences out of 15000+200000
+ 3151 strings out of 493634
+ 40619 string characters out of 3141314
+ 111909 words of memory out of 3000000
+ 6460 multiletter control sequences out of 15000+200000
  16491 words of font info for 37 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  27i,10n,43p,1813b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -722,9 +740,9 @@ ublic/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb>
-Output written on main.pdf (39 pages, 525072 bytes).
+Output written on main.pdf (39 pages, 531755 bytes).
 PDF statistics:
- 654 PDF objects out of 1000 (max. 8388607)
+ 674 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,11 @@
 \newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1}
   \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bell-lapadula}
+E.~Bell and L.~J.~La Padula.
+\newblock {\em dopln}.
+\newblock dopln, 1973.
 
 \bibitem{gabova_kniha}
 Hartmut Ehrig, Gabriel Juhás, Julia Padberg, and Grzegorz~Rozenberg (Eds.).
@@ -12,15 +17,36 @@ David~F. Ferraiolo, D.~Richard Kuhn, and Ramaswamy Chandramouli.
 \newblock {\em ROLE-BASED ACCESS CONTROL}.
 \newblock Artech Print on Demand; 2 edition, 2007.
 
+\bibitem{NIST95}
+J.~Cugini Ferraiolo, D.~F. and D.~R. Kuh.
+\newblock {\em Role-Based Access Control %(RBAC): Features and Motivations}.
+\newblock dopln, dopln.
+
 \bibitem{ekonomika}
 Michael~P. Gallaher, Alan~C. O’Connor, and Brian Kropp.
 \newblock {\em The Economic Impact of Role-Based Access Control}.
 \newblock National Institute of Standards and Technology, 2002.
 
+\bibitem{saltzer}
+J.~H. Saltzer and M.~D. Schroeder.
+\newblock {\em The Protection of Information in Computer Systems}.
+\newblock zmen toto este, 1975.
+
+\bibitem{sandhu96}
+R.~a~kolektív Sandhu.
+\newblock {\em Role-Based Access Control Models}.
+\newblock IEEE Computer, 1996.
+
+\bibitem{workflow_vyhody}
+W.~M. Van Der~Aalst.
+\newblock {\em Three good reasons for using a petri-net-based workflow
+  management system}.
+\newblock MIT press., 1996.
+
 \bibitem{aalst}
 Wil Van Der~Aalst and Kees~Max Van~Hee.
 \newblock {\em Workflow management: models, methods, and systems}.
-\newblock MIT press.
+\newblock MIT press., dopln rok.
 
 \bibitem{workflow_systemy}
 W.M.P. van~der Aalst.

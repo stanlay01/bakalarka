@@ -19,11 +19,7 @@ V každom podniku je zaužívaná určitá logistika, nastavenie procesov na zá
 
 
 Workflow systémy sú založené na jednotlivých prípadoch (cases). Ako jednotlivý prípad si môžeme predstaviť konkrétnu požiadavku, ako je napríklad založenie si účtu, objednávka, spísanie závete a podobne. Jednotlivé prípady sú často krát spúšťané samotnými zákazníkmi, ale nie je to pravidlo. Hoci takýchto prípadov môže vzniknúť v systéme mnoho, ich priebeh je riadený za pomoci jednotnej workflow logiky. Každý prípad je unikátny a má konečnú životnosť.  Úloha, ktorá sa vykonáva v konkrétnom prípade sa nazýva pracovaná jednotka (working item).
-Spôsob vykonávania jednotlivých úloh (pracovných jednotiek) v prípade  je určený prostredníctvom definície workflow procesov. \cite{aalst}  //  
-
-%Cieľom workflow management systému je efektívne zvládať jednotlivé prípady. Workflow proces je časť workflow management systému zameraný na spracovanie podobných prípadov. Každý workflow proces pozostáva z úloh , ktoré sú za sebou radené v špecifickom poradí. Definícia workflow procesov zabezpečuje , ktorá úloha sa má spustiť a v akom poradí. 
-
-%Jednotlivé úlohy (tasks) sa teda môžu vykonávať súčasne vo viacerých prípadoch. Úloha, ktorá sa vykonáva v konkrétnom prípade, sa nazýva „working item“. Väčšina úloh (working items) je spúšťaná  konkrétnymi zdrojmi. \cite{workflow_systemy}
+Spôsob vykonávania jednotlivých úloh (pracovných jednotiek) v prípade  je určený prostredníctvom definície workflow procesov. \cite{aalst}  \\	 
 
 
 
@@ -50,12 +46,12 @@ Proces definuje spôsob, akým sa vykonajú určité úlohy v konkrétnom prípa
 \end{itemize}
 
 \begin{figure}[h]
-	\centerline{\includegraphics[width=0.7\textwidth]{images/smerovacie_konstrukcie}}
+	\centerline{\includegraphics[width=0.6\textwidth]{images/smerovacie_konstrukcie}}
 	\caption[smerovacie konštrukcie]{Smerovacie konštrukcie vo workflow systémoch podľa \cite{workflow_systemy}}
 	\label{obr:cursus}
 \end{figure}
 
-
+%
 \subsection{Výhody použitia WfMS}
 Workflow management systém ponúka možnosť oddeliť procesnú časť, čím sa zabezpečia nasledovné výhody:
 \begin{itemize}
@@ -68,10 +64,11 @@ Workflow management systém ponúka možnosť oddeliť procesnú časť, čím s
 \end{itemize}
 
 \subsection{Riadenie zrojov vo WfMS}
-Pod pojmom zdroj rozumieme jednotku, ktorá je určená na vykonávanie úlohy. Môžme si pod tým predstaviť počítač (server, tlačiareň, fax ... ) alebo človeka ako pracovnú jednotku. V business prostredí väčšina zdrojov tvoria jednotliví pracovníci a zákazníci, nie je to však pravidlo.
+Pod pojmom zdroj rozumieme jednotku, ktorá je určená na vykonávanie úlohy. Môžme si pod tým predstaviť počítač (server, tlačiareň, fax ... ) alebo človeka ako pracovnú jednotku. V biznis prostredí väčšinu zdrojov tvoria jednotliví pracovníci a zákazníci, nie je to však pravidlo.
 
 Jednotlivé zdroje sa môžu zoskupovať do skupín s podobnou charakteristikou. Ak majú rovnakú funkcionálnu charakteristiku, nazývame túto skupinu rola.
-Ako príklad role si môžeme predstaviť akúkoľvek pracovnú pozíciu a pod samotnými pracovnými zdrojmi samotného zamestnanca. Táto klasifikácia umožňuje uľahčenie prideľovania právomocí na spúšťanie jednotlivých úloh. Zároveň tak jednotlivé zdroje môžu byť priradené k rôznym roliam a zabráni sa tým problému s nulovou referenciou. Ak by sme priradili jednotlivú úlohu ku konkrétnemu zdroju, nastali by problémy po vymazaní konkrétneho zdroja a samotný proces by nebolo možné ukončiť.
+Ako príklad roly si môžeme predstaviť akúkoľvek pracovnú pozíciu a pod samotnými pracovnými zdrojmi samotného zamestnanca. Pridelenie právomocí zdrojom sa udeľuje nepriamo pomocou rol. Týmto spôsobom sa oddelí návrh procesu od jednotlivých používateľov. Taktiež sa tým uľahčí administrácia a zabráni sa deadlockom. Ak by sme totiž priradili úlohu ku konkrétnemu zdroju, nastali by problémy po vymazaní daného zdroja a samotný proces by nebolo možné ukončiť.
+
 
 %---------------------------------- Koniec sekcie Workflow management systém ----------------------------------------
 
@@ -84,8 +81,6 @@ Ako príklad role si môžeme predstaviť akúkoľvek pracovnú pozíciu a pod s
 \section{Petriho siete}
 %PETRI, C.A. - REISIG, W. 2008 Petri net. [online] [cit. 27.04.2016]. Dostupné na
 %internete: <http://www.scholarpedia.org/article/Petri_net>
-
-
 
 
 %Prof. Dr. Carl Adam Petri [online] [cit. 27.04.2016].
@@ -102,7 +97,7 @@ Petriho sieť je podľa
 Obsahuje dva typy uzlov nazývanými: \emph{place}  (miesto) a \emph{transition} (prechod). Tieto uzly môžu byť spolu prepojené prostredníctvom orientovanej hrany (arc). Spojenie medzi dvoma uzlami rovnakého typu nie je povolené.
 \\
 \\
-Graf petriho siete obsahuje: 
+Graf Petriho siete obsahuje: 
 \begin{itemize}
 	\item miesta - označované krúžkom 
 	\item prechody - označené obdĺžnikom
@@ -119,10 +114,10 @@ Graf petriho siete obsahuje:
 Pre formálne opísanie Petriho sietí použijeme definíciu z 
 %\cite{}
 .\\
-	Petriho sieť je orientovaný bipartitný graf reprezentovaný päticou (P,T,F,W,m0), kde:\\
+	Petriho sieť je orientovaný bipartitný graf reprezentovaný päticou (P,T,F,W,m$_{0}$), kde:\\
 \begin{quotation}
 	\noindent P = \{$ p_{1}, ... ,p_{n}$ \} - konečná neprázdna množina miest;\\
-	P = \{$ t_{1}, ... ,t_{n}$ \} - konečná neprázdna množina prechodov;\\
+	T = \{$ t_{1}, ... ,t_{n}$ \} - konečná neprázdna množina prechodov;\\
 	{$ P \cap T = \emptyset,P \cup T \neq \emptyset $ }; \\
 	{$ F\subseteq ( P x T ) \cup (T x P)$}  - množina hrán (toková relácia);\\
 	{$ W : F \rightarrow N \cup \{ 0\}$} - váhová funkcia ;\\
@@ -136,7 +131,7 @@ Pre formálne opísanie Petriho sietí použijeme definíciu z
 \end{enumerate}
 
 \subsection{Príklad}
-Na obrázku môžeme vidieť jednoduchú Petriho sieť ktorá znázorňuje spojenie dvoch prvkov vodíka a kyslíka na vytvorenie vody. Máme tri miesta. Dve z nich nám predstavujú jednotlivé prvky a tretie predstavuje molekulu vody H20. Medzi nimi je prechod ktorý v tejto sieti znázorňuje spojenie dvoch prvkov do jednej molekuly. Medzi miestom ''O'' a prechodom máme jednoduchú hranu, zatiaľ čo z miesta ''H'' do prechodu máme hranu násobnosti dva. Jednotlivé násobnosti znázorňujú, koľko prvkov (tokenov) treba skonzumovať z každého miesta, aby bolo možné prechod spustiť. Na druhej strane vidíme jednoduchú hranu z prechodu do miesta H20, ktorá nám značí, že po skonzumovaní značiek z miest ''O'' a ''H'' sa vytvorí práve jedna značka v mieste ''H20'' (vyprodukuje sa práve jedna molekula ). 
+Na obrázku \ref{obr:voda} môžeme vidieť jednoduchú Petriho sieť ktorá znázorňuje spojenie dvoch prvkov vodíka a kyslíka na vytvorenie vody. Máme tri miesta. Dve z nich nám predstavujú jednotlivé prvky a tretie predstavuje molekulu vody H$_{2} $0. Medzi nimi je prechod ktorý v tejto sieti znázorňuje spojenie dvoch prvkov do jednej molekuly. Medzi miestom O a prechodom máme jednoduchú hranu, zatiaľ čo z miesta H do prechodu máme hranu násobnosti dva. Jednotlivé násobnosti znázorňujú, koľko tokenov (prvkov) treba skonzumovať z každého miesta, aby bolo možné prechod spustiť. Na druhej strane vidíme jednoduchú hranu z prechodu do miesta  H$_{2} $0, ktorá nám značí, že po skonzumovaní značiek z miest O a H sa vytvorí práve jedna značka v mieste H$_{2} $0 (vyprodukuje sa práve jedna molekula ). 
 
 \begin{figure}[h]
 	\centerline{\includegraphics[width=0.4\textwidth]{images/vojvoda}}
@@ -160,7 +155,7 @@ Pre spustenie tohto procesu je potrebné aby bola v mieste ''O'' minimálne jedn
 \subsection{Implementovanie Petriho sietí na workflow management systém}
 \label{kap:teoria_petriho_siete_na_workflow}
 V minulosti sa objavilo niekoľko systémov , ktoré sa snažili implementovať WfMS, ale po čase narazili na problémy, lebo ich architektúra nespĺňala náležité požiadavky. Mnohé z nich nedokázali súčasne implementovať paralelné a alternatívne smerovanie, ostatné narazili na problémy, keď ich aplikácia modelovala WfMS len pomocou udalostí (pri vykonaní úlohy sa systém nedostal do určitého stavu, ale na udalosť nasledovalo okamžité spustenie ďalšej udalosti).
-W.M.P. van der Aalst v DOPLN
+W.M.P. van der Aalst v \cite{workflow_vyhody}
 vysvetlil 3 hlavné výhody použitia Petriho sietí na modelovanie workflow management systému:
 \begin{itemize}
 	\item formálna sémantika spolu s grafickou reprezentáciu
@@ -210,19 +205,17 @@ V nasledovnej sekcii rozoberieme princíp a pravidlá riadenia prístupu podľa 
 \end{itemize}
 
 
-%Saltzer, J. H., and M. D. Schroeder, “The Protection of Information in
-%Computer Systems,” Proc. IEEE, Vol. 63, No. 9, September 1975, pp.
-%1278–1308.
+
 \subsection{Princípy bezpečného dizajnu}
 \label{sec:bezpecny dizajn}
-V roku 1975 Salzer a Schroeder popísali ochranné mechanizmy, ktoré musí dobrý dizajn prístupových práv obsahovať. V skutočnosti však niektoré z nich siahajú do 19-teho storočia, kedy ich popísal Auguste Kerchoffs. 
+V roku 1975 Salzer a Schroeder \cite{saltzer} popísali ochranné mechanizmy, ktoré musí dobrý dizajn prístupových práv obsahovať. V skutočnosti však niektoré z nich siahajú do 19-teho storočia, kedy ich popísal Auguste Kerchoffs. 
 
 \begin{description}
 	\item[Minimálne oprávnenia] : Hlavnou požiadavkou autorizácie je potreba vymedziť používateľovi minimálne oprávnenia, teda také, ktoré mu vymedzia prístup iba k úlohám, ktoré potrebuje na vykonávanie svojej práce. Tým sa predíde problémom, kedy jednotlivý používateľ môže svojou aktivitou vykonať nežiaduce operácie. Je potrebné si uvedomiť, že že práva používateľa sa môžu meniť v závislosti od  času, úlohy alebo samotnej funkcie. 
 	\item[Jednoduchosť mechanizmu] Dizajn by mal byť dostatočne zrozumiteľný , aby bolo možné dokázať jeho správne fungovanie. Taktiež by mal byť dostatočne jednoduchý, aby prípadné bolo možné chyby ľahko identifikovať a opraviť.
 	\item[Protiporuchové princípy] Prístupové oprávnenia by mali byť založené na inklúzii. Subjekt má mať explicitne definované práva. Na začiatku by mali byť jeho práva k objektu nulové. Tento princíp zabezpečí v prípade poruchy mechanizmu, aby bol zamietnutý prístup oprávnenému ako aj neoprávnenému prístupu. 
 	\item[Pravidelná autorizácia] Každá požiadavka na prístup k objektu by mala požadovať autorizáciu subjektu. Žiadne ukladanie výsledkov prístupu by nemalo byť povolené.
-	\item[verejne známy príncíp autorizácie (Kerckhoffov princíp)] Bezpečnosť autorizácie by nemala závisieť od utajenia princípu. Ak je dizajn správny, jeho odhalenie by nemalo narušiť bezpečnosť.
+	\item[Verejne známy príncíp autorizácie (Kerckhoffov princíp)] Bezpečnosť autorizácie by nemala závisieť od utajenia princípu. Ak je dizajn správny, jeho odhalenie by nemalo narušiť bezpečnosť.
 	\item[Oddelenie právomocí] Ak je to možné, ochranný mechanizmus by mal závisieť od čo najviac nezávislých podmienok. Príkladom môže byť vyžiadanie spolupráce dvoch nezávislých entít. 
 	\item[Mechanizmus najmenšej právomoci] V dizajne by sa malo minimalizovať zdieľanie viacerými používateľmi. Implementácia tohto princípu vyžaduje fyzické alebo logické oddelenie systémov
 	\item[Používateľská akceptácia] Ochranný systém by mal byť pre používateľov transparentný a ľahký na používanie. Užívateľ by nemal byť nútený sa odhlásiť a znova prihlásiť k vykonaniu bežných úloh
@@ -235,7 +228,7 @@ V roku 1975 Salzer a Schroeder popísali ochranné mechanizmy, ktoré musí dobr
 %Bedford, MA, March–December 1973.
 \subsection{Model Bell-LaPadula} 
 V 70-tych rokoch vznikla potreba formálne popísať model, ktorý bude spĺňať bezpečnostné požiadavky pre potreby viacúrovňovej bezpečnostnej politiky pre Ministerstvo Obrany USA.
-V roku 1973 tak vznikol model Bell-LaPadula. Princíp tohto modelu je jednoduchý  a matematicky jasne zadefinovaný. Určuje 3 pravidlá: 
+V roku 1973 tak vznikol model Bell-LaPadula \cite{bell-lapadula} . Princíp tohto modelu je jednoduchý  a matematicky jasne zadefinovaný. Určuje 3 pravidlá: 
 \begin{enumerate}
 	\item Prvé pravidlo definuje,že subjekt nesmie čítať dokumenty, pokiaľ pre ne nedosahuje dostatočnú úroveň bezpečnostnej klasifikácie. Používateľ teda nie je oprávnený čítať dokumenty, ktoré majú vyššiu úroveň bezpečnosti. Napríklad používateľ s klasifikáciou  \emph{secret} môže čítať súbory s bezpečnosťou \emph{secret} a  \emph{regular}, ale nesmie čítať dokumenty s úrovňou  \emph{Top secret}
 	\item Druhé pravidlo definuje, že subjekt nie je oprávnený zapisovať do objektov s nižšou úrovňou bezpečnosti. Toto pravidlo zabezpečuje aby nebolo možné neúmyselne kompromitovať informácie do nižšej bezpečnostnej úrovne. Naopak zapisovanie do vyššej úrovne bezpečnosti je povolené. Môžeme si napríklad predstaviť, že chceme poslať tajný dopis prezidentovi. 
@@ -268,10 +261,10 @@ Výhodou tohto modelu je možnosť priradiť viacerým používateľom rovnaké 
 %Security Application Conference, New Orleans, LA, December 11–15, 1995,
 %pp. 241–248.
 
-%[19] Sandhu, R., et. al., “Role-Based Access Control Models,” IEEE Computer, Vol.
+	%[19] Sandhu, R., et. al., “Role-Based Access Control Models,” IEEE Computer, Vol.
 %29, No. 2, February 1996.
 \subsection{Dizajn}
-V jednej organizácii môže byť viacero rolí, ktoré vykonávajú rôzne funkcie. Práva na vykonávanie určitých operácii sú priradené týmto roliam. Jednotliví zamestnanci a členovia firmy sú priradený k roliam, čím nepriamo získavajú tieto právomoci.	Vďaka tomu, že tieto právomoci nie sú priamo priradené konkrétnym členom, ale roliam, administrácia právomocí pre konkrétneho člena sa zjednodušuje na zaradenie člena do určitej roly.
+V jednej organizácii môže byť viacero rol, ktoré vykonávajú rôzne funkcie. Práva na vykonávanie určitých operácii sú priradené týmto rolám. Jednotliví zamestnanci a členovia firmy sú priradení k rolám, čím nepriamo získavajú tieto právomoci.	Vďaka tomu, že tieto právomoci nie sú priamo priradené konkrétnym členom, ale rolám, administrácia právomocí pre konkrétneho člena sa zjednodušuje na zaradenie člena do určitej roly.
 V roku 1992 NIST sformulovala základné požiadavky do všeobecného modelu.
 Definovali sa 3  pravidlá:
 \begin{enumerate}
@@ -280,7 +273,7 @@ Definovali sa 3  pravidlá:
 		\item Autorizácia operácie: subjekt s aktívnou rolou je oprávnený spúšťať iba také operácie, pre ktoré má daná rola oprávnenia ich spúšťať. Spolu s prvým a druhým pravidlom sa tak zabezpečí, že subjekt môže vykonávať iba povolené operácie
 \end{enumerate}
 
-V nasledujúcej publikácii [ref] NIST rozobrala RBAC viac do detailov , navrhla prídavné funkcionality a zahrnula špecifické formy vzťahov , tak aby spĺňali požiadavky na oddelenie právomocí (SoD). V roku 1996 Sandhu a spol [ref] predstavili framework RBAC96 založený na RBAC a rozložil tak RBAC do štyroch koncepčných modelov. Ponúkli tak riešenie pre komerčnú implementáciu RBAC.
+V nasledujúcej publikácii \cite{NIST95} NIST rozobrala RBAC viac do detailov , navrhla prídavné funkcionality a zahrnula špecifické formy vzťahov , tak aby spĺňali požiadavky na oddelenie právomocí (SoD). V roku 1996 Sandhu a spol. \cite{sandhu96} predstavili framework RBAC96 založený na RBAC a rozložil tak RBAC do štyroch koncepčných modelov. Ponúkli tak riešenie pre komerčnú implementáciu RBAC.
 Základný model RBAC0 predstavuje jadro,v ktorom sú obsiahnuté všetky 3 spomenuté pravidlá. Nadväzujúci model RBAC1 pridáva ku základnému modelu hierarchický systém, čím umožňuje pre jednotlivú rolu zdediť právomoci inej roly. Celý systém sa tak dokáže sprehľadniť a ak je jedna rola nadradená iným, stačí, aby bol používateľ priradený k nadradenej role a automaticky dostane právomoci všetkých podradených rolí. RBAC2 pridáva obmedzenia ako napríklad oddelenie právomocí (ak chceme aby dve úlohy nemohol vykonať rovnaký používateľ z rovnakej role). 
 
 %rbac0->rbac1->rbac2->rbac3
@@ -312,7 +305,7 @@ Jadro RBAC , taktiež značené ako RBAC0 poskytuje základ pre riadenie prístu
 
 
 \subsubsection{Hierarchické štruktúry}
-Mnoho rolí v má v procesoch prelínajúce sa právomoci. Používatelia patriaci odlišným rolám môžu byť oprávnení vykonávať rovnaké operácie. Hierarchia rol zabezpečí prirodzené rozšírenie pre automatické splnomocňovanie nadradených rol. Môžeme si predstaviť napríklad juniorské a seniorské pozície v organizácii. Seniorská pozícia by mala mať obsahovať oprávnenia juniorskej, pričom môže zahŕňať oprávnenia, ktoré juniorskej pozícii neprináležia.   V opačnom smere to nie je možné.  Pre realizáciu hierarchickej štruktúry sa často zavádza relácia čiastočného usporiadania, ktorá verne znázorní štruktúru organizácie. 
+Mnoho rol v má v procesoch prelínajúce sa právomoci. Používatelia patriaci odlišným rolám môžu byť oprávnení vykonávať rovnaké operácie. Hierarchia rol zabezpečí prirodzené rozšírenie pre automatické splnomocňovanie nadradených rol. Môžeme si predstaviť napríklad juniorské a seniorské pozície v organizácii. Seniorská pozícia by mala mať obsahovať oprávnenia juniorskej, pričom môže zahŕňať oprávnenia, ktoré juniorskej pozícii neprináležia.   V opačnom smere to nie je možné.  Pre realizáciu hierarchickej štruktúry sa často zavádza relácia čiastočného usporiadania, ktorá verne znázorní štruktúru organizácie. 
 
 %onkolog->doktor->sestrička
 \begin{figure}[h]
@@ -329,7 +322,7 @@ Mnoho rolí v má v procesoch prelínajúce sa právomoci. Používatelia patria
 %(Telecom Glossary 2000, American National Standard for
 %Telecommunications, American National Standards Institute)
 \subsubsection{Obmedzenia}
-Do modelu RBAC je možné pridať ďalšie obmedzenia, ktoré bližšie definujú politiku prístupu práv. Medzi tie základné patrí vylúčenie práv. V niektorých prípadoch chceme zamedziť aby používateľ mohol pristupovať súčasne k dvom objektom. [ref] definuje vylúčenie práv ako rozdelenie zodpovednosti pre citlivé údaje, tak aby žiaden jednotlivec nebol schopný narušiť bezpečnosť dát. Poznáme dve základné kategórie: statické a dynamické vylúčenie práv. Najľahšie ich rozlíšime podľa toho , v akom čase ich v systéme zavádzame. Statické vylúčenie práv sa určuje na začiatku a vopred zamedzí jednému používateľovi súčasne byť priradený v rolách, ktoré sa vzájomne vylučujú. Pri dynamickom vylúčení práv sa vylúčenie práv aplikuje v čase, keď je používateľ prihlásený v systéme. Tento typ vylúčenia je slabšou formou obmedzenia a dovoľuje jednému používateľovi zastávať dve vylučujúce sa role, avšak nemôže používať obidve v samotnej používateľskej session.
+Do modelu RBAC je možné pridať ďalšie obmedzenia, ktoré bližšie definujú politiku prístupu práv. Medzi tie základné patrí vylúčenie práv. V niektorých prípadoch chceme zamedziť aby používateľ mohol pristupovať súčasne k dvom objektom. \cite{telecom} definuje vylúčenie práv ako rozdelenie zodpovednosti pre citlivé údaje, tak aby žiaden jednotlivec nebol schopný narušiť bezpečnosť dát. Poznáme dve základné kategórie: statické a dynamické vylúčenie práv. Najľahšie ich rozlíšime podľa toho , v akom čase ich v systéme zavádzame. Statické vylúčenie práv sa určuje na začiatku a vopred zamedzí jednému používateľovi súčasne byť priradený v rolách, ktoré sa vzájomne vylučujú. Pri dynamickom vylúčení práv sa vylúčenie práv aplikuje v čase, keď je používateľ prihlásený v systéme. Tento typ vylúčenia je slabšou formou obmedzenia a dovoľuje jednému používateľovi zastávať dve vylučujúce sa role, avšak nemôže používať obidve v samotnej používateľskej session.
 
 
 
