@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  1 MAY 2016 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  2 MAY 2016 00:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -393,9 +393,6 @@ LaTeX Warning: Label `obr:cursus' multiply defined.
 LaTeX Warning: Label `obr:cursus' multiply defined.
 
 
-LaTeX Warning: Label `fig:referencia' multiply defined.
-
-
 LaTeX Warning: Label `gabova_kniha' multiply defined.
 
 )
@@ -648,63 +645,118 @@ File: images/rbac_net_cash.png Graphic file (type png)
 Package pdftex.def Info: images/rbac_net_cash.png used on input line 395.
 (pdftex.def)             Requested size: 264.61333pt x 162.6059pt.
 ) (opis.tex [18 <./images/rbac_net_cash.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[19
+<images/model_apk.png, id=139, 943.525pt x 682.55pt>
+File: images/model_apk.png Graphic file (type png)
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-[20] <images/referencia.png, id=145, 576.1525pt x 230.8625pt>
-File: images/referencia.png Graphic file (type png)
-
-<use images/referencia.png>
-Package pdftex.def Info: images/referencia.png used on input line 29.
-(pdftex.def)             Requested size: 308.71106pt x 123.7022pt.
-File: images/referencia.png Graphic file (type png)
- <use images/referencia.png>
-Package pdftex.def Info: images/referencia.png used on input line 39.
-(pdftex.def)             Requested size: 308.71106pt x 123.7022pt.
+<use images/model_apk.png>
+Package pdftex.def Info: images/model_apk.png used on input line 22.
+(pdftex.def)             Requested size: 396.91325pt x 287.1273pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (zaver.tex [21 <./images/referencia.png>] [22]
+[19
+
+] <images/vyvoj_role.png, id=143, 973.6375pt x 287.0725pt>
+File: images/vyvoj_role.png Graphic file (type png)
+
+<use images/vyvoj_role.png>
+Package pdftex.def Info: images/vyvoj_role.png used on input line 40.
+(pdftex.def)             Requested size: 396.91325pt x 117.02591pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+[20 <./images/model_apk.png (PNG copy)> <./images/vyvoj_role.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+<images/referencia.png, id=147, 576.1525pt x 230.8625pt>
+File: images/referencia.png Graphic file (type png)
+
+<use images/referencia.png>
+Package pdftex.def Info: images/referencia.png used on input line 54.
+(pdftex.def)             Requested size: 308.71106pt x 123.7022pt.
+ [21 <./images/referencia.png>]
+File: images/referencia.png Graphic file (type png)
+
+<use images/referencia.png>
+Package pdftex.def Info: images/referencia.png used on input line 64.
+(pdftex.def)             Requested size: 308.71106pt x 123.7022pt.
+ [22]) (opisroli.tex [23] [24
+
+]
+
+LaTeX Warning: Reference `fig:model_rbac_v_aplikacii' on page 25 undefined on i
+nput line 13.
+
+<images/roles_in_petri_model.jpg, id=161, 762.85pt x 401.5pt>
+File: images/roles_in_petri_model.jpg Graphic file (type jpg)
+
+<use images/roles_in_petri_model.jpg>
+Package pdftex.def Info: images/roles_in_petri_model.jpg used on input line 17.
+
+(pdftex.def)             Requested size: 396.91325pt x 208.8976pt.
+
+
+LaTeX Warning: Reference `fig:user_to_roles' on page 25 undefined on input line
+ 23.
+
+[25 <./images/roles_in_petri_model.jpg>]
+<images/user_to_roles.png, id=165, 833.1125pt x 441.65pt>
+File: images/user_to_roles.png Graphic file (type png)
+
+<use images/user_to_roles.png>
+Package pdftex.def Info: images/user_to_roles.png used on input line 28.
+(pdftex.def)             Requested size: 396.91325pt x 210.41264pt.
+
+<images/roles_permissions.png, id=166, 742.775pt x 301.125pt>
+File: images/roles_permissions.png Graphic file (type png)
+
+<use images/roles_permissions.png>
+Package pdftex.def Info: images/roles_permissions.png used on input line 45.
+(pdftex.def)             Requested size: 396.91325pt x 160.91418pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26 <./images/user_to_roles.png (PNG copy)>] [27 <./images/roles_permissions.pn
+g (PNG copy)>]) (zaver.tex [28]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [23
+)) [29
 
 ] (main.bbl
-[24
+[30
 
 
 
-]) [25] [26
+]) [31] [32
 
 ] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3142 strings out of 493634
- 40270 string characters out of 3141314
- 111915 words of memory out of 3000000
- 6454 multiletter control sequences out of 15000+200000
+ 3177 strings out of 493634
+ 41137 string characters out of 3141314
+ 111951 words of memory out of 3000000
+ 6480 multiletter control sequences out of 15000+200000
  16491 words of font info for 37 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,10n,43p,1594b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,43p,1834b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ectt1200.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ecti1200.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
@@ -723,9 +775,9 @@ ublic/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb>
-Output written on main.pdf (36 pages, 465476 bytes).
+Output written on main.pdf (42 pages, 614733 bytes).
 PDF statistics:
- 648 PDF objects out of 1000 (max. 8388607)
+ 703 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

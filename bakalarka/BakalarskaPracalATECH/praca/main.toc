@@ -31,8 +31,27 @@
 \contentsline {chapter}{Opis rie\IeC {\v s}enia - Workflow syst\IeC {\'e}m}{19}
 \contentsline {section}{\numberline {2.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek}{19}
 \contentsline {subsection}{\numberline {2.1.1}Z\IeC {\'a}kladn\IeC {\'y} opis aplik\IeC {\'a}cie}{19}
-\contentsline {subsection}{\numberline {2.1.2}Funkcia rol\IeC {\'\i } v aplik\IeC {\'a}cii}{20}
-\contentsline {subsection}{\numberline {2.1.3}Referencie}{20}
-\contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{21}
-\contentsline {subsection}{\numberline {2.2.1}Model fungovania aplik\IeC {\'a}cie}{22}
-\contentsline {chapter}{Z\IeC {\'a}ver}{23}
+\contentsline {subsection}{\numberline {2.1.2}Funkcia rol\IeC {\'\i } v aplik\IeC {\'a}cii}{19}
+\contentsline {subsection}{\numberline {2.1.3}Referencie}{21}
+\contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{22}
+\contentsline {subsection}{\numberline {2.2.1}Procesn\IeC {\'y} port\IeC {\'a}l - Martin Kov\IeC {\'a}\IeC {\v c}ik}{22}
+\contentsline {subsection}{\numberline {2.2.2}Procesn\IeC {\'y} editor}{23}
+\contentsline {subsection}{\numberline {2.2.3}Editor mana\IeC {\v z}mentu rol\IeC {\'\i } a organiza\IeC {\v c}nej \IeC {\v s}trukt\IeC {\'u}ry}{23}
+\contentsline {subsection}{\numberline {2.2.4}Editor formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu}{23}
+\contentsline {subsection}{\numberline {2.2.5}Procesn\IeC {\'y} server}{23}
+\contentsline {subsection}{\numberline {2.2.6}Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{23}
+\contentsline {subsection}{\numberline {2.2.7}Server formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu}{23}
+\contentsline {chapter}{Opis rie\IeC {\v s}enia - Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{24}
+\contentsline {section}{\numberline {3.1}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{24}
+\contentsline {section}{\numberline {3.2}Implement\IeC {\'a}cia}{24}
+\contentsline {subsection}{\numberline {3.2.1}Popis architekt\IeC {\'u}ry}{25}
+\contentsline {subsection}{\numberline {3.2.2}Prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k roliam}{25}
+\contentsline {subsection}{\numberline {3.2.3}Riadenie pr\IeC {\'a}vomoc\IeC {\'\i }}{26}
+\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{26}
+\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{26}
+\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{27}
+\contentsline {subsection}{\numberline {3.2.4}D\IeC {\'a}tov\IeC {\'y} model}{28}
+\contentsline {subsection}{\numberline {3.2.5}Ukladanie rol\IeC {\'\i } a referencii k Petriho sieti}{28}
+\contentsline {subsection}{\numberline {3.2.6}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} rozhranie}{28}
+\contentsline {section}{\numberline {3.3}Overenie rie\IeC {\v s}enia}{28}
+\contentsline {chapter}{Z\IeC {\'a}ver}{29}

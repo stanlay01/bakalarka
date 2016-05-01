@@ -9,18 +9,43 @@
 %V nasledujúcej sekcii opíšeme základný model fungovania aplikácie, analyzujeme  požiadavky a naznačíme spôsob jej realizácie. Pre lepšie pochopenie aplikácie si pomôžeme jednoduchým príkladom procesu, na ktorom vyniknú hlavné výhody nášho systému. V rámci nášho systému sa špeciálne zameriame na model riadenia systému pomocou rolí.  
 
 \subsection{Základný opis aplikácie}
-Zistili sme, že Workflow management systému je silný nástroj, ktorý umožní používateľovi oddeliť a jasne znázorniť procesnú časť od aplikácie. Tento systém ponúka mnohé výhody. Jednou z možností ako WfMS implementovať je použitím Petriho sietí. Petriho siete sú jasne formálne definované a matematicky overené. Ako základ pre fungovanie našej aplikácie sme sa preto rozhodli použiť práve Petriho siete. Pri aplikácii Petriho siete na WfMS, prechody predstavujú úlohy, ktoré za sebou nasledujú v určitom poradí. Tieto úlohy môžeme rôzne definovať.  Príklad takejto úlohy je napríklad vypísanie daňového priznania, schválenie žiadosti alebo iné. V našej aplikácii bude ku každému prechodu v sieti možné priradiť formulár, ktorý pokryje väčšinu bežných požiadaviek. Pre vypísanie daňového priznania sa teda bude dať jednoducho vypísať formulár, ktorý bude obsahovať potrebné políčka ako krátka odpoveď, dlhá odpoveď, zaškrtávacie políčka prípadne výber z viacerých možností. Každú úlohu musí niekto spustiť a vykonať. Je treba teda definovať prístup riadenia v aplikácii. Pre tieto účely sme zvolili systém riadenia za pomoci rolí, ktorý sa ukázal ako flexibilné riešenie našich požiadaviek. Ku každému prechodu v procese bude okrem formuláru pridelená rola ktorá môže daný prechod spustiť. 
+Zistili sme, že workflow management systém je silný nástroj, ktorý umožní používateľovi oddeliť a jasne znázorniť procesnú časť od aplikácie. Tento systém ponúka mnohé výhody. Jednou z možností ako WfMS implementovať je použitím Petriho sietí. Petriho siete sú jasne formálne definované a matematicky overené.  Rozhodli sme sa preto implementovať Petriho siete ako nástroj pre modelovanie procesov.\\
 
-Naznačili sme spôsob vytvárania biznis procesov prostredníctvom Petriho sietí. Aby však daná aplikácia mohla fungovať ako plnohodnotné WfMS potrebujeme aplikačné rozhranie, ktoré bude nad vytvoreným procesom zabezpečovať jeho správne fungovanie. Naša aplikácia bude poskytovať webové rozhranie, ktoré umožní používateľom používať náš systém bez nutnosti sťahovať dodatočný softvér. Takisto sa tým vyhneme problémom spojených s kompatibilitou odlišných operačných systémov.  Na strane servera budeme využívať kombináciu jazyka PHP s databázovým systémom MySQL. Na strane klienta využijeme framework  Jquery, ktorý je rýchly a nenáročný na pamäť.\\
+Celý systém bude fungovať na portáli, kde bude možné sa registrovať a následne prihlásiť. Aplikáciu môžeme pomyselne rozdeliť na modelovaciu a používateľskú časť (obrázok \ref{fig:model_apk}). V modelovacej časti je možné navrhovať a modelovať procesy prostredníctvom Petriho sietí . Ku ním sa v \emph{editore manažmentu rolí a organizačnej štruktúry} pripoja role a v \emph{editore formulárov a dátového modelu} sa namapujú formuláre. Takto vytvorená workflow sieť spolu s rolami a formulármi je tak pripravené na používanie. 
 
-Kľúčovou výhodou WfMS je možnosť oddeliť proces od aplikačnej časti. Veľa firiem používa rovnaké alebo veľmi podobné procesy. Predstavme si dve rôzne pekárne. V zjednodušenom pohľade môžeme povedať, že pre obidve pekárne platí rovnaký proces výroby chleba. Jediné v čom sa tieto pekárne odlišujú je zamestnanecká štruktúra. Náš systém by umožnil obidvom pekárňam použiť rovnaký proces. Ak je možné prepoužiť rovnaké procesy pre viacero firiem, vzniká tu možnosť procesy predávať. V našej aplikácii je preto dôležitou súčasťou portál, ktorý okrem poskytnutia tvorby procesov a jeho následného používania, poskytne možnosť vyhľadávať a prepoužívať procesy, ktoré už boli vytvorené.  
+Pre používanie potom stačí workflow sieť nasadiť (deploy) do konkrétnej firmy. Vo firme bude potrebné priradiť konkrétnych používateľov ku rolám, ktoré táto workflow sieť používa.
+
+Následne môžeme považovať Workflow systém za funkčný a z Workflow siete budeme môcť vytvárať nové prípady. Prechody sa budú dať spúšťať v každom prípade  automaticky podľa namodelovanej logiky.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\linewidth]{images/model_apk}
+		\caption{Model wokflow systému}
+		\label{fig:model_apk} 
+	\end{figure}
+
+
+
+%Pri aplikácii Petriho siete na WfMS, prechody predstavujú úlohy, ktoré za sebou nasledujú v určitom poradí. Tieto úlohy môžeme rôzne definovať.  Príklad takejto úlohy je napríklad vypísanie daňového priznania, schválenie žiadosti alebo iné. V našej aplikácii bude ku každému prechodu v sieti možné priradiť formulár, ktorý pokryje väčšinu bežných požiadaviek. Pre vypísanie daňového priznania sa teda bude dať jednoducho vypísať formulár, ktorý bude obsahovať potrebné políčka ako krátka odpoveď, dlhá odpoveď, zaškrtávacie políčka prípadne výber z viacerých možností. Každú úlohu musí niekto spustiť a vykonať. Je treba teda definovať prístup riadenia v aplikácii. Pre tieto účely sme zvolili systém riadenia za pomoci rolí, ktorý sa ukázal ako flexibilné riešenie našich požiadaviek. Ku každému prechodu v procese bude okrem formuláru pridelená rola ktorá môže daný prechod spustiť. 
+
+%Aby však daná aplikácia mohla fungovať ako plnohodnotné WfMS potrebujeme aplikačné rozhranie, ktoré bude nad vytvoreným procesom zabezpečovať jeho správne fungovanie. Naša aplikácia bude poskytovať webové rozhranie, ktoré umožní používateľom používať náš systém bez nutnosti sťahovať dodatočný softvér. Takisto sa tým vyhneme problémom spojených s kompatibilitou odlišných operačných systémov.  Na strane servera budeme využívať kombináciu jazyka PHP s databázovým systémom MySQL. Na strane klienta využijeme framework  Jquery, ktorý je rýchly a nenáročný na pamäť.\\
+
+%Kľúčovou výhodou WfMS je možnosť oddeliť proces od aplikačnej časti. Veľa firiem používa rovnaké alebo veľmi podobné procesy. Predstavme si dve rôzne pekárne. V zjednodušenom pohľade môžeme povedať, že pre obidve pekárne platí rovnaký proces výroby chleba. Jediné v čom sa tieto pekárne odlišujú je zamestnanecká štruktúra. Náš systém by umožnil obidvom pekárňam použiť rovnaký proces. Ak je možné prepoužiť rovnaké procesy pre viacero firiem, vzniká tu možnosť procesy predávať. V našej aplikácii je preto dôležitou súčasťou portál, ktorý okrem poskytnutia tvorby procesov a jeho následného používania, poskytne možnosť vyhľadávať a prepoužívať procesy, ktoré už boli vytvorené.  
 
 
 \subsection{Funkcia rolí v aplikácii}
-V biznis procesoch väčšinu úloh vykonávajú fyzické osoby. V každej firme je niekoľko zamestnancov, ktorí majú rôzne právomoci. Zároveň však môžeme vidieť ich neustálu fluktuáciu. Zamestnanci do firmy prichádzajú a aj odchádzajú. Takisto sa stáva, že zamestnanec zmení pozíciu vo firme a dostane tak nové právomoci. Pre management riadenia takéhoto systému nám nestačí využitie klasických modelov, prípadne systém na správu takéhoto systému by bol vysoko nákladný. Z týchto dôvodov väčšina workflow management systémov využíva model systému prístupu na základe rolí RBAC. Pre potreby našej aplikácie preto využijeme základy tohoto modelu (implementujeme základný model RBAC0 ). V každej workflow sieti priradíme rolu na sieť, aby sme vedeli určiť, kto môže spustiť nový prípad. Zároveň v Petriho sieti definujeme ku každému prechodu jednu rolu, ktorá môže daný prechod spustiť. Samotné právomoci danej role nad prechodom sú určené vo dátovej časti. Vo formulári ku prechodu sa dajú políčka nastaviť ako povinné, upraviteľné a viditeľné. To nám zabezpečí ekvivalent k právomociam read, write. 
+V biznis procesoch väčšinu úloh vykonávajú fyzické osoby. V každej firme je niekoľko zamestnancov, ktorí majú rôzne právomoci. Zároveň však môžeme vidieť ich neustálu fluktuáciu. Zamestnanci do firmy prichádzajú a aj odchádzajú. Takisto sa stáva, že zamestnanec zmení pozíciu vo firme a dostane tak nové právomoci. Pre management riadenia takéhoto systému nám nestačí využitie klasických modelov, prípadne systém na správu takéhoto systému by bol vysoko nákladný. Z týchto dôvodov väčšina workflow management systémov využíva model  prístupu na základe rolí RBAC. Pre potreby našej aplikácie preto využijeme základy tohoto modelu ( konkrétne implementujeme základný model RBAC0 ). V každej Workflow sieti priradíme rolu na sieť, aby sme vedeli určiť, kto môže spustiť nový prípad. Zároveň v Petriho sieti definujeme ku každému prechodu jednu rolu, ktorá môže daný prechod spustiť. Samotné právomoci danej role nad prechodom sú určené vo dátovej časti. Vo formulári ku prechodu sa dajú políčka nastaviť ako povinné, upraviteľné a viditeľné. To nám zabezpečí ekvivalent k právomociam read, write. 
+
+\begin{figure}[h]
+	\centerline{\includegraphics[width=0.9\textwidth]{images/vyvoj_role}}
+	\caption{Príklad priradenia rolí k prechodom (vytvorenie novej aplikácie zjednodušene)}
+	\label{obr:role_na prechody}
+\end{figure}
+
+
 
 \subsection{Referencie}
-Role v procese zabezpečia prenos prístupových práv z úloh na používateľa. V rámci jednej role si môžeme predstaviť skupinu používateľov, ktorí majú určité spoločné prístupové práva vo firme. V niektorých procesoch však treba zabezpečiť, aby dve od seba závislé úlohy, mohol spustiť len ten samý používateľ. Samotné role túto funkcionalitu nedokážu zabezpečiť . V našej aplikácii je nutné ju explicitne zadefinovať. Do našej aplikácie sme použili systém referencii na prechody v Petriho sieti. Do nášho projektu sme implementovali dva typy referencii : referencia na prechod a referencia na prvého používateľa z role.\\ 
+Role v procese zabezpečia prenos prístupových práv z úloh na používateľa. V rámci jednej role si môžeme predstaviť skupinu používateľov, ktorí majú určité spoločné prístupové práva vo firme. V niektorých procesoch však treba zabezpečiť, aby dve od seba závislé úlohy, mohol spustiť len ten samý používateľ. Samotné role túto funkcionalitu nedokážu zabezpečiť . V našej aplikácii je nutné ju explicitne zadefinovať. Do našej aplikácie sme použili systém referencii na prechody v Petriho sieti. Do nášho projektu sme implementovali dva typy referencii : \emph{referencia na prechod} a \emph{referencia na prvého používateľa z role} .\\ 
 
 Najskôr opíšeme referenciu na prechod. Referencia na prechod zabezpečí, aby ten samý používateľ ktorý spustí prechod, na ktorý odkazuje referencia, bol jediný oprávnený na spustenie prechodu s touto referenciou. Jednoduchým príkladom je ak rozložíme jeden zložitý prechod , ktorý musí vykonať ten samý používateľ na dve menšie. Predstavme si napríklad podpísanie tlačiva. Ku tlačivu treba podpísať aj jeho kópiu. Náš prvý prechod predstavuje podpísanie tlačiva a druhý prechod je priradený k podpísaniu kópie tlačiva. Podpísanie kópie obsahuje v sebe referenciu na prvý prechod s podpísaním originálneho tlačiva. V praxi to znamená, že obidve tlačivá musí podpísať tá istá osoba. \\
 
@@ -28,7 +53,7 @@ Najskôr opíšeme referenciu na prechod. Referencia na prechod zabezpečí, aby
 		\centering
 		\includegraphics[width=0.7\linewidth]{images/referencia}
 		\caption{Referencia na prechod}
-		\label{fig:referencia}
+		\label{fig:referencia_na_prechod}
 	\end{figure}
 
 
@@ -38,33 +63,26 @@ V procese však môžu existovať úlohy, ktoré sa v určitom prípade nikdy ne
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/referencia}
 	\caption{Referencia na prechod}
-	\label{fig:referencia}
+	\label{fig:referencia na prvého z role}
 \end{figure}
+
 %teraz mi napadlo, že by bolo dobré to spraviť tak, že by bola napr. referencia1 - priradená prechodom 2,3,4 a ktokoľvek by prvý spustil hociktorý z týchto prechodov by následne určil danú referenciu. Je to taká modifikácia nášho prvý z role. Ale umožňovalo by to mať viacero referencii tej samer role v jednom procese a zjednodušilo by to systém , pretože by to fungovalo rovnako dobre aj na náš prvý prípad "referencia na prechod" 
 
 
 
 \section{Návrh}
-V nasledujúcej kapitole podrobne opíšeme fungovanie celého systému, pričom sa bližšie zameriame na konkrétnu imolementáciu a v krátkosti vysvetlíme jednotlivé časti systému, tak ako sme si ich rozdelili. Na začiatku na obrázku popíšeme model celého systému. ---TODO---- 
+V nasledujúcej sekcii bližšie popíšeme jednotlivé časti systému, tak ako sme si ich rozdelili.
 
-	\subsection{Model fungovania aplikácie}
-	Cel	
-	
-		%\begin{figure}
-		%	\centering
-		%	\includegraphics[width=0.7\linewidth]{../../uml/model_apk}
-		%	\caption{}
-		%	\label{fig:model_apk}
-		%\end{figure}
-		
-	%\subsubsection{Schvaľovanie bakalárskych prác}
-	%Pre bližšie porozumenie fungovania aplikácie si ukážeme príklad schvaľovania bakalárskej práce. Najprv si definujeme celý proces vrátane osôb ktoré %sa daného procesu zúčastňujú. Následne si ukážeme príklad na vytvorenie procesu a jeho spracovanie v aplikácii. Celý proces ilustrujeme obrázkami 
-	%----TODO---
-	
-	%Najprv si celý proces predstavíme z pohľadu -----TODO----- . Na stránke úvodnej stránke sa zaregistrujeme a prihlásime. Vytvoríme si firmu .... . 
-		
-	
-%	\subsection{Životný cyklus}
+\subsection{Procesný portál - Martin Kováčik}
+Procesný portál slúži na zjednotenie všetkých častí dohromady. Základnou myšlienkou portálu je poskytnúť možnosť vytvárať, využívať a manažovať Workflow systémy. Taktiež slúži ako e-shop. Ponúka možnosť vytvorené Workflow siete kopírovať do iných firiem. Všetky firmy a workflow siete sú verejne viditeľné. Vytvára priestor, kde sa dajú procesy vzájomne vymieňať. Vďaka tomu môžu používatelia využívať vo svojich firmách Workflow systém bez nutnej znalosti samotného modelovania Workflow siete. Portál umožňuje registráciu a prihlásenie používateľov. Prihlásený používateľ  môže manažovať svoj profil : prezerať svoje objednávky, meniť heslo. V prípade straty hesla zabezpečí jeho opätovné zaslanie. Každý používateľ môže vytvoriť a spravovať vlastnú firmu. Vo firme je zahrnutá správa používateľov. Ich pridávanie a vyhadzovanie z firmy ako aj priradenie práv na správu firmy. Nového používateľa je možné pridať do firmy cez zaslanie pozvánky. Zaregistrovaní používatelia majú vstup do firmy voľný, prípadne zabezpečený cez heslo.  V portály je zabezpečený prístup do modelovania workflow sietí spolu s editorom manažmentu rolí a editorom formulárov, ako aj k správe rolí a ich mapovaniu na používateľov. 
+
+\subsection{Procesný editor}
+\subsection{Editor manažmentu rolí a organizačnej štruktúry}
+\subsection{Editor formulárov a dátového modelu}
+\subsection{Procesný server}
+\subsection{Server manažmentu rolí a používateľov}
+\subsection{Server formulárov a dátového modelu}
+
 	
 
 
