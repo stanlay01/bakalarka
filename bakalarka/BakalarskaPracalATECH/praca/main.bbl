@@ -2,10 +2,30 @@
   \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
 \begin{thebibliography}{10}
 
+\bibitem{telecom}
+Alfred.
+\newblock {\em American National Standard for}.
+\newblock Telecommunications, 2000.
+
+\bibitem{TSCES}
+Alfred.
+\newblock {\em dopln.. toto nie je kniha :D}.
+\newblock dfgd, 2000.
+
 \bibitem{bell-lapadula}
 E.~Bell and L.~J.~La Padula.
 \newblock {\em dopln}.
 \newblock dopln, 1973.
+
+\bibitem{MAC}
+Mark. CURPHEY.
+\newblock {\em Mandatory Access Control}.
+\newblock online, 2002.
+
+\bibitem{desel}
+W.~DESEL, J.~REISIG.
+\newblock {\em Lectures on Petri nets I: Basic models}.
+\newblock Germany: Universtit ät Karlsruhe: Springer, 1998.
 
 \bibitem{gabova_kniha}
 Hartmut Ehrig, Gabriel Juhás, Julia Padberg, and Grzegorz~Rozenberg (Eds.).
@@ -19,13 +39,23 @@ David~F. Ferraiolo, D.~Richard Kuhn, and Ramaswamy Chandramouli.
 
 \bibitem{NIST95}
 J.~Cugini Ferraiolo, D.~F. and D.~R. Kuh.
-\newblock {\em Role-Based Access Control %(RBAC): Features and Motivations}.
-\newblock dopln, dopln.
+\newblock {\em Role-Based Access Control (RBAC): Features and Motivations}.
+\newblock dopln, 2151.
 
 \bibitem{ekonomika}
 Michael~P. Gallaher, Alan~C. O’Connor, and Brian Kropp.
 \newblock {\em The Economic Impact of Role-Based Access Control}.
 \newblock National Institute of Standards and Technology, 2002.
+
+\bibitem{Modelovacie_formalizmy}
+G.~JUHÁS.
+\newblock {\em Mandatory Access Control}.
+\newblock Bratislava: RT systems s.r.o., 20.
+
+\bibitem{petri}
+C.A.~REISIG PETRI.
+\newblock {\em Petri net}.
+\newblock Germany: Universtit ät Karlsruhe: Springer, 1998.
 
 \bibitem{saltzer}
 J.~H. Saltzer and M.~D. Schroeder.

@@ -92,7 +92,7 @@ Petriho siete vymyslel nemecký matematik Carl Adam Petri už ako 13 ročný na 
 
 \subsection{Všeobecná definícia Petriho siete}
 Petriho sieť je podľa 
-%\cite{desel} 
+\cite{desel}
  zvláštny typ orientovaného grafu spolu so začiatočným stavom (začiatočným značkovaním) - PN = ( $N, M_{0}$ ). 
 Obsahuje dva typy uzlov nazývanými: \emph{place}  (miesto) a \emph{transition} (prechod). Tieto uzly môžu byť spolu prepojené prostredníctvom orientovanej hrany (arc). Spojenie medzi dvoma uzlami rovnakého typu nie je povolené.
 \\
@@ -111,8 +111,8 @@ Graf Petriho siete obsahuje:
 \end{itemize}
 
 \subsubsection*{Formálna definícia}
-Pre formálne opísanie Petriho sietí použijeme definíciu z 
-%\cite{}
+Pre formálne opísanie Petriho sietí použijeme definíciu z \cite{Modelovacie_formalizmy}
+
 .\\
 	Petriho sieť je orientovaný bipartitný graf reprezentovaný päticou (P,T,F,W,m$_{0}$), kde:\\
 \begin{quotation}
@@ -286,7 +286,7 @@ Základný model RBAC0 predstavuje jadro,v ktorom sú obsiahnuté všetky 3 spom
 
 
 \subsubsection{Jadro RBAC}
-Jadro RBAC , taktiež značené ako RBAC0 poskytuje základ pre riadenie prístupu na základe rol. Rozlišuje päť základných administratívnych prvkov: používateľov, roly a oprávnenia, pričom oprávnenia pozostávajú z operácii aplikovaných na objekty. Základ RBAC pozostáva z definovania oprávnení pre roly a používatelia sú priradení k roliam a tým nadobúdajú právomoci patriace rolám. Obrázok \ref{obr:rbac_kuhn} ukazuje vzťah užívateľov, rolí a oprávnení. Dvojitá šípka značí vzťah m:n. Teda napríklad jeden používateľ môže byť priradený k viacerým roliam a zároveň jedna rola môže pozostávať z mnohých používateľov. Tento princíp predstavuje flexibilné riešenie priradenia práv rolám a užívateľov k rolám, čím podporuje princíp minimálnych oprávnení. Každé oprávnenie predstavuje kombináciu objektov a operácii. Celý systém oprávnenia na základe môžeme vidieť na obrázku \ref{obr:rbac_kuhn_full}.
+Jadro RBAC , taktiež značené ako RBAC0 poskytuje základ pre riadenie prístupu na základe rol. Rozlišuje päť základných administratívnych prvkov: používateľov, roly a oprávnenia, pričom oprávnenia pozostávajú z operácii aplikovaných na objekty. Základ RBAC pozostáva z definovania oprávnení pre roly a používatelia sú priradení k roliam a tým nadobúdajú právomoci patriace rolám. Obrázok \ref{obr:rbac_kuhn} ukazuje vzťah užívateľov, rolí a oprávnení. Dvojitá šípka značí vzťah m:n. Teda napríklad jeden používateľ môže byť priradený k viacerým roliam a zároveň jedna rola môže pozostávať z mnohých používateľov. Tento princíp predstavuje flexibilné riešenie priradenia práv rolám a užívateľov k rolám, čím podporuje princíp minimálnych oprávnení. Každé oprávnenie predstavuje kombináciu objektov a operácii. Celý systém oprávnenia na základe rol môžeme vidieť na obrázku \ref{obr:rbac_kuhn_full}.
 
 %users<->roles<->premissions
 \begin{figure}[h]
@@ -305,7 +305,7 @@ Jadro RBAC , taktiež značené ako RBAC0 poskytuje základ pre riadenie prístu
 
 
 \subsubsection{Hierarchické štruktúry}
-Mnoho rol v má v procesoch prelínajúce sa právomoci. Používatelia patriaci odlišným rolám môžu byť oprávnení vykonávať rovnaké operácie. Hierarchia rol zabezpečí prirodzené rozšírenie pre automatické splnomocňovanie nadradených rol. Môžeme si predstaviť napríklad juniorské a seniorské pozície v organizácii. Seniorská pozícia by mala mať obsahovať oprávnenia juniorskej, pričom môže zahŕňať oprávnenia, ktoré juniorskej pozícii neprináležia.   V opačnom smere to nie je možné.  Pre realizáciu hierarchickej štruktúry sa často zavádza relácia čiastočného usporiadania, ktorá verne znázorní štruktúru organizácie. 
+Mnoho rol v má v procesoch prelínajúce sa právomoci. Používatelia patriaci odlišným rolám môžu byť oprávnení vykonávať rovnaké operácie. Hierarchia rol zabezpečí prirodzené rozšírenie pre automatické splnomocňovanie nadradených rol. Môžeme si predstaviť napríklad juniorské a seniorské pozície v organizácii. Seniorská pozícia by mala obsahovať oprávnenia juniorskej, pričom môže zahŕňať oprávnenia, ktoré juniorskej pozícii neprináležia.   V opačnom smere to nie je možné.  Pre realizáciu hierarchickej štruktúry sa často zavádza relácia čiastočného usporiadania, ktorá verne znázorní štruktúru organizácie. 
 
 %onkolog->doktor->sestrička
 \begin{figure}[h]
@@ -333,7 +333,7 @@ V tejto časti si ukážeme tri časté modely: access control list (ACL), DAC (
 	\begin{table}[h]%[17] R. Sandhu. Roles Versus Groups, 1996. http://www.list.gmu.edu/confrnc/rbac/rolegroup.	pdf
 		\centering
 		\begin{tabularx}{\textwidth}{>{\setlength\hsize{1\hsize}\setlength\linewidth{\hsize}}X>{\setlength\hsize{1\hsize}\setlength\linewidth{\hsize}}X>{\setlength\hsize{.7\hsize}\setlength\linewidth{\hsize}}X}
-			RBAC & Štandartné systémy riadenia \\
+			RBAC & Štandardné systémy riadenia \\
 			
 			\begin{itemize}
 				\item Rola nemusí obsahovať žiadnych používateľov
@@ -358,25 +358,25 @@ V tejto časti si ukážeme tri časté modely: access control list (ACL), DAC (
 			
 			
 		\end{tabularx}
-		\caption{Porovnanie RBAC so štandartými prístupmi riadenia}
+		\caption{Porovnanie RBAC so štandardnými prístupmi riadenia}
 		\label{tab:1}
 	\end{table}
 
 
 \subsubsection{ACL}
-Tento prístup definuje ku každému objektu zoznam používateľov a ich právomocí. Administrátor v systéme ľahko vyhľadá kto má k akému objektu aké právomoci. Problém nastáva , ak chceme zistiť všetky právomoci , ktoré prináležia konkrétnemu používateľovi. Ešte väčšie komplikácie nastávajú pri potrebe upraviť alebo vymazať používateľovi nejaké právomoci, pretože treba prejsť všetky možné objekty v danom systéme. 
+Tento prístup definuje ku každému objektu zoznam používateľov a ich právomocí. Administrátor v systéme ľahko vyhľadá kto má k akému objektu aké právomoci. Problém nastáva , ak chceme zistiť všetky právomoci , ktoré prináležia konkrétnemu používateľovi. Ešte väčšie komplikácie nastávajú pri potrebe upraviť alebo vymazať používateľovi  právomoci, pretože treba prejsť všetky možné objekty v danom systéme. 
 
 
 % [1] DoD, Trusted Computer System Evaluation Criteria (TCSEC), DoD 5200.28-STD.
 
 \subsubsection{voliteľné riadenie prístupu DAC}
-Podľa \cite{} DAC predstavuje riadenie prístupu k objektu založené na identite subjektu, skupiny alebo ich kombinácie. Subjekt, ktorý vlastní určité práva je schopný ich predávať  ďalšiemu subjektu. DAC teda necháva jednotlivým používateľom možnosť prideľovať a odoberať prístupové práva. Tento prístup však môže byť často nežiadúci, ak chceme zamedziť šíreniu dát medzi neoprávnených používateľov. DAC bližšie nešpecifikuje právomoci pre konkrétneho používateľa. Akonáhle môže používateľ k objektom pristupovať, môže dáta zmeniť alebo rozšíriť práva pre neautorizovaného používateľa.(Sandhu and Samarati, 1994)
+Podľa \cite{TSCES} DAC predstavuje riadenie prístupu k objektu založené na identite subjektu, skupiny alebo ich kombinácie. Subjekt, ktorý vlastní určité práva je schopný ich predávať  ďalšiemu subjektu. DAC teda necháva jednotlivým používateľom možnosť prideľovať a odoberať prístupové práva. Tento prístup však môže byť často nežiadúci, ak chceme zamedziť šíreniu dát medzi neoprávnených používateľov. DAC bližšie nešpecifikuje právomoci pre konkrétneho používateľa. Akonáhle môže používateľ k objektom pristupovať, môže dáta zmeniť alebo rozšíriť práva pre neautorizovaného používateľa.(Sandhu and Samarati, 1994)
 
 
 % CURPHEY, Mark. Mandatory Access Control [online]. 2002 [cit. 2008-10-22] .
 %Dostupné z WWW: <http://www.cgisecurity.com/owasp/html/ch08s02.html>
 \subsubsection{povinné riadenie prístupu MAC}
-Ako riešenie pre hlavný problém DAC architektúry, povinné riadenie prístupu MAC definuje hierarchické úrovne bezpečnosti. Vychyľuje sa tak od štandartných prístupov a implementuje MLS (multilevel security).  Iba administrátori sú oprávnení  spravovať a priraďovať prístupové práva. Ku každému objektu ako aj subjektu sa priradí určitá bezpečnostnú úroveň. Riadenie prístupu je následne automaticky riadené pomocou dvoch pravidiel. Prvé z nich povoľuje  čítať v rovnakej a nižšej bezpečnostnej úrovni, zatiaľ čo druhé zabezpečuje zapisovanie do rovnakej alebo vyššej bezpečnostnej úrovne. 
+Ako riešenie pre hlavný problém DAC architektúry, povinné riadenie prístupu MAC definuje hierarchické úrovne bezpečnosti. Vychyľuje sa tak od štandartných prístupov a implementuje MLS (multilevel security).  Iba administrátori sú oprávnení  spravovať a priraďovať prístupové práva. Ku každému objektu ako aj subjektu sa priradí určitá bezpečnostnú úroveň. Riadenie prístupu je následne automaticky riadené pomocou dvoch pravidiel. Prvé z nich povoľuje  čítať v rovnakej a nižšej bezpečnostnej úrovni, zatiaľ čo druhé zabezpečuje zapisovanie do rovnakej alebo vyššej bezpečnostnej úrovne. \cite{MAC}
 
  % MAC (Mandatory access control) predstavuje tyký typ riadenia, v ktorom môžu iba administrátori spravovať a priraďovať prístupové práva. Nad každým objektom administrátor definuje politiku prístupu pre každý subjekt samostatne. 
 
