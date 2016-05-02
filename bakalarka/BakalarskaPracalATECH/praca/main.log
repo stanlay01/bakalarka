@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  2 MAY 2016 00:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  3 MAY 2016 01:53
 entering extended mode
 **./main.tex
 (main.tex
@@ -689,34 +689,25 @@ File: images/referencia.png Graphic file (type png)
 <use images/referencia.png>
 Package pdftex.def Info: images/referencia.png used on input line 64.
 (pdftex.def)             Requested size: 308.71106pt x 123.7022pt.
- [22]) (opisroli.tex [23] [24
+ [22] [23]) (opisroli.tex [24] [25
 
 ]
-
-LaTeX Warning: Reference `fig:model_rbac_v_aplikacii' on page 25 undefined on i
-nput line 13.
-
-<images/roles_in_petri_model.jpg, id=161, 762.85pt x 401.5pt>
+<images/roles_in_petri_model.jpg, id=164, 762.85pt x 401.5pt>
 File: images/roles_in_petri_model.jpg Graphic file (type jpg)
 
 <use images/roles_in_petri_model.jpg>
 Package pdftex.def Info: images/roles_in_petri_model.jpg used on input line 17.
 
 (pdftex.def)             Requested size: 396.91325pt x 208.8976pt.
-
-
-LaTeX Warning: Reference `fig:user_to_roles' on page 25 undefined on input line
- 23.
-
-[25 <./images/roles_in_petri_model.jpg>]
-<images/user_to_roles.png, id=165, 833.1125pt x 441.65pt>
+ [26 <./images/roles_in_petri_model.jpg>]
+<images/user_to_roles.png, id=168, 833.1125pt x 441.65pt>
 File: images/user_to_roles.png Graphic file (type png)
 
 <use images/user_to_roles.png>
 Package pdftex.def Info: images/user_to_roles.png used on input line 28.
 (pdftex.def)             Requested size: 396.91325pt x 210.41264pt.
 
-<images/roles_permissions.png, id=166, 742.775pt x 301.125pt>
+<images/roles_permissions.png, id=169, 742.775pt x 301.125pt>
 File: images/roles_permissions.png Graphic file (type png)
 
 <use images/roles_permissions.png>
@@ -726,25 +717,22 @@ Package pdftex.def Info: images/roles_permissions.png used on input line 45.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26 <./images/user_to_roles.png (PNG copy)>] [27 <./images/roles_permissions.pn
-g (PNG copy)>]) (zaver.tex [28]
+[27 <./images/user_to_roles.png (PNG copy)>] [28 <./images/roles_permissions.pn
+g (PNG copy)>]) (zaver.tex [29]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [29
+)) [30
 
 ] (main.bbl
-[30
+[31
 
 
 
-]) [31] [32
+]) [32] [33
 
 ] (main.aux)
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -752,7 +740,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3177 strings out of 493634
  41137 string characters out of 3141314
- 111951 words of memory out of 3000000
+ 111987 words of memory out of 3000000
  6480 multiletter control sequences out of 15000+200000
  16491 words of font info for 37 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -775,9 +763,9 @@ ublic/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb>
-Output written on main.pdf (42 pages, 614733 bytes).
+Output written on main.pdf (43 pages, 620316 bytes).
 PDF statistics:
- 703 PDF objects out of 1000 (max. 8388607)
+ 710 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
