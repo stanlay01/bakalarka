@@ -53,7 +53,9 @@
 \contentsline {subsection}{\numberline {3.3.1}Modul na prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k rol\IeC {\'a}m}{30}
 \contentsline {subsubsection}{Priradenie a vyradenie viacer\IeC {\'y}ch pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov z role}{31}
 \contentsline {subsubsection}{Priradenie a vyradenie jednotlivca}{32}
-\contentsline {subsection}{\numberline {3.3.2}Ukladanie rol\IeC {\'\i } a referencii k Petriho sieti}{33}
-\contentsline {subsection}{\numberline {3.3.3}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'e} rozhranie}{33}
-\contentsline {section}{\numberline {3.4}Overenie rie\IeC {\v s}enia}{33}
-\contentsline {chapter}{Z\IeC {\'a}ver}{34}
+\contentsline {subsubsection}{Spr\IeC {\'a}va rol\IeC {\'\i } vo firme}{33}
+\contentsline {subsection}{\numberline {3.3.2}Ukladanie rol\IeC {\'\i } a referencii k Petriho sieti}{34}
+\contentsline {subsection}{\numberline {3.3.3}D\IeC {\'a}tov\IeC {\'y} model}{35}
+\contentsline {subsection}{\numberline {3.3.4}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{35}
+\contentsline {section}{\numberline {3.4}Overenie rie\IeC {\v s}enia}{35}
+\contentsline {chapter}{Z\IeC {\'a}ver}{36}

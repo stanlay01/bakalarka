@@ -81,11 +81,7 @@ Vo formulári je možné nastaviť aké dáta budú používateľovi prístupné
 
 
 
-%\subsection{Dátový model}
-%Dátová časť našej aplikácie je implementovaná v databáze MySQL5.1. Na začiatku je potrebné definovať návrh tabuliek pre uloženie rolí a referencii ku konkrétnej sieti. Druhým krokom je návrh databázového modelu, ktorý bude umožňovať konkrétnym používateľom vo firme priradiť rolu.
-%Pre tieto účely sme si definovali nasledovné tabuľky:
-%ROLES,TRANSITIONS\_X\_ROLE , ROLES\_START\_CASES, REFERENCES, USERS, USERS\_X\_FIRM, USERS\_X\_ROLE 
-%Do tabuľky ROLES budeme ukladať role a ich názov. Názov role sme zvolili ako unikátny atribút, kvôli tomu aby bolo uľahčené ukladanie role do databázy. TODOOOOO . V tabuľke TRANSITIONS\_X\_ROLE sa viažu role na prechody v petriho sieti. Každý prechod bude mať v tejto tabuľke presne určené , ktorá roľa ho môže spustiť. V Tabuľke ROLES\_START\_CASES priradíme k petriho sieti rolu, ktorá môže spustiť nový prípad. V tabuľke REFERENCES definujeme , či má prechod v sieti referenciu. Atribút  value typu boolean v tejto tabuľke definuje, či má prechod referenciu. Ak má referenciu, v atribúte referenced\_transition\_id sa skontroluje,či obsahuje referenciu na konkrétny prechod. V prípade , že tento atribút nemá hodnotu NULL, odkazuje tento atribút na primárny kľúč referencovaného prechodu. V tabuľke USERS budú uložený jednotlivý používatelia, ich prihlasovacie a osobné údaje. V tabuľke USERS\_X\_FIRM priraďujeme používateľov ku firmám a v tabuľke USERS\_X\_ROLE priraďujeme používateľom role v jednotlivých firmách. V tejto tabuľke sme zvolili ako primárny kľúč kombináciu cudzích kľúčov odkazujúcich na id používateľa, role a firmy . 
+
 
 \section{Implementácia}
 
@@ -126,16 +122,87 @@ Správa samotného používateľa je realizovaná viacerými spôsobmi. Prvý sp
 	\label{fig:user_detail_screen}
 \end{figure}
 
+\subsubsection{Správa rolí vo firme}
+Firma musí mať vo svojej štruktúre také role, ktoré používa vo svojich procesoch. Preto sa pri priradení procesu do firmy nahrávajú do firmy roly, ktoré sú v procese využívané (viď. \ref{ukladanie rolí}). Okrem toho sa však dajú vo firme vytvoriť role pred tým ako sa k nemu priradia procesy. Na to slúži administrácia rolí vo firme. Do firmy je tak možné pridať nové role, prípadne odstrániť staré. Pri odstraňovaní rolí sa najprv skontrolujú v databáze, či firma nepoužíva danú rolu v niektorej z jej procesov.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{images/firm_administration_screen}
+	\caption{ Administrácia rolí vo firme  }
+	\label{fig:Administrácia rolí vo firme}
+\end{figure}
+
+\noindent Priradenie rolí do firmy je možné aj za pomoci xml- súboru v podobnej štruktúre:
+\begin{lstlisting}[language=XML]
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<roles>
+		<role>
+			<name>názov role 1</name>
+		</role>
+		<role>
+			<name>názov role 2</name>
+		</role>
+	</roles>
+</document>
+\end{lstlisting}
 
 
 \subsection{Ukladanie rolí a referencii k Petriho sieti}
+\label{ukladanie rolí}
+Dôležitou časťou serverovej časti rolí je uložiť výstup z \emph{editora rolí}. Celý proces prebieha v nasledovných fázach : 
+\begin{enumerate}
+	\item vytvorenie a priradenie rolí (v editore)
+	\item po tom ako používateľ odošle požiadavku na uloženie do databázy,  sa odošle na server XML súbor spolu s ID procesom  a ID firmy z databázy
+	\item na serveri sa najprv vymažú staré dáta (napojenie rolí a referencii na sieť), aby nevznikali problémy pri spätnej úprave
+	\item do databázy sa pridajú role 
+	\item pridajú sa do databázy spojenia medzi rolou a prechodmi. Uloží sa rola, ktorá môže spustiť prípad a pridajú sa referencie ku prechodom,.
+	\item role použité v sieti sa priradia do firmy, z ktorej sa vykonávalo modelovanie
+\end{enumerate}
+
+Štruktúra XML súboru a jeho uloženie do databázy:
+
+%\<\!\-\-  \-\-\>
+%referencia na prvého používateľa z roly
+%<!-- referencia na prechod s id 0 -->
+\begin{lstlisting}
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<roles>
+	<role>  // definovanie role 
+		<id>0</id>
+		<name>programátor</name>
+		<start_case>false</start_case> // určuje či môže rola spustiť prechod
+		<transitionId>0</transitionId> 
+		<transitionId>1</transitionId>
+		<transitionId>2</transitionId>
+	</role>
+</roles>
+<references>
+	<reference> // nulová referencia 
+		<transitionId>2</transitionId>
+		<value>false</value>
+	</reference>
+	<reference>   // referencia na prechod s id 0
+		<transitionId>1</transitionId>
+		<value>true</value>
+	</reference>
+		<reference> 
+		<transitionId>0</transitionId>
+		<value>0</value>
+	</reference>
+</references>
+</document>
+\end{lstlisting}
 
 
+\subsection{Dátový model}
+Dátová časť našej aplikácie je implementovaná v databáze MySQL5.1. Na začiatku je potrebné definovať návrh tabuliek pre uloženie rolí a referencii ku konkrétnej sieti. Druhým krokom je návrh databázového modelu, ktorý bude umožňovať konkrétnym používateľom vo firme priradiť rolu.%Pre tieto účely sme si definovali nasledovné tabuľky:
+ROLES,TRANSITIONS\_X\_ROLE , ROLES\_START\_CASES, REFERENCES, USERS, USERS\_X\_FIRM, USERS\_X\_ROLE 
+Do tabuľky ROLES budeme ukladať role a ich názov. Názov role sme zvolili ako unikátny atribút, kvôli tomu aby bolo uľahčené ukladanie role do databázy. TODOOOOO . V tabuľke TRANSITIONS\_X\_ROLE sa viažu role na prechody v petriho sieti. Každý prechod bude mať v tejto tabuľke presne určené , ktorá roľa ho môže spustiť. V Tabuľke ROLES\_START\_CASES priradíme k petriho sieti rolu, ktorá môže spustiť nový prípad. V tabuľke REFERENCES definujeme , či má prechod v sieti referenciu. Atribút  value typu boolean v tejto tabuľke definuje, či má prechod referenciu. Ak má referenciu, v atribúte referenced\_transition\_id sa skontroluje,či obsahuje referenciu na konkrétny prechod. V prípade , že tento atribút nemá hodnotu NULL, odkazuje tento atribút na primárny kľúč referencovaného prechodu. V tabuľke USERS budú uložený jednotlivý používatelia, ich prihlasovacie a osobné údaje. V tabuľke USERS\_X\_FIRM priraďujeme používateľov ku firmám a v tabuľke USERS\_X\_ROLE priraďujeme používateľom role v jednotlivých firmách. V tejto tabuľke sme zvolili ako primárny kľúč kombináciu cudzích kľúčov odkazujúcich na id používateľa, role a firmy . 
 
-
-\subsection{Používateľské rozhranie}
-
-
+ 
+\subsection{Použité technológie}
 
 \section{Overenie riešenia}
 TODO

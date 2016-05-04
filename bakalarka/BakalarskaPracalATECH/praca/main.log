@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  4 MAY 2016 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  4 MAY 2016 18:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -330,6 +330,31 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count92
+\lst@gtempboxa=\box26
+\lst@token=\toks18
+\lst@length=\count93
+\lst@currlwidth=\dimen113
+\lst@column=\count94
+\lst@pos=\count95
+\lst@lostspace=\dimen114
+\lst@width=\dimen115
+\lst@newlines=\count96
+\lst@lineno=\count97
+\lst@maxwidth=\dimen116
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count98
+\lst@skipnumbers=\count99
+\lst@framebox=\box27
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2016/01/08 3.9n The Babel package
 
@@ -344,13 +369,13 @@ Language: slovak 2008/07/06 v3.1a Slovak support from the babel system
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2016/01/08 3.9n Babel common definitions
-\babel@savecnt=\count92
-\U@D=\dimen113
+\babel@savecnt=\count100
+\U@D=\dimen117
 )
 Package babel Info: Making ^ an active character on input line 123.
 Package babel Info: Making " an active character on input line 126.
 Package babel Info: Making ' an active character on input line 129.
-\cs@wordlen=\count93
+\cs@wordlen=\count101
 Package babel Info: Making - an active character on input line 294.
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
@@ -358,19 +383,19 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen114
-\extrarowheight=\dimen115
-\NC@list=\toks18
+\col@sep=\dimen118
+\extrarowheight=\dimen119
+\NC@list=\toks19
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-\TX@col@width=\dimen116
-\TX@old@table=\dimen117
-\TX@old@col=\dimen118
-\TX@target=\dimen119
-\TX@delta=\dimen120
-\TX@cols=\count94
-\TX@ftn=\toks19
+\TX@col@width=\dimen120
+\TX@old@table=\dimen121
+\TX@old@col=\dimen122
+\TX@target=\dimen123
+\TX@delta=\dimen124
+\TX@cols=\count102
+\TX@ftn=\toks20
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip45
@@ -382,6 +407,14 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \f@ncyO@erf=\skip51
 \f@ncyO@olf=\skip52
 \f@ncyO@orf=\skip53
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
 ) (main.aux
 
 LaTeX Warning: Label `obr:cursus' multiply defined.
@@ -407,18 +440,18 @@ LaTeX Warning: Label `gabova_kniha' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -456,35 +489,37 @@ LaTeX Font Info:    ... okay on input line 48.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count95
-\scratchdimen=\dimen121
-\scratchbox=\box26
-\nofMPsegments=\count96
-\nofMParguments=\count97
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count98
-\MPscratchDim=\dimen122
-\MPnumerator=\count99
-\makeMPintoPDFobject=\count100
-\everyMPtoPDFconversion=\toks21
-) [1
+\scratchcounter=\count103
+\scratchdimen=\dimen125
+\scratchbox=\box28
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen126
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks22
+)
+\c@lstlisting=\count109
+ [1
 
 {C:/Users/palko/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 96.
+(Font)              <12> on input line 140.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 96.
+(Font)              <8> on input line 140.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 96.
+(Font)              <6> on input line 140.
 
 [2] <images/zadanie.pdf, id=12, 597.51233pt x 845.0471pt>
 File: images/zadanie.pdf Graphic file (type pdf)
 
 <use images/zadanie.pdf>
-Package pdftex.def Info: images/zadanie.pdf used on input line 138.
+Package pdftex.def Info: images/zadanie.pdf used on input line 182.
 (pdftex.def)             Requested size: 485.1222pt x 686.0962pt.
 
-Overfull \hbox (4.82378pt too wide) in paragraph at lines 138--139
+Overfull \hbox (4.82378pt too wide) in paragraph at lines 182--183
 [] [] 
  []
 
@@ -497,12 +532,12 @@ Overfull \hbox (4.82378pt too wide) in paragraph at lines 138--139
 \openout3 = `main.toc'.
 
  [7]
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--234
+Underfull \hbox (badness 10000) in paragraph at lines 273--278
 
  []
 
@@ -512,7 +547,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--234
 
  [9
 
-] (uvod.tex
+] [10] (uvod.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -536,7 +571,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
-[4] <images/smerovacie_konstrukcie.png, id=71, 472.76625pt x 344.28625pt>
+[4] <images/smerovacie_konstrukcie.png, id=74, 472.76625pt x 344.28625pt>
 File: images/smerovacie_konstrukcie.png Graphic file (type png)
 
 <use images/smerovacie_konstrukcie.png>
@@ -562,13 +597,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--125
 
  []
 
-[7] <images/vojvoda.png, id=89, 235.279pt x 142.934pt>
+[7] <images/vojvoda.png, id=92, 235.279pt x 142.934pt>
 File: images/vojvoda.png Graphic file (type png)
 
 <use images/vojvoda.png>
 Package pdftex.def Info: images/vojvoda.png used on input line 137.
 (pdftex.def)             Requested size: 176.40439pt x 107.17188pt.
- <images/vojvoda2.png, id=90, 504.284pt x 146.949pt>
+ <images/vojvoda2.png, id=93, 504.284pt x 146.949pt>
 File: images/vojvoda2.png Graphic file (type png)
 
 <use images/vojvoda2.png>
@@ -578,20 +613,20 @@ Package pdftex.def Info: images/vojvoda2.png used on input line 146.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./images/vojvoda.png>] <images/and.png, id=95, 437.635pt x 126.874pt>
+[8 <./images/vojvoda.png>] <images/and.png, id=99, 437.635pt x 126.874pt>
 File: images/and.png Graphic file (type png)
 
 <use images/and.png>
 Package pdftex.def Info: images/and.png used on input line 175.
 (pdftex.def)             Requested size: 308.71106pt x 89.49843pt.
  [9 <./images/vojvoda2.png>]
-<images/or.png, id=101, 455.301pt x 122.859pt>
+<images/or.png, id=104, 455.301pt x 122.859pt>
 File: images/or.png Graphic file (type png)
  <use images/or.png>
 Package pdftex.def Info: images/or.png used on input line 181.
 (pdftex.def)             Requested size: 308.71106pt x 83.3049pt.
 
-<images/iteracia.png, id=102, 533.192pt x 109.208pt>
+<images/iteracia.png, id=105, 533.192pt x 109.208pt>
 File: images/iteracia.png Graphic file (type png)
  <use images/iteracia.png>
 Package pdftex.def Info: images/iteracia.png used on input line 187.
@@ -602,7 +637,7 @@ Overfull \hbox (3.92062pt too wide) in paragraph at lines 218--219
 []\T1/cmr/m/n/12 Bezpe£nos´ au-to-ri-zá-
  []
 
-[12] [13] <images/rbac012.png, id=118, 491.8375pt x 371.3875pt>
+[12] [13] <images/rbac012.png, id=121, 491.8375pt x 371.3875pt>
 File: images/rbac012.png Graphic file (type png)
 
 <use images/rbac012.png>
@@ -612,7 +647,7 @@ Package pdftex.def Info: images/rbac012.png used on input line 281.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/rbac_kuhn.png, id=119, 592.2125pt x 170.6375pt>
+<images/rbac_kuhn.png, id=122, 592.2125pt x 170.6375pt>
 File: images/rbac_kuhn.png Graphic file (type png)
 
 <use images/rbac_kuhn.png>
@@ -622,7 +657,7 @@ Package pdftex.def Info: images/rbac_kuhn.png used on input line 293.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/rbac_kuhn_full.png, id=120, 732.7375pt x 240.9pt>
+<images/rbac_kuhn_full.png, id=123, 732.7375pt x 240.9pt>
 File: images/rbac_kuhn_full.png Graphic file (type png)
 
 <use images/rbac_kuhn_full.png>
@@ -632,7 +667,7 @@ Package pdftex.def Info: images/rbac_kuhn_full.png used on input line 300.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] <images/hierarchia_priklad.png, id=124, 341.275pt x 411.5375pt>
+[14] <images/hierarchia_priklad.png, id=128, 341.275pt x 411.5375pt>
 File: images/hierarchia_priklad.png Graphic file (type png)
 
 <use images/hierarchia_priklad.png>
@@ -647,7 +682,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [16 <./images/rbac_kuhn_full.png (PNG copy)> <./images/hierarchia_priklad.png (
-PNG copy)>] [17] <images/rbac_net_cash.png, id=135, 1174.3875pt x 721.69624pt>
+PNG copy)>] [17] <images/rbac_net_cash.png, id=138, 1174.3875pt x 721.69624pt>
 File: images/rbac_net_cash.png Graphic file (type png)
 
 <use images/rbac_net_cash.png>
@@ -658,7 +693,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-<images/model_apk.png, id=139, 943.525pt x 682.55pt>
+<images/model_apk.png, id=142, 943.525pt x 682.55pt>
 File: images/model_apk.png Graphic file (type png)
 
 <use images/model_apk.png>
@@ -670,7 +705,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [19
 
-] <images/vyvoj_role.png, id=143, 973.6375pt x 287.0725pt>
+] <images/vyvoj_role.png, id=146, 973.6375pt x 287.0725pt>
 File: images/vyvoj_role.png Graphic file (type png)
 
 <use images/vyvoj_role.png>
@@ -686,7 +721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-<images/referencia.png, id=147, 576.1525pt x 230.8625pt>
+<images/referencia.png, id=151, 576.1525pt x 230.8625pt>
 File: images/referencia.png Graphic file (type png)
 
 <use images/referencia.png>
@@ -699,13 +734,13 @@ File: images/referencia.png Graphic file (type png)
 Package pdftex.def Info: images/referencia.png used on input line 62.
 (pdftex.def)             Requested size: 308.71106pt x 123.7022pt.
  [22] [23]
-<images/anicka.png, id=158, 1371.1225pt x 672.5125pt>
+<images/anicka.png, id=161, 1371.1225pt x 672.5125pt>
 File: images/anicka.png Graphic file (type png)
  <use images/anicka.png>
 Package pdftex.def Info: images/anicka.png used on input line 129.
 (pdftex.def)             Requested size: 441.01773pt x 216.3064pt.
 
-[24] <images/kubko.png, id=162, 584.1825pt x 702.625pt>
+[24] <images/kubko.png, id=165, 584.1825pt x 702.625pt>
 File: images/kubko.png Graphic file (type png)
  <use images/kubko.png>
 Package pdftex.def Info: images/kubko.png used on input line 142.
@@ -717,7 +752,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) (opisroli.tex [25 <./images/anicka.png>] [26 <./images/kubko.png (PNG copy)>]
 [27
 
-] <images/roles_in_petri_model.jpg, id=174, 762.85pt x 401.5pt>
+] <images/roles_in_petri_model.jpg, id=177, 762.85pt x 401.5pt>
 File: images/roles_in_petri_model.jpg Graphic file (type jpg)
 
 <use images/roles_in_petri_model.jpg>
@@ -730,14 +765,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
  []
 
 [28 <./images/roles_in_petri_model.jpg>]
-<images/user_to_roles.png, id=178, 833.1125pt x 441.65pt>
+<images/user_to_roles.png, id=181, 833.1125pt x 441.65pt>
 File: images/user_to_roles.png Graphic file (type png)
 
 <use images/user_to_roles.png>
 Package pdftex.def Info: images/user_to_roles.png used on input line 32.
 (pdftex.def)             Requested size: 396.91325pt x 210.41264pt.
 
-<images/roles_permissions.png, id=179, 742.775pt x 301.125pt>
+<images/roles_permissions.png, id=182, 742.775pt x 301.125pt>
 File: images/roles_permissions.png Graphic file (type png)
 
 <use images/roles_permissions.png>
@@ -748,7 +783,7 @@ Package pdftex.def Info: images/roles_permissions.png used on input line 49.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [29 <./images/user_to_roles.png (PNG copy)>]
-<images/formulare_opravnenia.png, id=183, 296.60812pt x 134.75343pt>
+<images/formulare_opravnenia.png, id=186, 296.60812pt x 134.75343pt>
 File: images/formulare_opravnenia.png Graphic file (type png)
 
 <use images/formulare_opravnenia.png>
@@ -760,18 +795,18 @@ Package pdftex.def Info: images/formulare_opravnenia.png used on input line 77.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [30 <./images/roles_permissions.png (PNG copy)>]
-<images/server_roli_screen.png, id=187, 673.01437pt x 414.79968pt>
+<images/server_roli_screen.png, id=190, 673.01437pt x 414.79968pt>
 File: images/server_roli_screen.png Graphic file (type png)
 
 <use images/server_roli_screen.png>
-Package pdftex.def Info: images/server_roli_screen.png used on input line 97.
+Package pdftex.def Info: images/server_roli_screen.png used on input line 93.
 (pdftex.def)             Requested size: 396.91325pt x 244.62842pt.
 
-<images/role_actions_screen.png, id=188, 398.23781pt x 99.37125pt>
+<images/role_actions_screen.png, id=191, 398.23781pt x 99.37125pt>
 File: images/role_actions_screen.png Graphic file (type png)
 
 <use images/role_actions_screen.png>
-Package pdftex.def Info: images/role_actions_screen.png used on input line 107.
+Package pdftex.def Info: images/role_actions_screen.png used on input line 103.
 
 (pdftex.def)             Requested size: 220.50887pt x 55.0228pt.
 
@@ -779,33 +814,64 @@ Package pdftex.def Info: images/role_actions_screen.png used on input line 107.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31 <./images/formulare_opravnenia.png> <./images/server_roli_screen.png>]
-<images/user_detail_screen.png, id=194, 306.39468pt x 342.5297pt>
+<images/user_detail_screen.png, id=197, 306.39468pt x 342.5297pt>
 File: images/user_detail_screen.png Graphic file (type png)
 
 <use images/user_detail_screen.png>
-Package pdftex.def Info: images/user_detail_screen.png used on input line 117.
+Package pdftex.def Info: images/user_detail_screen.png used on input line 113.
 (pdftex.def)             Requested size: 220.50887pt x 246.51665pt.
 
-<images/one_user_screen2.png, id=195, 657.95813pt x 78.2925pt>
+<images/one_user_screen2.png, id=198, 657.95813pt x 78.2925pt>
 File: images/one_user_screen2.png Graphic file (type png)
 
 <use images/one_user_screen2.png>
-Package pdftex.def Info: images/one_user_screen2.png used on input line 124.
+Package pdftex.def Info: images/one_user_screen2.png used on input line 120.
 (pdftex.def)             Requested size: 441.01773pt x 52.47958pt.
-) (zaver.tex [32 <./images/role_actions_screen.png> <./images/user_detail_scree
-n.png> <./images/one_user_screen2.png>]
-[33]
+ [32 <./images/role_actions_screen.png> <./images/user_detail_screen.png> <./im
+ages/one_user_screen2.png>]
+<images/firm_administration_screen.png, id=206, 302.63063pt x 350.05782pt>
+File: images/firm_administration_screen.png Graphic file (type png)
+
+<use images/firm_administration_screen.png>
+Package pdftex.def Info: images/firm_administration_screen.png used on input li
+ne 130.
+(pdftex.def)             Requested size: 220.50887pt x 255.07002pt.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 137.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 137.
+ [33 <./images/firm_administration_screen.png>]
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+Overfull \hbox (43.2451pt too wide) in paragraph at lines 200--203
+\T1/cmr/m/n/12 va-te-©om vo firme pri-ra-di´ rolu.ROLES,TRANSITIONS_X_ROLE , RO
+-LES_START_CASES,
+ []
+
+[34]) (zaver.tex [35]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [34
+)) [36
 
-]
-(main.bbl [35
+] (main.bbl
+[37
 
 
 
-]) [36] [37
+]) [38] [39
 
 ] (main.aux)
 
@@ -813,34 +879,35 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3222 strings out of 493634
- 42445 string characters out of 3141314
- 112109 words of memory out of 3000000
- 6518 multiletter control sequences out of 15000+200000
- 16491 words of font info for 37 fonts, out of 3000000 for 9000
+ 5068 strings out of 493634
+ 66888 string characters out of 3141314
+ 210620 words of memory out of 3000000
+ 8336 multiletter control sequences out of 15000+200000
+ 17254 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,10n,43p,1609b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,11n,51p,1609b,1633s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ectt1200.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecti1200.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\palko\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\palko\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\palko\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Us
-ers\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.
+ec\dpi600\ecrm1000.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\palko\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\palko\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\palko\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Us
+ers\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.
 pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecrm2074.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
-\ec\dpi600\ecrm1200.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\eccc1440.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb>
-Output written on main.pdf (47 pages, 768598 bytes).
+\ecrm1728.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
+\ec\dpi600\ecrm2074.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (50 pages, 792891 bytes).
 PDF statistics:
- 733 PDF objects out of 1000 (max. 8388607)
+ 793 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
