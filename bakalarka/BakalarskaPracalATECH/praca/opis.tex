@@ -11,11 +11,9 @@
 \subsection{Základný opis aplikácie}
 Zistili sme, že workflow management systém je silný nástroj, ktorý umožní používateľovi oddeliť a jasne znázorniť procesnú časť od aplikácie. Tento systém ponúka mnohé výhody. Jednou z možností ako WfMS implementovať je použitím Petriho sietí. Petriho siete sú jasne formálne definované a matematicky overené.  Rozhodli sme sa preto implementovať Petriho siete ako nástroj pre modelovanie procesov.\\
 
-Celý systém bude fungovať na portáli, kde bude možné sa registrovať a následne prihlásiť. Aplikáciu môžeme pomyselne rozdeliť na modelovaciu a používateľskú časť (obrázok \ref{fig:model_apk}). V modelovacej časti je možné navrhovať a modelovať procesy prostredníctvom Petriho sietí . Ku ním sa v \emph{editore manažmentu rolí a organizačnej štruktúry} pripoja role a v \emph{editore formulárov a dátového modelu} sa namapujú formuláre. Takto vytvorená workflow sieť spolu s rolami a formulármi je tak pripravené na používanie. 
+Celý systém bude fungovať na portáli, cez ktorý bude možné sa registrovať a následne prihlásiť. Aplikáciu môžeme pomyselne rozdeliť na modelovaciu a používateľskú časť (obrázok \ref{fig:model_apk}). V modelovacej časti je možné navrhovať a modelovať procesy prostredníctvom Petriho sietí . Ku ním sa v \emph{editore manažmentu rolí a organizačnej štruktúry} pripoja role a v \emph{editore formulárov a dátového modelu} sa namapujú formuláre. Takto vytvorená workflow sieť spolu s rolami a formulármi je tak pripravené na používanie. 
 
-Pre používanie potom stačí workflow sieť nasadiť (deploy) do konkrétnej firmy. Vo firme bude potrebné priradiť konkrétnych používateľov ku rolám, ktoré táto workflow sieť používa.
-
-Následne môžeme považovať Workflow systém za funkčný a z Workflow siete budeme môcť vytvárať nové prípady. Prechody sa budú dať spúšťať v každom prípade  automaticky podľa namodelovanej logiky.
+Pre používanie potom stačí workflow sieť nasadiť (deploy) do konkrétnej firmy. Vo firme bude potrebné priradiť konkrétnych používateľov ku rolám, ktoré táto workflow sieť používa.Následne tak môžeme považovať Workflow systém za funkčný a z Workflow siete budeme môcť vytvárať nové prípady. Prechody sa budú dať spúšťať v každom prípade  automaticky podľa namodelovanej logiky.
 
 	\begin{figure}[h]
 		\centering
@@ -34,7 +32,7 @@ Následne môžeme považovať Workflow systém za funkčný a z Workflow siete 
 
 
 \subsection{Funkcia rolí v aplikácii}
-V biznis procesoch väčšinu úloh vykonávajú fyzické osoby. V každej firme je niekoľko zamestnancov, ktorí majú rôzne právomoci. Zároveň však môžeme vidieť ich neustálu fluktuáciu. Zamestnanci do firmy prichádzajú a aj odchádzajú. Takisto sa stáva, že zamestnanec zmení pozíciu vo firme a dostane tak nové právomoci. Pre management riadenia takéhoto systému nám nestačí využitie klasických modelov, prípadne systém na správu takéhoto systému by bol vysoko nákladný. Z týchto dôvodov väčšina workflow management systémov využíva model  prístupu na základe rolí RBAC. Pre potreby našej aplikácie preto využijeme základy tohoto modelu ( konkrétne implementujeme základný model RBAC0 ). V každej Workflow sieti priradíme rolu na sieť, aby sme vedeli určiť, kto môže spustiť nový prípad. Zároveň v Petriho sieti definujeme ku každému prechodu jednu rolu, ktorá môže daný prechod spustiť. Samotné právomoci danej role nad prechodom sú určené vo dátovej časti. Vo formulári ku prechodu sa dajú políčka nastaviť ako povinné, upraviteľné a viditeľné. To nám zabezpečí ekvivalent k právomociam read, write. 
+V biznis procesoch väčšinu úloh vykonávajú fyzické osoby. V každej firme je niekoľko zamestnancov, ktorí majú rôzne právomoci. Zároveň však môžeme vidieť ich neustálu fluktuáciu. Zamestnanci do firmy prichádzajú a aj odchádzajú. Takisto sa stáva, že zamestnanec zmení pozíciu vo firme a dostane tak nové právomoci. Pre management riadenia takéhoto systému nám nestačí využitie klasických modelov, prípadne systém na správu takéhoto systému by bol vysoko nákladný. Z týchto dôvodov väčšina workflow management systémov využíva model  prístupu na základe rolí RBAC. Pre potreby našej aplikácie preto využijeme základy tohoto modelu ( konkrétne implementujeme základný model RBAC0 ). V každej Workflow sieti priradíme rolu na sieť, aby sme vedeli určiť, kto môže spustiť nový prípad. Zároveň v Petriho sieti definujeme ku každému prechodu jednu rolu, ktorá môže daný prechod spustiť. Samotné právomoci danej role nad prechodom sú určené v dátovej časti. Vo formulári ku prechodu sa dajú políčka nastaviť ako povinné, upraviteľné a viditeľné. To nám zabezpečí ekvivalent k právomociam read, write. 
 
 \begin{figure}[h]
 	\centerline{\includegraphics[width=0.9\textwidth]{images/vyvoj_role}}
@@ -45,7 +43,7 @@ V biznis procesoch väčšinu úloh vykonávajú fyzické osoby. V každej firme
 
 
 \subsection{Referencie}
-Role v procese zabezpečia prenos prístupových práv z úloh na používateľa. V rámci jednej role si môžeme predstaviť skupinu používateľov, ktorí majú určité spoločné prístupové práva vo firme. V niektorých procesoch však treba zabezpečiť, aby dve od seba závislé úlohy, mohol spustiť len ten samý používateľ. Samotné role túto funkcionalitu nedokážu zabezpečiť . V našej aplikácii je nutné ju explicitne zadefinovať. Do našej aplikácie sme použili systém referencii na prechody v Petriho sieti. Do nášho projektu sme implementovali dva typy referencii : \emph{referencia na prechod} a \emph{referencia na prvého používateľa z role} .\\ 
+Role v procese zabezpečia prenos prístupových práv z úloh na používateľa. V rámci jednej role si môžeme predstaviť skupinu používateľov, ktorí majú určité spoločné prístupové práva vo firme. V niektorých procesoch však treba zabezpečiť, aby dve od seba závislé úlohy, mohol spustiť len ten samý používateľ. Samotné role túto funkcionalitu nedokážu zabezpečiť . V našej aplikácii je nutné ju explicitne zadefinovať. Do našej aplikácie sme použili systém referencii na prechody v Petriho sieti. Konkrétne sme implementovali dva typy referencii : \emph{referencia na prechod} a \emph{referencia na prvého používateľa z role} .\\ 
 
 Najskôr opíšeme referenciu na prechod. Referencia na prechod zabezpečí, aby ten samý používateľ ktorý spustí prechod, na ktorý odkazuje referencia, bol jediný oprávnený na spustenie prechodu s touto referenciou. Jednoduchým príkladom je ak rozložíme jeden zložitý prechod , ktorý musí vykonať ten samý používateľ na dve menšie. Predstavme si napríklad podpísanie tlačiva. Ku tlačivu treba podpísať aj jeho kópiu. Náš prvý prechod predstavuje podpísanie tlačiva a druhý prechod je priradený k podpísaniu kópie tlačiva. Podpísanie kópie obsahuje v sebe referenciu na prvý prechod s podpísaním originálneho tlačiva. V praxi to znamená, že obidve tlačivá musí podpísať tá istá osoba. \\
 
@@ -76,21 +74,78 @@ V nasledujúcej sekcii bližšie popíšeme jednotlivé časti systému, tak ako
 \subsection{Procesný portál - Martin Kováčik}
 Procesný portál slúži na zjednotenie všetkých častí dohromady. Základnou myšlienkou portálu je poskytnúť možnosť vytvárať, využívať a manažovať Workflow systémy. Taktiež slúži ako e-shop. Ponúka možnosť vytvorené Workflow siete kopírovať do iných firiem. Všetky firmy a workflow siete sú verejne viditeľné. Vytvára priestor, kde sa dajú procesy vzájomne vymieňať. Vďaka tomu môžu používatelia využívať vo svojich firmách Workflow systém bez nutnej znalosti samotného modelovania Workflow siete. Portál umožňuje registráciu a prihlásenie používateľov. Prihlásený používateľ  môže manažovať svoj profil : prezerať svoje objednávky, meniť heslo. V prípade straty hesla zabezpečí jeho opätovné zaslanie. Každý používateľ môže vytvoriť a spravovať vlastnú firmu. Vo firme je zahrnutá správa používateľov. Ich pridávanie a vyhadzovanie z firmy ako aj priradenie práv na správu firmy. Nového používateľa je možné pridať do firmy cez zaslanie pozvánky. Zaregistrovaní používatelia majú vstup do firmy voľný, prípadne zabezpečený cez heslo.  V portály je zabezpečený prístup do modelovania workflow sietí spolu s editorom manažmentu rolí a editorom formulárov, ako aj k správe rolí a ich mapovaniu na používateľov. 
 
+\begin{figure}[h]
+	\centering
+%	\includegraphics[width=0.7\linewidth]{images/martin}
+	\caption{Procesný portál}
+	\label{fig:procesný portál}
+\end{figure}
+
+
+
 \subsection{Procesný editor - Tomáš Prieboj}
 Procesný editor ponúka možnosť modelovať Petriho sieť a navrhnúť tak workflow sieť pre vytvorenie firemných procesov. Nájdeme tak v ňom nástroje na kreslenie rôznych objektov ako miest, prechodov a hrán. Každý takýto objekt je možné presunúť a vymazať. Pri presúvaní je automaticky zabezpečené presúvanie hrán napojených na objekt. Vymazanie objektu analogicky zaručí odstránenie hrán, ktoré by inak nemali začiatočný alebo koncový bod. Každé miesto a prechod je možné označiť menovkou. Udeľovanie značkovania (tokenov) pre miesta je zabezpečené dvoma spôsobmi. Prvý spôsob pridáva tokeny ľavým tlačidlom myši a  pravým tokeny uberá. Druhý spôsob umožní k miestu ručne napísať počet tokenov. Dôležitou funkcionalitou je simulácia Petriho siete. Dovoľuje používateľovi simulovať proces v Petriho sieti, pričom v každom stave zobrazuje aktívne prechody. Aplikácia umožňuje ukladanie siete buď vo formáte svg ako obrázok, alebo vo formáte xml, z ktorého je možné neskôr celú sieť importovať na účely modelovania. Pre potreby Workflow systému, editor ukladá popis workflow siete a cez komunikáciu prostredníctvom json-u s procesným serverom umožňuje uložiť sieť do databázy. Po uložení do databázy príjme id, ktoré bolo sieti priradené. Následne tak môže používateľa presmerovať na editor formulárov a dátového modelu.
 
+\begin{figure}[h]
+	\centering
+%	\includegraphics[width=0.7\linewidth]{images/tomas}
+	\caption{Procesný editor}
+	\label{fig:Procesný editor}
+\end{figure}
+
+
 \subsection{Editor formulárov a dátového modelu - Ján Polaček}
+\label{editor formulárov}
 Po tom, ako sa workflow sieť nakreslí v procesnom editore je potrebné k prechodom priradiť formuláre, ktoré sa budú neskôr zobrazovať pri spracovaní úloh v prípadoch. Editor formulárov a dátového modelu umožňuje navrhnúť dátový model pre formuláre. Modelovanie formulárov je realizované cez vytváranie, editovanie, prípadne mazanie vstupných polí. Tie môžu byť pridané v podobe \emph{krátkej odpovede}, \emph{dlhej odpovede} , \emph{výberu z viacerých} (select boxu ) 	alebo \emph{zaškrtávacích možností } (checkboxy) . Ku každému sa dá pridať otázka a popis. Pre jednotlivý vstup definujeme , či je povinný, viditeľný a upraviteľný. Pre potreby prepoužívania formulárov a ich ukladania do databázy sa vytvorí dataset, ktorý reprezentuje premenné, do ktorých sa ukladajú hodnoty z vstupných polí. Editor dokáže načítať a uložiť Petriho sieť cez formát SVG. Jednotlivé formuláre a dátové typy je možné uložiť vo formáte XML a následne spätne nahrať na načítanú sieť (napr. prostredníctvom SVG). Editor spolupracuje so \emph{serverom formulárov a dátového modelu}. Prostredníctvom JSON dát sú formuláre priebežne ukladané na server.
 
+
+\begin{figure}[h]
+	\centering
+%	\includegraphics[width=0.7\linewidth]{images/jan}
+	\caption{editor formulárov a dátového modelu}
+	\label{fig:editor formulárov a dátového modelu}
+\end{figure}
+
+
 \subsection{Editor manažmentu rolí a organizačnej štruktúry- Kristián Stroka}
+\label{Editor manažmentu rolí a organizačnej štruktúry}
 Podobne ako pri editore formulárov, \emph{Editor manažmentu rolí a organizačnej štruktúry} slúži na bližšie definovanie prechodov, konkrétne sa zameriava na otázku kto môže spustiť prípad a prechody v ňom. Editor umožňuje vytvárať roly a následne každému prechodu vymedziť prostredníctvom  rol a referencii práva na spustenie prechodu. Každému prechodu je možné priradiť rolu, prípadne jednu z dvoch referencii : \emph{referenciu na prechod} a \emph{referenciu na prvého používateľa z role}. Toto priradenie je možné následne zrušiť. Editor načítava Petriho sieť prostredníctvom SVG formátu načítaním zo súboru, prípadne z databázy. Mapovanie rolí a referencii je možné uložiť v XML formáte. Pre potreby Workflow systému je ukladanie mapovania do databázy zabezpečené prostredníctvom JSON komunikácie  zo \emph{serveru manažmentu rolí a používateľov}. Rovnakým spôsobom je možné z databázy načítať roly vo firme v akej používateľ práve modeluje.
+
+\begin{figure}[h]
+	\centering
+%	\includegraphics[width=0.7\linewidth]{images/kristian}
+	\caption{Editor manažmentu rolí a organizačnej štruktúry}
+	\label{fig:Editor manažmentu rolí a organizačnej štruktúry}
+\end{figure}
+
 
 \subsection{Procesný server - Anna Demeterová}
 Procesný server zabezpečuje správne fungovanie Workflow systému po jeho namodelovaní vo firme. Pre konkrétneho používateľa vo firme zabezpečí, aby mohol vytvárať nové prípady a preberať úlohy z vytvorených prípadov podľa stavu, v akom sa prípad nachádza a používateľských oprávnení zadefinovaných na základe rolí. Stará sa tak o to, aby každý prípad nasledoval logiku definovanú namodelovanou Workflow sieťou. Kontroluje a zabraňuje možným  kolíziám referencii a iným deadlockom.  
 %cancel čo? 
-Ukladá históriu vykonaných prípadov a úloh. Umožňuje vizualizáciu stavu, v akom sa prípad nachádza. Okrem toho spracováva workflow siete vytvorené v \emph{procesnom editore} a ukladá vytvorenú sieť do databázy. Po prebratí úlohy, používateľovi zobrazí možnosť túto úlohu vykonať. To ho presmeruje na \emph{server formulárov a dátového modelu} kde sa používateľovi zobrazí formulár patriaci danej úlohe. Odtiaľ naspäť putuje 
+Ukladá históriu vykonaných prípadov a úloh. Umožňuje vizualizáciu stavu, v akom sa prípad nachádza. Okrem toho spracováva workflow siete vytvorené v \emph{procesnom editore} a ukladá vytvorenú sieť do databázy. Po prebratí úlohy používateľovi zobrazí možnosť túto úlohu vykonať. To ho presmeruje na \emph{server formulárov a dátového modelu} kde sa používateľovi zobrazí formulár patriaci danej úlohe. Ak je formulár vyplnení, odošle sa naspať potvrdenie. Procesný server tak dokončí úlohu, prípad sa tak posunie do nového stavu. Procesný portál nanovo vypočíta aktívne prechody na spustenie.
 
-\subsection{Server formulárov a dátového modelu}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{images/anicka}
+	\caption{Procesný server}
+	\label{fig:Procesný server}
+\end{figure}
+
+
+
+\subsection{Server formulárov a dátového modelu- Jakub Kováčik}
+Serverová strana formulárov a dátového modelu rieši zobrazovanie formulárov pre spustené úlohy v konkrétnom prípade. Formulár môže obsahovať krátku odpoveď, dlhú odpoveď, zaškrtávacie pole a výber z viacerých možností. Po odoslaní formuláru prebieha validácia, či sú vstupné polia správne vyplnené. Taktiež umožňuje priebežne uložiť vyplnené polia, bez toho aby sa formulár odoslal. To umožní používateľovi odložiť vypĺňanie na neskôr. Táto časť je pevne previazaná s editorom formulárov (\ref{editor formulárov}) . Zatiaľ čo editor rieši modelovanie dátového modelu a návrh formuláru, serverová časť sa stará o ukladanie dát a následné zrekonštruovanie formuláru pre jeho samotné vypĺňanie. Komunikácia medzi editorom a serverom prebieha prostredníctvom JSON dát vymieňaných cez AJAX. Pre editor zabezpečuje uloženie a načítanie v rámci databázy. 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/kubko}
+	\caption{Server formulárov a dátového modelu- Jakub Kováčik}
+	\label{fig:Server formulárov a dátového modelu- Jakub Kováčik}
+\end{figure}
+
+
+
 \subsection{Server manažmentu rolí a používateľov}
 
 	
