@@ -148,7 +148,7 @@ Firma musí mať vo svojej štruktúre také role, ktoré používa vo svojich p
 \end{lstlisting}
 
 
-\subsection{Ukladanie rolí a referencii k Petriho sieti}
+\subsection{Ukladanie rolí a referencii z editoru do databázy}
 \label{ukladanie rolí}
 Dôležitou časťou serverovej časti rolí je uložiť výstup z \emph{editora rolí}. Celý proces prebieha v nasledovných fázach : 
 \begin{enumerate}
@@ -197,9 +197,56 @@ Dôležitou časťou serverovej časti rolí je uložiť výstup z \emph{editora
 
 
 \subsection{Dátový model}
-Dátová časť našej aplikácie je implementovaná v databáze MySQL5.1. Na začiatku je potrebné definovať návrh tabuliek pre uloženie rolí a referencii ku konkrétnej sieti. Druhým krokom je návrh databázového modelu, ktorý bude umožňovať konkrétnym používateľom vo firme priradiť rolu.%Pre tieto účely sme si definovali nasledovné tabuľky:
-ROLES,TRANSITIONS\_X\_ROLE , ROLES\_START\_CASES, REFERENCES, USERS, USERS\_X\_FIRM, USERS\_X\_ROLE 
-Do tabuľky ROLES budeme ukladať role a ich názov. Názov role sme zvolili ako unikátny atribút, kvôli tomu aby bolo uľahčené ukladanie role do databázy. TODOOOOO . V tabuľke TRANSITIONS\_X\_ROLE sa viažu role na prechody v petriho sieti. Každý prechod bude mať v tejto tabuľke presne určené , ktorá roľa ho môže spustiť. V Tabuľke ROLES\_START\_CASES priradíme k petriho sieti rolu, ktorá môže spustiť nový prípad. V tabuľke REFERENCES definujeme , či má prechod v sieti referenciu. Atribút  value typu boolean v tejto tabuľke definuje, či má prechod referenciu. Ak má referenciu, v atribúte referenced\_transition\_id sa skontroluje,či obsahuje referenciu na konkrétny prechod. V prípade , že tento atribút nemá hodnotu NULL, odkazuje tento atribút na primárny kľúč referencovaného prechodu. V tabuľke USERS budú uložený jednotlivý používatelia, ich prihlasovacie a osobné údaje. V tabuľke USERS\_X\_FIRM priraďujeme používateľov ku firmám a v tabuľke USERS\_X\_ROLE priraďujeme používateľom role v jednotlivých firmách. V tejto tabuľke sme zvolili ako primárny kľúč kombináciu cudzích kľúčov odkazujúcich na id používateľa, role a firmy . 
+Dátová časť našej aplikácie je implementovaná v databáze MySQL. Na začiatku je potrebné definovať návrh tabuliek pre uloženie rolí a referencii ku konkrétnej sieti. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/roles_permissions_diagram}
+	\caption{ Priradenie právomocí rolám }
+	\label{fig:Priradenie právomocí rolám}
+\end{figure}
+Tabuľka \emph{TRANSITIONS\_X\_ROLE} ukladá právomoci rolí na spustenie konkrétneho prechodu v sieti, tabuľka \emph{ROLES\_START\_CASES}  ukladá rolu, ktorá môže spustiť nový prípad a tabuľka REFERENCES ukladá jednotlivé referencie ku prechodom. Ak má nastavené \emph{value} na false, prechod nemá referenciu. Ak má hodnotu nastavenú na true , skontroluje sa položka \emph{referenced\_transition\_id}.Pokiaľ má tento atribút číselnú hodnotu, referencia odkazuje na prechod s touto id. Pokiaľ má nastavenú hodnotu na NULL, referencia je nastavená na prvého užívateľa z role.
+
+
+
+Druhým krokom je návrh databázového modelu, ktorý bude umožňovať konkrétnym používateľom vo firme priradiť rolu. Priradených používateľov vo firme zaznamenávame v tabuľke USERS\_X\_FIRM.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{images/users_to_roles_diagram}
+	\caption{ Priradenie používateľov do rol vo firmách }
+	\label{fig:Priradenie používateľov do rol vo firmách}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{images/database_diagram}
+	\caption{ Hlavné tabuľky pre prácu s rolami }
+	\label{fig:Hlavné tabuľky pre prácu s rolami}
+\end{figure}
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{images/roles_table}
+	\caption{ Hlavné tabuľky pre prácu s rolami }
+	\label{fig:Hlavné tabuľky pre prácu s rolami}
+\end{figure}
+Do tabuľky ROLES budeme ukladať role a ich názov. Táto tabuľka má unikátny atribút \emph{názov roly}. Samotná rola sa neviaže na firmu ani na proces. Bolo by tak nežiaduce mať duplicitné záznamy. Vyrieši sa tak aj ukladanie roly do databázy, pretože z XML súboru sa nedá zistiť, či už neexistuje rola rovnaká rola inak ako podľa názvu roly. \\
+
+
+ V tabuľke TRANSITIONS\_X\_ROLE sa roly viažu  na prechody v Petriho sieti. Každý prechod bude mať v tejto tabuľke presne určené , ktorá roľa ho môže spustiť. \\
+ 
+V tabuľke ROLES\_START\_CASES priradíme k Petriho sieti rolu, ktorá môže spustiť nový prípad.\\
+ 
+V tabuľke REFERENCES definujeme , či má prechod v sieti referenciu. Atribút  \emph{value} typu boolean v tejto tabuľke definuje, či má prechod referenciu. Ak má referenciu, v atribúte \emph{referenced\_transition\_id} sa skontroluje,či obsahuje referenciu na konkrétny prechod. V prípade , že tento atribút má hodnotu NULL, referencia odkazuje na prvý prechod spustený danou rolou v prípade.V prípade , že má nastavenú hodnotu, odkazuje tento atribút na primárny kľúč referencovaného prechodu. \\
+  
+  
+  V tabuľke USERS budú uložený jednotlivý používatelia, ich prihlasovacie a osobné údaje.\\
+  
+  V tabuľke USERS\_X\_FIRM priraďujeme používateľov ku firmám.\\
+  
+  V tabuľke USERS\_X\_ROLE priraďujeme používateľom roly v jednotlivých firmách. V tejto tabuľke sme zvolili ako primárny kľúč kombináciu cudzích kľúčov odkazujúcich na id používateľa, role a firmy . 
 
  
 \subsection{Použité technológie}

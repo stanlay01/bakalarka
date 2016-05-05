@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {2.2.4}Editor mana\IeC {\v z}mentu rol\IeC {\'\i } a organiza\IeC {\v c}nej \IeC {\v s}trukt\IeC {\'u}ry- Kristi\IeC {\'a}n Stroka}{24}
 \contentsline {subsection}{\numberline {2.2.5}Procesn\IeC {\'y} server - Anna Demeterov\IeC {\'a}}{24}
 \contentsline {subsection}{\numberline {2.2.6}Server formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu- Jakub Kov\IeC {\'a}\IeC {\v c}ik}{25}
-\contentsline {subsection}{\numberline {2.2.7}Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{25}
+\contentsline {subsection}{\numberline {2.2.7}Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{26}
 \contentsline {chapter}{Opis rie\IeC {\v s}enia - Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{27}
 \contentsline {section}{\numberline {3.1}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{27}
 \contentsline {section}{\numberline {3.2}N\IeC {\'a}vrh}{27}
@@ -54,8 +54,8 @@
 \contentsline {subsubsection}{Priradenie a vyradenie viacer\IeC {\'y}ch pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov z role}{31}
 \contentsline {subsubsection}{Priradenie a vyradenie jednotlivca}{32}
 \contentsline {subsubsection}{Spr\IeC {\'a}va rol\IeC {\'\i } vo firme}{33}
-\contentsline {subsection}{\numberline {3.3.2}Ukladanie rol\IeC {\'\i } a referencii k Petriho sieti}{34}
+\contentsline {subsection}{\numberline {3.3.2}Ukladanie rol\IeC {\'\i } a referencii z editoru do datab\IeC {\'a}zy}{34}
 \contentsline {subsection}{\numberline {3.3.3}D\IeC {\'a}tov\IeC {\'y} model}{35}
-\contentsline {subsection}{\numberline {3.3.4}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{35}
-\contentsline {section}{\numberline {3.4}Overenie rie\IeC {\v s}enia}{35}
-\contentsline {chapter}{Z\IeC {\'a}ver}{36}
+\contentsline {subsection}{\numberline {3.3.4}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{38}
+\contentsline {section}{\numberline {3.4}Overenie rie\IeC {\v s}enia}{38}
+\contentsline {chapter}{Z\IeC {\'a}ver}{39}
