@@ -5,57 +5,58 @@
 \contentsline {subsection}{\numberline {1.1.1}\IeC {\'U}loha}{5}
 \contentsline {subsection}{\numberline {1.1.2}Proces}{5}
 \contentsline {subsection}{\numberline {1.1.3}Smerovacie kon\IeC {\v s}trukcie}{5}
-\contentsline {subsection}{\numberline {1.1.4}V\IeC {\'y}hody pou\IeC {\v z}itia WfMS}{5}
+\contentsline {subsection}{\numberline {1.1.4}V\IeC {\'y}hody pou\IeC {\v z}itia WfMS}{6}
 \contentsline {subsection}{\numberline {1.1.5}Riadenie zrojov vo WfMS}{6}
-\contentsline {section}{\numberline {1.2}Petriho siete}{7}
-\contentsline {subsection}{\numberline {1.2.1}Hist\IeC {\'o}ria}{7}
-\contentsline {subsection}{\numberline {1.2.2}V\IeC {\v s}eobecn\IeC {\'a} defin\IeC {\'\i }cia Petriho siete}{7}
+\contentsline {section}{\numberline {1.2}Petriho siete}{6}
+\contentsline {subsection}{\numberline {1.2.1}Hist\IeC {\'o}ria}{6}
+\contentsline {subsection}{\numberline {1.2.2}Defin\IeC {\'\i }cia Petriho siete}{7}
 \contentsline {subsection}{\numberline {1.2.3}Pravidl\IeC {\'a} pre sp\IeC {\'u}\IeC {\v s}\IeC {\v t}anie prechodov}{8}
 \contentsline {subsection}{\numberline {1.2.4}Pr\IeC {\'\i }klad}{8}
-\contentsline {subsection}{\numberline {1.2.5}Implementovanie Petriho siet\IeC {\'\i } na workflow management syst\IeC {\'e}m}{9}
-\contentsline {subsubsection}{Smerovacie kon\IeC {\v s}trukcie}{10}
+\contentsline {subsection}{\numberline {1.2.5}Implementovanie Petriho siet\IeC {\'\i } na Workflow management syst\IeC {\'e}m}{8}
+\contentsline {subsubsection}{Smerovacie kon\IeC {\v s}trukcie}{9}
 \contentsline {section}{\numberline {1.3}Riadenie pr\IeC {\'\i }stupu}{10}
 \contentsline {subsection}{\numberline {1.3.1}Princ\IeC {\'\i }py bezpe\IeC {\v c}n\IeC {\'e}ho dizajnu}{11}
 \contentsline {subsection}{\numberline {1.3.2}Model Bell-LaPadula}{12}
-\contentsline {section}{\numberline {1.4}RBAC}{13}
-\contentsline {subsection}{\numberline {1.4.1}Popis modelu}{13}
-\contentsline {subsection}{\numberline {1.4.2}Dizajn}{13}
-\contentsline {subsubsection}{Jadro RBAC}{14}
-\contentsline {subsubsection}{Hierarchick\IeC {\'e} \IeC {\v s}trukt\IeC {\'u}ry}{15}
-\contentsline {subsubsection}{Obmedzenia}{15}
-\contentsline {subsection}{\numberline {1.4.3}Porovnanie RBAC s alternat\IeC {\'\i }vnymi met\IeC {\'o}dami riadenia}{16}
+\contentsline {section}{\numberline {1.4}RBAC}{14}
+\contentsline {subsection}{\numberline {1.4.1}Popis modelu}{14}
+\contentsline {subsection}{\numberline {1.4.2}Dizajn}{14}
+\contentsline {subsubsection}{Jadro RBAC}{15}
+\contentsline {subsubsection}{Hierarchick\IeC {\'e} \IeC {\v s}trukt\IeC {\'u}ry}{16}
+\contentsline {subsubsection}{Obmedzenia}{17}
+\contentsline {subsection}{\numberline {1.4.3}Porovnanie RBAC s alternat\IeC {\'\i }vnymi met\IeC {\'o}dami riadenia}{17}
 \contentsline {subsubsection}{ACL}{17}
 \contentsline {subsubsection}{volite\IeC {\v l}n\IeC {\'e} riadenie pr\IeC {\'\i }stupu DAC}{17}
-\contentsline {subsubsection}{povinn\IeC {\'e} riadenie pr\IeC {\'\i }stupu MAC}{17}
+\contentsline {subsubsection}{povinn\IeC {\'e} riadenie pr\IeC {\'\i }stupu MAC}{18}
+\contentsline {subsubsection}{Porovnanie}{18}
 \contentsline {subsection}{\numberline {1.4.4}V\IeC {\'y}hody RBAC}{18}
-\contentsline {chapter}{Opis rie\IeC {\v s}enia - Workflow syst\IeC {\'e}m}{19}
-\contentsline {section}{\numberline {2.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek}{19}
-\contentsline {subsection}{\numberline {2.1.1}Z\IeC {\'a}kladn\IeC {\'y} opis aplik\IeC {\'a}cie}{19}
-\contentsline {subsection}{\numberline {2.1.2}Funkcia rol\IeC {\'\i } v aplik\IeC {\'a}cii}{19}
-\contentsline {subsection}{\numberline {2.1.3}Referencie}{21}
-\contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{22}
-\contentsline {subsection}{\numberline {2.2.1}Procesn\IeC {\'y} port\IeC {\'a}l - Martin Kov\IeC {\'a}\IeC {\v c}ik}{22}
-\contentsline {subsection}{\numberline {2.2.2}Procesn\IeC {\'y} editor - Tom\IeC {\'a}\IeC {\v s} Prieboj}{23}
-\contentsline {subsection}{\numberline {2.2.3}Editor formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu - J\IeC {\'a}n Pola\IeC {\v c}ek}{23}
-\contentsline {subsection}{\numberline {2.2.4}Editor mana\IeC {\v z}mentu rol\IeC {\'\i } a organiza\IeC {\v c}nej \IeC {\v s}trukt\IeC {\'u}ry- Kristi\IeC {\'a}n Stroka}{24}
-\contentsline {subsection}{\numberline {2.2.5}Procesn\IeC {\'y} server - Anna Demeterov\IeC {\'a}}{24}
-\contentsline {subsection}{\numberline {2.2.6}Server formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu- Jakub Kov\IeC {\'a}\IeC {\v c}ik}{25}
-\contentsline {subsection}{\numberline {2.2.7}Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{26}
-\contentsline {chapter}{Opis rie\IeC {\v s}enia - Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{27}
-\contentsline {section}{\numberline {3.1}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{27}
-\contentsline {section}{\numberline {3.2}N\IeC {\'a}vrh}{27}
-\contentsline {subsection}{\numberline {3.2.1}Popis architekt\IeC {\'u}ry}{28}
-\contentsline {subsubsection}{Prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k roliam}{28}
-\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{29}
-\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{29}
-\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{30}
-\contentsline {section}{\numberline {3.3}Implement\IeC {\'a}cia}{30}
-\contentsline {subsection}{\numberline {3.3.1}Modul na prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k rol\IeC {\'a}m}{30}
-\contentsline {subsubsection}{Priradenie a vyradenie viacer\IeC {\'y}ch pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov z role}{31}
-\contentsline {subsubsection}{Priradenie a vyradenie jednotlivca}{32}
-\contentsline {subsubsection}{Spr\IeC {\'a}va rol\IeC {\'\i } vo firme}{33}
-\contentsline {subsection}{\numberline {3.3.2}Ukladanie rol\IeC {\'\i } a referencii z editoru do datab\IeC {\'a}zy}{34}
-\contentsline {subsection}{\numberline {3.3.3}D\IeC {\'a}tov\IeC {\'y} model}{35}
-\contentsline {subsection}{\numberline {3.3.4}Pou\IeC {\v z}it\IeC {\'e} technol\IeC {\'o}gie}{38}
-\contentsline {section}{\numberline {3.4}Overenie rie\IeC {\v s}enia}{38}
-\contentsline {chapter}{Z\IeC {\'a}ver}{39}
+\contentsline {chapter}{Opis rie\IeC {\v s}enia - Workflow syst\IeC {\'e}m}{20}
+\contentsline {section}{\numberline {2.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek}{20}
+\contentsline {subsection}{\numberline {2.1.1}Z\IeC {\'a}kladn\IeC {\'y} opis aplik\IeC {\'a}cie}{20}
+\contentsline {subsection}{\numberline {2.1.2}Funkcia rol\IeC {\'\i } v aplik\IeC {\'a}cii}{20}
+\contentsline {subsection}{\numberline {2.1.3}Referencie}{22}
+\contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{23}
+\contentsline {subsection}{\numberline {2.2.1}Procesn\IeC {\'y} port\IeC {\'a}l - Martin Kov\IeC {\'a}\IeC {\v c}ik}{23}
+\contentsline {subsection}{\numberline {2.2.2}Procesn\IeC {\'y} editor - Tom\IeC {\'a}\IeC {\v s} Prieboj}{24}
+\contentsline {subsection}{\numberline {2.2.3}Editor formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu - J\IeC {\'a}n Pola\IeC {\v c}ek}{24}
+\contentsline {subsection}{\numberline {2.2.4}Editor mana\IeC {\v z}mentu rol\IeC {\'\i } a organiza\IeC {\v c}nej \IeC {\v s}trukt\IeC {\'u}ry- Kristi\IeC {\'a}n Stroka}{25}
+\contentsline {subsection}{\numberline {2.2.5}Procesn\IeC {\'y} server - Anna Demeterov\IeC {\'a}}{25}
+\contentsline {subsection}{\numberline {2.2.6}Server formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu- Jakub Kov\IeC {\'a}\IeC {\v c}ik}{26}
+\contentsline {subsection}{\numberline {2.2.7}Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{27}
+\contentsline {chapter}{Opis rie\IeC {\v s}enia - Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{28}
+\contentsline {section}{\numberline {3.1}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{28}
+\contentsline {section}{\numberline {3.2}N\IeC {\'a}vrh}{28}
+\contentsline {subsection}{\numberline {3.2.1}Popis architekt\IeC {\'u}ry}{29}
+\contentsline {subsubsection}{Prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k roliam}{29}
+\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{30}
+\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{31}
+\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{31}
+\contentsline {section}{\numberline {3.3}Implement\IeC {\'a}cia}{32}
+\contentsline {subsection}{\numberline {3.3.1}Modul na prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k rol\IeC {\'a}m}{32}
+\contentsline {subsubsection}{Priradenie a vyradenie viacer\IeC {\'y}ch pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov z role}{33}
+\contentsline {subsubsection}{Priradenie a vyradenie jednotlivca}{33}
+\contentsline {subsubsection}{Spr\IeC {\'a}va rol\IeC {\'\i } vo firme}{34}
+\contentsline {subsection}{\numberline {3.3.2}Ukladanie rol\IeC {\'\i } a referencii z editoru do datab\IeC {\'a}zy}{35}
+\contentsline {subsection}{\numberline {3.3.3}D\IeC {\'a}tov\IeC {\'y} model}{36}
+\contentsline {section}{\numberline {3.4}Mo\IeC {\v z}n\IeC {\'e} roz\IeC {\v s}\IeC {\'\i }renia}{38}
+\contentsline {section}{\numberline {3.5}Overenie rie\IeC {\v s}enia}{39}
+\contentsline {chapter}{Z\IeC {\'a}ver}{40}

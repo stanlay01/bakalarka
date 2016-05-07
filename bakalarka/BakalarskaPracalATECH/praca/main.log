@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  5 MAY 2016 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  6 MAY 2016 23:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -431,9 +431,6 @@ LaTeX Warning: Label `obr:cursus' multiply defined.
 LaTeX Warning: Label `obr:cursus' multiply defined.
 
 
-LaTeX Warning: Label `obr:cursus' multiply defined.
-
-
 LaTeX Warning: Label `fig:roles_permissions' multiply defined.
 
 
@@ -443,27 +440,23 @@ LaTeX Warning: Label `fig:server_roli_screen' multiply defined.
 LaTeX Warning: Label `fig:user_detail_screen' multiply defined.
 
 
-LaTeX Warning: Label `fig:Hlavn\IeC {\'e} tabu\IeC {\v l}ky pre pr\IeC {\'a}cu 
-s rolami' multiply defined.
-
-
 LaTeX Warning: Label `gabova_kniha' multiply defined.
 
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -518,20 +511,20 @@ LaTeX Font Info:    ... okay on input line 94.
 
 {C:/Users/palko/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 142.
+(Font)              <12> on input line 141.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 142.
+(Font)              <8> on input line 141.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 142.
+(Font)              <6> on input line 141.
 
 [2] <images/zadanie.pdf, id=12, 597.51233pt x 845.0471pt>
 File: images/zadanie.pdf Graphic file (type pdf)
 
 <use images/zadanie.pdf>
-Package pdftex.def Info: images/zadanie.pdf used on input line 184.
+Package pdftex.def Info: images/zadanie.pdf used on input line 183.
 (pdftex.def)             Requested size: 485.1222pt x 686.0962pt.
 
-Overfull \hbox (4.82378pt too wide) in paragraph at lines 184--185
+Overfull \hbox (4.82378pt too wide) in paragraph at lines 183--184
 [] [] 
  []
 
@@ -544,12 +537,12 @@ Overfull \hbox (4.82378pt too wide) in paragraph at lines 184--185
 \openout3 = `main.toc'.
 
  [7]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--280
+Underfull \hbox (badness 10000) in paragraph at lines 274--289
 
  []
 
@@ -560,13 +553,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--280
 \openout4 = `main.lof'.
 
  [10] (uvod.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
  [1
 
 
@@ -589,23 +582,14 @@ File: images/smerovacie_konstrukcie.png Graphic file (type png)
 <use images/smerovacie_konstrukcie.png>
 Package pdftex.def Info: images/smerovacie_konstrukcie.png used on input line 4
 9.
-(pdftex.def)             Requested size: 264.61333pt x 192.70442pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5] [6 <./images/smerovacie_konstrukcie.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 94--101
+(pdftex.def)             Requested size: 220.50887pt x 160.58527pt.
+ [5 <./images/smerovacie_konstrukcie.png>] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--125
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
 
  []
 
@@ -613,13 +597,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--125
 File: images/vojvoda.png Graphic file (type png)
 
 <use images/vojvoda.png>
-Package pdftex.def Info: images/vojvoda.png used on input line 137.
+Package pdftex.def Info: images/vojvoda.png used on input line 136.
 (pdftex.def)             Requested size: 176.40439pt x 107.17188pt.
  <images/vojvoda2.png, id=93, 504.284pt x 146.949pt>
 File: images/vojvoda2.png Graphic file (type png)
 
 <use images/vojvoda2.png>
-Package pdftex.def Info: images/vojvoda2.png used on input line 146.
+Package pdftex.def Info: images/vojvoda2.png used on input line 145.
 (pdftex.def)             Requested size: 396.91325pt x 115.66016pt.
 
 
@@ -629,83 +613,77 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/and.png Graphic file (type png)
 
 <use images/and.png>
-Package pdftex.def Info: images/and.png used on input line 175.
+Package pdftex.def Info: images/and.png used on input line 176.
 (pdftex.def)             Requested size: 308.71106pt x 89.49843pt.
- [9 <./images/vojvoda2.png>]
-<images/or.png, id=104, 455.301pt x 122.859pt>
-File: images/or.png Graphic file (type png)
- <use images/or.png>
-Package pdftex.def Info: images/or.png used on input line 181.
-(pdftex.def)             Requested size: 308.71106pt x 83.3049pt.
-
-<images/iteracia.png, id=105, 533.192pt x 109.208pt>
-File: images/iteracia.png Graphic file (type png)
- <use images/iteracia.png>
-Package pdftex.def Info: images/iteracia.png used on input line 187.
-(pdftex.def)             Requested size: 308.71106pt x 63.22902pt.
-
-[10 <./images/and.png> <./images/or.png> <./images/iteracia.png>] [11]
-Overfull \hbox (3.92062pt too wide) in paragraph at lines 218--219
-[]\T1/cmr/m/n/12 Bezpe£nos´ au-to-ri-zá-
- []
-
-[12] [13] <images/rbac012.png, id=121, 491.8375pt x 371.3875pt>
-File: images/rbac012.png Graphic file (type png)
-
-<use images/rbac012.png>
-Package pdftex.def Info: images/rbac012.png used on input line 281.
-(pdftex.def)             Requested size: 308.71106pt x 233.11398pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<images/or.png, id=100, 455.301pt x 122.859pt>
+File: images/or.png Graphic file (type png)
+ <use images/or.png>
+Package pdftex.def Info: images/or.png used on input line 183.
+(pdftex.def)             Requested size: 308.71106pt x 83.3049pt.
+ [9 <./images/vojvoda2.png>] <images/iteracia.png, id=105, 533.192pt x 109.208p
+t>
+File: images/iteracia.png Graphic file (type png)
+
+<use images/iteracia.png>
+Package pdftex.def Info: images/iteracia.png used on input line 190.
+(pdftex.def)             Requested size: 308.71106pt x 63.22902pt.
+ [10 <./images/and.png> <./images/or.png> <./images/iteracia.png>] [11]
+Overfull \hbox (3.92062pt too wide) in paragraph at lines 221--222
+[]\T1/cmr/m/n/12 Bezpe£nos´ au-to-ri-zá-
+ []
+
+[12] <images/belapadula.png, id=118, 401.5pt x 230.8625pt>
+File: images/belapadula.png Graphic file (type png)
+
+<use images/belapadula.png>
+Package pdftex.def Info: images/belapadula.png used on input line 242.
+(pdftex.def)             Requested size: 308.71106pt x 177.52159pt.
+ [13 <./images/belapadula.png>]
 <images/rbac_kuhn.png, id=122, 592.2125pt x 170.6375pt>
 File: images/rbac_kuhn.png Graphic file (type png)
 
 <use images/rbac_kuhn.png>
-Package pdftex.def Info: images/rbac_kuhn.png used on input line 293.
+Package pdftex.def Info: images/rbac_kuhn.png used on input line 264.
 (pdftex.def)             Requested size: 308.71106pt x 88.95331pt.
+ [14 <./images/rbac_kuhn.png (PNG copy)>]
+<images/rbac012.png, id=127, 491.8375pt x 371.3875pt>
+File: images/rbac012.png Graphic file (type png)
+ <use images/rbac012.png>
+Package pdftex.def Info: images/rbac012.png used on input line 294.
+(pdftex.def)             Requested size: 308.71106pt x 233.11398pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/rbac_kuhn_full.png, id=123, 732.7375pt x 240.9pt>
+[15 <./images/rbac012.png (PNG copy)>]
+<images/rbac_kuhn_full.png, id=131, 732.7375pt x 240.9pt>
 File: images/rbac_kuhn_full.png Graphic file (type png)
 
 <use images/rbac_kuhn_full.png>
-Package pdftex.def Info: images/rbac_kuhn_full.png used on input line 300.
+Package pdftex.def Info: images/rbac_kuhn_full.png used on input line 308.
 (pdftex.def)             Requested size: 308.71106pt x 101.49342pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14] <images/hierarchia_priklad.png, id=128, 341.275pt x 411.5375pt>
+<images/hierarchia_priklad.png, id=132, 341.275pt x 411.5375pt>
 File: images/hierarchia_priklad.png Graphic file (type png)
 
 <use images/hierarchia_priklad.png>
-Package pdftex.def Info: images/hierarchia_priklad.png used on input line 312.
+Package pdftex.def Info: images/hierarchia_priklad.png used on input line 320.
 (pdftex.def)             Requested size: 164.57562pt x 198.45662pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[15 <./images/rbac012.png (PNG copy)> <./images/rbac_kuhn.png (PNG copy)>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16 <./images/rbac_kuhn_full.png (PNG copy)> <./images/hierarchia_priklad.png (
-PNG copy)>] [17] <images/rbac_net_cash.png, id=138, 1174.3875pt x 721.69624pt>
+ [16 <./images/rbac_kuhn_full.png (PNG copy)> <./images/hierarchia_priklad.png 
+(PNG copy)>] [17] [18]
+<images/rbac_net_cash.png, id=142, 1174.3875pt x 721.69624pt>
 File: images/rbac_net_cash.png Graphic file (type png)
 
 <use images/rbac_net_cash.png>
-Package pdftex.def Info: images/rbac_net_cash.png used on input line 395.
+Package pdftex.def Info: images/rbac_net_cash.png used on input line 405.
 (pdftex.def)             Requested size: 264.61333pt x 162.6059pt.
-) (opis.tex [18 <./images/rbac_net_cash.png>]
+) (opis.tex [19 <./images/rbac_net_cash.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-<images/model_apk.png, id=142, 943.525pt x 682.55pt>
+<images/model_apk.png, id=146, 943.525pt x 682.55pt>
 File: images/model_apk.png Graphic file (type png)
 
 <use images/model_apk.png>
@@ -715,9 +693,9 @@ Package pdftex.def Info: images/model_apk.png used on input line 20.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19
+[20
 
-] <images/vyvoj_role.png, id=146, 973.6375pt x 287.0725pt>
+] <images/vyvoj_role.png, id=151, 973.6375pt x 287.0725pt>
 File: images/vyvoj_role.png Graphic file (type png)
 
 <use images/vyvoj_role.png>
@@ -728,40 +706,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-[20 <./images/model_apk.png (PNG copy)> <./images/vyvoj_role.png>]
+[21 <./images/model_apk.png> <./images/vyvoj_role.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-<images/referencia.png, id=151, 576.1525pt x 230.8625pt>
+<images/referencia.png, id=155, 576.1525pt x 230.8625pt>
 File: images/referencia.png Graphic file (type png)
 
 <use images/referencia.png>
 Package pdftex.def Info: images/referencia.png used on input line 52.
 (pdftex.def)             Requested size: 308.71106pt x 123.7022pt.
- [21 <./images/referencia.png>]
+ [22 <./images/referencia.png>]
 File: images/referencia.png Graphic file (type png)
 
 <use images/referencia.png>
 Package pdftex.def Info: images/referencia.png used on input line 62.
 (pdftex.def)             Requested size: 308.71106pt x 123.7022pt.
- [22] [23]
-<images/anicka.png, id=161, 1371.1225pt x 672.5125pt>
+ [23] [24]
+<images/anicka.png, id=165, 1371.1225pt x 672.5125pt>
 File: images/anicka.png Graphic file (type png)
  <use images/anicka.png>
 Package pdftex.def Info: images/anicka.png used on input line 129.
 (pdftex.def)             Requested size: 441.01773pt x 216.3064pt.
 
-[24] <images/kubko.png, id=165, 584.1825pt x 702.625pt>
+[25] <images/kubko.png, id=169, 584.1825pt x 702.625pt>
 File: images/kubko.png Graphic file (type png)
  <use images/kubko.png>
 Package pdftex.def Info: images/kubko.png used on input line 142.
 (pdftex.def)             Requested size: 308.71106pt x 371.31735pt.
 
-[25 <./images/anicka.png>]) (opisroli.tex [26 <./images/kubko.png (PNG copy)>]
-[27
+[26 <./images/anicka.png>]) (opisroli.tex [27 <./images/kubko.png (PNG copy)>]
+[28
 
-] <images/roles_in_petri_model.jpg, id=177, 762.85pt x 401.5pt>
+] <images/roles_in_petri_model.jpg, id=181, 762.85pt x 401.5pt>
 File: images/roles_in_petri_model.jpg Graphic file (type jpg)
 
 <use images/roles_in_petri_model.jpg>
@@ -773,45 +751,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[28 <./images/roles_in_petri_model.jpg>]
-<images/user_to_roles.png, id=181, 833.1125pt x 441.65pt>
+[29 <./images/roles_in_petri_model.jpg>]
+<images/user_to_roles.png, id=185, 833.1125pt x 441.65pt>
 File: images/user_to_roles.png Graphic file (type png)
 
 <use images/user_to_roles.png>
 Package pdftex.def Info: images/user_to_roles.png used on input line 32.
 (pdftex.def)             Requested size: 396.91325pt x 210.41264pt.
 
-<images/roles_permissions.png, id=182, 742.775pt x 301.125pt>
+<images/roles_permissions.png, id=186, 742.775pt x 301.125pt>
 File: images/roles_permissions.png Graphic file (type png)
 
 <use images/roles_permissions.png>
 Package pdftex.def Info: images/roles_permissions.png used on input line 49.
 (pdftex.def)             Requested size: 396.91325pt x 160.91418pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[29 <./images/user_to_roles.png (PNG copy)>]
-<images/formulare_opravnenia.png, id=186, 296.60812pt x 134.75343pt>
+ [30 <./images/user_to_roles.png>]
+<images/formulare_opravnenia.png, id=190, 296.60812pt x 134.75343pt>
 File: images/formulare_opravnenia.png Graphic file (type png)
 
 <use images/formulare_opravnenia.png>
 Package pdftex.def Info: images/formulare_opravnenia.png used on input line 77.
 
 (pdftex.def)             Requested size: 176.40439pt x 80.14536pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[30 <./images/roles_permissions.png (PNG copy)>]
-<images/server_roli_screen.png, id=190, 673.01437pt x 414.79968pt>
+ [31 <./images/roles_permissions.png (PNG copy)>] <images/server_roli_screen.pn
+g, id=194, 673.01437pt x 414.79968pt>
 File: images/server_roli_screen.png Graphic file (type png)
 
 <use images/server_roli_screen.png>
 Package pdftex.def Info: images/server_roli_screen.png used on input line 93.
 (pdftex.def)             Requested size: 396.91325pt x 244.62842pt.
-
-<images/role_actions_screen.png, id=191, 398.23781pt x 99.37125pt>
+ [32 <./images/formulare_opravnenia.png> <./images/server_roli_screen.png>]
+<images/role_actions_screen.png, id=201, 398.23781pt x 99.37125pt>
 File: images/role_actions_screen.png Graphic file (type png)
 
 <use images/role_actions_screen.png>
@@ -819,26 +789,25 @@ Package pdftex.def Info: images/role_actions_screen.png used on input line 103.
 
 (pdftex.def)             Requested size: 220.50887pt x 55.0228pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[31 <./images/formulare_opravnenia.png> <./images/server_roli_screen.png>]
-<images/user_detail_screen.png, id=197, 306.39468pt x 342.5297pt>
+<images/user_detail_screen.png, id=202, 306.39468pt x 342.5297pt>
 File: images/user_detail_screen.png Graphic file (type png)
 
 <use images/user_detail_screen.png>
 Package pdftex.def Info: images/user_detail_screen.png used on input line 113.
 (pdftex.def)             Requested size: 220.50887pt x 246.51665pt.
 
-<images/one_user_screen2.png, id=198, 657.95813pt x 78.2925pt>
+<images/one_user_screen2.png, id=203, 657.95813pt x 78.2925pt>
 File: images/one_user_screen2.png Graphic file (type png)
 
 <use images/one_user_screen2.png>
 Package pdftex.def Info: images/one_user_screen2.png used on input line 120.
 (pdftex.def)             Requested size: 441.01773pt x 52.47958pt.
- [32 <./images/role_actions_screen.png> <./images/user_detail_screen.png> <./im
-ages/one_user_screen2.png>]
-<images/firm_administration_screen.png, id=206, 302.63063pt x 350.05782pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33 <./images/role_actions_screen.png> <./images/user_detail_screen.png>]
+<images/firm_administration_screen.png, id=209, 302.63063pt x 350.05782pt>
 File: images/firm_administration_screen.png Graphic file (type png)
 
 <use images/firm_administration_screen.png>
@@ -859,94 +828,60 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 137.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 137.
- [33 <./images/firm_administration_screen.png>]
+ [34 <./images/one_user_screen2.png> <./images/firm_administration_screen.png>]
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
-)
-<images/roles_permissions_diagram.png, id=212, 447.92343pt x 453.19313pt>
+) [35]
+<images/roles_permissions_diagram.png, id=219, 447.92343pt x 453.19313pt>
 File: images/roles_permissions_diagram.png Graphic file (type png)
 
 <use images/roles_permissions_diagram.png>
 Package pdftex.def Info: images/roles_permissions_diagram.png used on input lin
 e 204.
 (pdftex.def)             Requested size: 308.71106pt x 312.35092pt.
- [34]
-<images/users_to_roles_diagram.png, id=216, 626.34pt x 481.8pt>
+
+<images/users_to_roles_diagram.png, id=220, 626.34pt x 481.8pt>
 File: images/users_to_roles_diagram.png Graphic file (type png)
 
 <use images/users_to_roles_diagram.png>
 Package pdftex.def Info: images/users_to_roles_diagram.png used on input line 2
-16.
+15.
 (pdftex.def)             Requested size: 441.01773pt x 339.25734pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+ [36 <./images/roles_permissions_diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
-[35 <./images/roles_permissions_diagram.png>]
-<images/database_diagram.png, id=221, 727.21687pt x 480.29437pt>
+<images/database_diagram.png, id=225, 727.21687pt x 480.29437pt>
 File: images/database_diagram.png Graphic file (type png)
 
 <use images/database_diagram.png>
-Package pdftex.def Info: images/database_diagram.png used on input line 223.
+Package pdftex.def Info: images/database_diagram.png used on input line 226.
 (pdftex.def)             Requested size: 441.01773pt x 291.27887pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/roles_table.png, id=222, 258.9675pt x 157.33781pt>
-File: images/roles_table.png Graphic file (type png)
-
-<use images/roles_table.png>
-Package pdftex.def Info: images/roles_table.png used on input line 232.
-(pdftex.def)             Requested size: 176.40439pt x 107.18034pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+ [37 <./images/users_to_roles_diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 232--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-[36 <./images/users_to_roles_diagram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
-
- []
-
-) (zaver.tex [37 <./images/database_diagram.png> <./images/roles_table.png>]
-[38]
+[38 <./images/database_diagram.png>]) (zaver.tex [39]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [39
+)) [40
 
-]
-(main.bbl [40
+] (main.bbl
+[41
 
 
 
-]) [41] [42
+]) [42] [43
 
 ] (main.aux)
 
@@ -954,13 +889,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5148 strings out of 493634
- 68399 string characters out of 3141314
- 211013 words of memory out of 3000000
- 8408 multiletter control sequences out of 15000+200000
+ 5149 strings out of 493634
+ 68408 string characters out of 3141314
+ 210218 words of memory out of 3000000
+ 8409 multiletter control sequences out of 15000+200000
  17254 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 28i,11n,51p,1609b,1633s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,11n,51p,1594b,2174s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ectt1200.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ecrm1000.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
@@ -980,9 +915,9 @@ ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (53 pages, 986354 bytes).
+Output written on main.pdf (54 pages, 989610 bytes).
 PDF statistics:
- 811 PDF objects out of 1000 (max. 8388607)
+ 817 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,10 +10,7 @@
 \usepackage{tabularx}
 \usepackage{fancyhdr}
 \usepackage{float}
-
-
 \usepackage{color}
-
 
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -85,9 +82,11 @@ literate=
 
 %moje funkcie 
 \newcommand{\mychapter}[2]{
+	\stepcounter{chapter}
 	\setcounter{chapter}{#1}
 	\setcounter{section}{0}
 	\chapter*{#2}
+	\markboth{chapter name}{}
 	\addcontentsline{toc}{chapter}{#2}
 }
 
@@ -275,6 +274,16 @@ Slovak language).
 \noindent
 WFMS – Workflow management system\\
 RBAC – Role-based access control\\
+MVC\\
+DAC\\
+MAC\\
+WF-sieť\\
+ACL\\
+NIST\\
+MLS\\
+SVG\\
+XML\\
+JSON\\
 CSS - Cascading Style Sheets\\
 XML - Extensible Markup Language\\
 

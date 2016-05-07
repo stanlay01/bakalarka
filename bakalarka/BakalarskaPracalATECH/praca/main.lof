@@ -1,35 +1,35 @@
 \select@language {slovak}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces smerovacie kon\IeC {\v s}trukcie}}{6}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces smerovacie kon\IeC {\v s}trukcie}}{5}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Petriho sie\IeC {\v t} na ''vytvorenie'' vody}}{8}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Spustenie siete s jedn\IeC {\'y}m \IeC {\v z}et\IeC {\'o}nom v mieste ''O'' a troma \IeC {\v z}et\IeC {\'o}nmi v mieste ''H''}}{9}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces and}}{10}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces or}}{10}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces sekvencne a itera\IeC {\v c}n\IeC {\'e}}}{10}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Framework RBAC96 pod\IeC {\v l}a Sandhu a spol.}}{15}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Vz\IeC {\v t}ahy RBAC pod\IeC {\v l}a \cite {kuhn}}}{15}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Roz\IeC {\v s}\IeC {\'\i }ren\IeC {\'e} vz\IeC {\v t}ahy RBAC pod\IeC {\v l}a \cite {kuhn}}}{16}
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Pr\IeC {\'\i }klad hierarchie rol}}{16}
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Ekonomick\IeC {\'a} n\IeC {\'a}vratnos\IeC {\v t} RBAC pod\IeC {\v l}a \cite {ekonomika}}}{18}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Model wokflow syst\IeC {\'e}mu}}{20}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Pr\IeC {\'\i }klad priradenia rol\IeC {\'\i } k prechodom (vytvorenie novej aplik\IeC {\'a}cie zjednodu\IeC {\v s}ene)}}{20}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Referencia na prechod}}{21}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Referencia na prechod}}{22}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Procesn\IeC {\'y} port\IeC {\'a}l}}{23}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Procesn\IeC {\'y} editor}}{23}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces editor formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu}}{24}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Editor mana\IeC {\v z}mentu rol\IeC {\'\i } a organiza\IeC {\v c}nej \IeC {\v s}trukt\IeC {\'u}ry}}{24}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Procesn\IeC {\'y} server}}{25}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Server formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu- Jakub Kov\IeC {\'a}\IeC {\v c}ik}}{26}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Model RBAC v aplik\IeC {\'a}cii}}{28}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Mapovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov na roly vo firme}}{29}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Pr\IeC {\'a}vomoci rol\IeC {\'\i } v sieti }}{30}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Pr\IeC {\'a}vomoci definovan\IeC {\'e} v prechodoch }}{31}
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Pride\IeC {\v l}ovanie }}{31}
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Pride\IeC {\v l}ovanie }}{32}
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Spr\IeC {\'a}va rol\IeC {\'\i } pre konkr\IeC {\'e}tneho pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}a }}{32}
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Vymazanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}a priamo z tabu\IeC {\v l}ky }}{32}
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Administr\IeC {\'a}cia rol\IeC {\'\i } vo firme }}{33}
-\contentsline {figure}{\numberline {3.31}{\ignorespaces Priradenie pr\IeC {\'a}vomoc\IeC {\'\i } rol\IeC {\'a}m }}{35}
-\contentsline {figure}{\numberline {3.32}{\ignorespaces Priradenie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov do rol vo firm\IeC {\'a}ch }}{36}
-\contentsline {figure}{\numberline {3.33}{\ignorespaces Hlavn\IeC {\'e} tabu\IeC {\v l}ky pre pr\IeC {\'a}cu s rolami }}{37}
-\contentsline {figure}{\numberline {3.34}{\ignorespaces Hlavn\IeC {\'e} tabu\IeC {\v l}ky pre pr\IeC {\'a}cu s rolami }}{37}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces model Bell-LaPadula}}{13}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Vz\IeC {\v t}ahy RBAC pod\IeC {\v l}a \cite {kuhn}}}{14}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Framework RBAC96 pod\IeC {\v l}a Sandhu a spol. \cite {sandhu96}}}{15}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Roz\IeC {\v s}\IeC {\'\i }ren\IeC {\'e} vz\IeC {\v t}ahy RBAC pod\IeC {\v l}a \cite {kuhn}}}{16}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Pr\IeC {\'\i }klad hierarchie rol}}{16}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Ekonomick\IeC {\'a} n\IeC {\'a}vratnos\IeC {\v t} RBAC pod\IeC {\v l}a \cite {ekonomika}}}{19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Model wokflow syst\IeC {\'e}mu}}{21}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Pr\IeC {\'\i }klad priradenia rol\IeC {\'\i } k prechodom (vytvorenie novej aplik\IeC {\'a}cie zjednodu\IeC {\v s}ene)}}{21}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Referencia na prechod}}{22}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Referencia na prechod}}{23}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Procesn\IeC {\'y} port\IeC {\'a}l}}{24}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Procesn\IeC {\'y} editor}}{24}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces editor formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu}}{25}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Editor mana\IeC {\v z}mentu rol\IeC {\'\i } a organiza\IeC {\v c}nej \IeC {\v s}trukt\IeC {\'u}ry}}{25}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Procesn\IeC {\'y} server}}{26}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Server formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu- Jakub Kov\IeC {\'a}\IeC {\v c}ik}}{27}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Model RBAC v aplik\IeC {\'a}cii}}{29}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Mapovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov na roly vo firme}}{30}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Pr\IeC {\'a}vomoci rol\IeC {\'\i } v sieti }}{31}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Pr\IeC {\'a}vomoci definovan\IeC {\'e} v prechodoch }}{32}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Pride\IeC {\v l}ovanie }}{32}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Pride\IeC {\v l}ovanie }}{33}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Spr\IeC {\'a}va rol\IeC {\'\i } pre konkr\IeC {\'e}tneho pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}a }}{33}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Vymazanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}a priamo z tabu\IeC {\v l}ky }}{34}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Administr\IeC {\'a}cia rol\IeC {\'\i } vo firme }}{34}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Priradenie pr\IeC {\'a}vomoc\IeC {\'\i } rol\IeC {\'a}m }}{36}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Priradenie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov do rol vo firm\IeC {\'a}ch }}{37}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Hlavn\IeC {\'e} tabu\IeC {\v l}ky pre pr\IeC {\'a}cu s rolami }}{38}

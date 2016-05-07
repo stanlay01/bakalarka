@@ -1,6 +1,6 @@
 \mychapter{1}{Analýza}
 
-V biznis sektore je neustála potreba monitorovať a kontrolovať firemné procesy. Čím je podniková štruktúra hlbšia, procesy komplexnejšie a narastá počet zamestnancov, tým stúpa náročnosť riadenia a manažmentu podniku. Komplexné projekty sú len zriedkavo vypracované podľa pôvodného časového plánu. Toto meškanie je často spôsobené zlou koordináciou pracovných procesov. Vo firemných  procesoch jednotlivé úlohy za sebou nasledujú v určitom poradí, ktoré musí byť prísne dodržané. Aj meškanie drobnej úlohy dokáže dominovým efektom zastaviť vykonanie nasledovných úloh. V konečnom dôsledku tak malé zaváhanie môže spôsobiť obrovské oneskorenie a finančné straty.   Vzniká tak potreba jasne vymedziť jednotlivé kroky práce a minimalizovať administráciu a možné chyby. Riešenie tohto problému je možné riešiť využitím Workflow management systémov (ďalej WfMS) .  WfMS ponúkajú možnosť explicitne zadefinovať firemné procesy, pričom dokážu automaticky zabezpečiť správnosť vykonávania jednotlivých úloh v korektnom poradí. Vo firemnom prostredí tak nastane poriadok a zjednoduší sa administrácia. Hlavnou nevýhodou WfMS sú náklady na samotnú implementáciu. Väčšina WfMS sa vyvíja pre potreby konkrétneho podniku, pričom náklady na ich naprogramovanie presahujú finančnú spôsobilosť stredných a drobných firiem. Na trhu sa tak objavujú generické WfMS systémy, ktoré dokážu zabezpečiť využívanie procesov viacerými organizáciami súčasne. 
+V biznis sektore je neustála potreba monitorovať a kontrolovať firemné procesy. Čím je podniková štruktúra hlbšia, procesy komplexnejšie a narastá počet zamestnancov, tým stúpa náročnosť riadenia a manažmentu podniku. Komplexné projekty sú len zriedkavo vypracované podľa pôvodného časového plánu. Toto meškanie je často spôsobené zlou koordináciou pracovných procesov. Vo firemných  procesoch jednotlivé úlohy za sebou nasledujú v určitom poradí, ktoré musí byť prísne dodržané. Aj meškanie drobnej úlohy dokáže dominovým efektom zastaviť vykonanie nasledovných úloh. V konečnom dôsledku tak malé zaváhanie môže spôsobiť obrovské oneskorenie a finančné straty.   Vzniká tak potreba jasne vymedziť jednotlivé kroky práce a minimalizovať administráciu a možné chyby. Riešenie tohto problému je možné riešiť využitím Workflow management systémov.  WfMS ponúkajú možnosť explicitne zadefinovať firemné procesy, pričom dokážu automaticky zabezpečiť správnosť vykonávania jednotlivých úloh v korektnom poradí. Vo firemnom prostredí tak nastane poriadok a zjednoduší sa administrácia. Hlavnou nevýhodou WfMS sú náklady na samotnú implementáciu. Väčšina WfMS sa vyvíja pre potreby konkrétneho podniku, pričom náklady na ich naprogramovanie presahujú finančnú spôsobilosť stredných a drobných firiem. Na trhu sa tak objavujú generické WfMS systémy, ktoré dokážu zabezpečiť využívanie procesov viacerými organizáciami súčasne. 
 
 Možným nástrojom na implementovanie WfMS sa naskytuje použitie Petriho sietí. Petriho siete sú jasne formálne a matematicky definované, pričom ich modelovanie je jednoduché a intuitívne. Medzi hlavné výhody môžeme považovať grafické znázornenie, ktoré uľahčuje pochopenie princípov a fungovania tohto modelu. Ak pripojíme fakt, že adaptácia Petriho sietí na WfMS nie je komplikovaná , môžeme tak Petriho siete považovať za vhodný nástroj na modelovanie WfMS. 
 
@@ -26,18 +26,18 @@ Spôsob vykonávania jednotlivých úloh (pracovných jednotiek) v prípade  je 
 Každý prípad vo WfMS má svoj začiatok a koniec. Medzitým sa proces nachádza v určitom stave, ktorý je definovaný prostredníctvom:
 \begin{itemize}
 	\item architektúry daného prípadu - určuje nám ako sa môže daný prípad vyvíjať. 
-	\item doposiaľ splnených podmienok - zistíme tak aktuálnu "polohu", v akej sa daný prípad nachádza 
+	\item doposiaľ splnených podmienok - zistíme tak aktuálnu \glqq polohu\grqq, v akej sa daný prípad nachádza 
 	\item hodnoty atribútov v danom prípade - atribúty nám definujú isté podmienky. Predstavme si prípad šetrenia peňazí do pokladničky. Do pokladničky budeme vkladať peniaze, dokiaľ suma v pokladničke nepresiahne určitú hodnotu. V našom prípade sú atribútom peniaze
 \end{itemize}
 
 \subsection{Úloha}
-Úloha je základnou logickou jednotkou workflow systému. Ako taká je nedeliteľná a v systéme sa musí vždy vykonať ako celok. V prípade neúspechu úlohy tak treba úlohu spustiť celú odznova. Je však možné rozlišovať medzi spustením a ukončením úlohy. 
+Úloha je základnou logickou jednotkou workflow systému. Definuje nám, čo treba vykonať aby sa prípad posunul.Ako taká je nedeliteľná a v systéme sa musí vždy vykonať ako celok. V prípade neúspechu úlohy tak treba úlohu spustiť celú odznova. Je však možné rozlišovať medzi spustením a ukončením úlohy. 
 
 \subsection{Proces}
 Proces definuje spôsob, akým sa vykonajú určité úlohy v konkrétnom prípade. Proces môže byť vo viacerých prípadoch rovnaký  ale môže sa takisto odlišovať. Tieto odlišnosti v procese môžu byť napríklad spôsobené smerovacími konštrukciami, za pomoci ktorých je prípad namodelovaný. V prípade vybavovanie pôžičky môže byť žiadosť pre Ferka zamietnutá, zatiaľ čo taká istá žiadosť bude pre Janka schválená.
 
 \subsection{Smerovacie konštrukcie}
-	Postupnosť vykonávania  úloh v systéme je určená na základe smerovania prípadu. V jednotlivých vetvách určujeme pre každú úlohu smerovacie konštrukcie, čím umožňujeme vytvoriť  pre prípad odlišné životné cykly. Využívame štyri základné: 
+	Postupnosť vykonávania  úloh v systéme je určená na základe smerovania prípadu. V jednotlivých vetvách určujeme pre každú úlohu smerovacie konštrukcie, čím umožňujeme vytvoriť  pre prípad odlišné životné cykly. Využívame štyri základné :  (obrázok \ref{obr:smerovacie_konstrukcie_WfMS} )
 \begin{itemize}
 	\item sekvenčné - úlohy sa vykonávajú za sebou v poradí,v akom nasledujú
 	\item paralelné – úlohy sa vykonávajú paralelne nezávisle na sebe za pomoci AND-splitov a AND-joinov.
@@ -45,29 +45,29 @@ Proces definuje spôsob, akým sa vykonajú určité úlohy v konkrétnom prípa
 	\item iteračné- vykonanie jednej alebo viacerých úloh viackrát za sebou
 \end{itemize}
 
-\begin{figure}[h]
-	\centerline{\includegraphics[width=0.6\textwidth]{images/smerovacie_konstrukcie}}
+\begin{figure}[H]
+	\centerline{\includegraphics[width=0.5\textwidth]{images/smerovacie_konstrukcie}}
 	\caption[smerovacie konštrukcie]{Smerovacie konštrukcie vo workflow systémoch podľa \cite{workflow_systemy}}
-	\label{obr:cursus}
+	\label{obr:smerovacie_konstrukcie_WfMS}
 \end{figure}
 
 %
 \subsection{Výhody použitia WfMS}
-Workflow management systém ponúka možnosť oddeliť procesnú časť, čím sa zabezpečia nasledovné výhody:
+Workflow management systém ponúka možnosť oddeliť procesnú časť. Podľa \cite{workflow_vyhody} sa tým zabezpečia nasledovné výhody:
 \begin{itemize}
-	\item zabezpečí sa tak jednotná funkcionalita manažmentu a oddelí sa od zvyšku systému. Tradične sa táto funkcionalita rozprestiera v celom systéme. Vďaka tejto separácii je možné rovnakú funkcionalitu použiť na viac ako jednu úlohu.
+	\item zabezpečí sa tak jednotná funkcionalita manažmentu a oddelí sa od zvyšku systému. Tradične sa táto funkcionalita rozprestiera v celom systéme. Vďaka tejto separácii je možné rovnakú funkcionalitu použiť na viac ako jeden proces.
 	\item aplikácie sú nezávislé od manažmentu , čo umožňuje upravovať logiku aj po implementovaní systému
 	\item k logickej vrstve je možné pridávať rôzne aplikácie a rozšíriť tak funkcionalitu systému
 	\item definovanie a návrh procesu je možné diagnostikovať a vopred tak zabrániť nežiaducim chybám
-	\item z pohľadu manažmentu je možné v konkrétnom prípade identifikovať, v akom stave sa prípad nachádza. Celý proces sa tak ľahšie monitoruje. Dá sa zistiť, kto má v danom prípade a čase čo vykonávať. Celé vykonávanie procesu je pod drobnohľadom, čím sa urýchli čas vykonania celého procesu. V prípade problému vo vykonávaní prípadu, je možné rýchlo identifikovať zdroj
+	\item z pohľadu manažmentu je možné v konkrétnom prípade identifikovať, v akom stave sa prípad nachádza. Celý proces sa tak ľahšie monitoruje. Dá sa zistiť, kto má v danom prípade a čase čo vykonávať. Celé vykonávanie procesu je pod drobnohľadom, čím sa urýchli čas vykonania celého procesu. V prípade problému vo vykonávaní prípadu, je možné rýchlo identifikovať zdroj.
 	
 \end{itemize}
 
 \subsection{Riadenie zrojov vo WfMS}
-Pod pojmom zdroj rozumieme jednotku, ktorá je určená na vykonávanie úlohy. Môžme si pod tým predstaviť počítač (server, tlačiareň, fax ... ) alebo človeka ako pracovnú jednotku. V biznis prostredí väčšinu zdrojov tvoria jednotliví pracovníci a zákazníci, nie je to však pravidlo.
+Pod pojmom zdroj rozumieme jednotku, ktorá je určená na vykonávanie úlohy. Môžme si pod tým predstaviť počítač (server, tlačiareň, fax ... ) alebo samotného človeka. V biznis prostredí väčšinu zdrojov tvoria jednotliví pracovníci a zákazníci. Nie je to však pravidlo.
 
 Jednotlivé zdroje sa môžu zoskupovať do skupín s podobnou charakteristikou. Ak majú rovnakú funkcionálnu charakteristiku, nazývame túto skupinu rola.
-Ako príklad roly si môžeme predstaviť akúkoľvek pracovnú pozíciu a pod samotnými pracovnými zdrojmi samotného zamestnanca. Pridelenie právomocí zdrojom sa udeľuje nepriamo pomocou rol. Týmto spôsobom sa oddelí návrh procesu od jednotlivých používateľov. Taktiež sa tým uľahčí administrácia a zabráni sa deadlockom. Ak by sme totiž priradili úlohu ku konkrétnemu zdroju, nastali by problémy po vymazaní daného zdroja a samotný proces by nebolo možné ukončiť.
+Ako príklad roly si môžeme predstaviť akúkoľvek pracovnú pozíciu a pod samotnými pracovnými zdrojmi samotného zamestnanca. Pridelenie právomocí zdrojom sa udeľuje nepriamo pomocou rol. Týmto spôsobom sa oddelí návrh procesu od jednotlivých používateľov. Taktiež sa tým uľahčí administrácia a zabráni sa deadlockom.
 
 
 %---------------------------------- Koniec sekcie Workflow management systém ----------------------------------------
@@ -90,31 +90,29 @@ Ako príklad roly si môžeme predstaviť akúkoľvek pracovnú pozíciu a pod s
 Petriho siete vymyslel nemecký matematik Carl Adam Petri už ako 13 ročný na modelovanie chemických procesov. Neskôr ich popísal vo svojej dizertačnej práci "Communication with Automata" \cite{petri} v roku 1962. Časom sa však Petriho siete menili a dopĺňali. Dnes už podľa \cite{gabova_kniha} poznáme viacero definícii Petriho sietí. 
 
 
-\subsection{Všeobecná definícia Petriho siete}
-Petriho sieť je podľa 
-\cite{desel}
- zvláštny typ orientovaného grafu spolu so začiatočným stavom (začiatočným značkovaním) - PN = ( $N, M_{0}$ ). 
+\subsection{Definícia Petriho siete}
+Petriho sieť je podľa  \cite{desel} zvláštny typ orientovaného grafu spolu so začiatočným stavom (začiatočným značkovaním) - PN = ( $N, M_{0}$ ). 
 Obsahuje dva typy uzlov nazývanými: \emph{place}  (miesto) a \emph{transition} (prechod). Tieto uzly môžu byť spolu prepojené prostredníctvom orientovanej hrany (arc). Spojenie medzi dvoma uzlami rovnakého typu nie je povolené.
-\\
-\\
-Graf Petriho siete obsahuje: 
 \begin{itemize}
 	\item miesta - označované krúžkom 
 	\item prechody - označené obdĺžnikom
 	\item hrany - spájajú jednotlivé uzly. Hrany môžu mať určitú násobnosť. Poznáme tieto typy hrán: 
-		\begin{itemize}
-			\item hrana z miesta do prechodu
-			\item hrana z prechodu do miesta
-		\end{itemize}
+	\begin{itemize}
+		\item hrana z miesta do prechodu
+		\item hrana z prechodu do miesta
+	\end{itemize}
 	\item váha hrany - reprezentuje násobnosť hrany
 	\item značkovanie - priraďuje každému miestu počet značiek (tokenov) - m-rozmerný vektor nezáporných celých M, M(p)- počet značiek v mieste p 
 \end{itemize}
+
+
+
 
 \subsubsection*{Formálna definícia}
 Pre formálne opísanie Petriho sietí použijeme definíciu z \cite{Modelovacie_formalizmy}
 
 .\\
-	Petriho sieť je orientovaný bipartitný graf reprezentovaný päticou (P,T,F,W,m$_{0}$), kde:\\
+Petriho sieť je orientovaný bipartitný graf reprezentovaný päticou (P,T,F,W,m$_{0}$), kde:\\
 \begin{quotation}
 	\noindent P = \{$ p_{1}, ... ,p_{n}$ \} - konečná neprázdna množina miest;\\
 	T = \{$ t_{1}, ... ,t_{n}$ \} - konečná neprázdna množina prechodov;\\
@@ -129,6 +127,7 @@ Pre formálne opísanie Petriho sietí použijeme definíciu z \cite{Modelovacie
 	\item Prechod je aktivovaný , ak každé z jeho vstupných miest obsahuje aspoň w(p,t) značiek
 	\item Spustenie prechodu t spôsobí zrušenie w(p,t) značiek v každom vstupnom mieste p prechodu t a pridanie w(t,p) značiek do každého výstupného miesta p prechodu t;	
 \end{enumerate}
+
 
 \subsection{Príklad}
 Na obrázku \ref{obr:voda} môžeme vidieť jednoduchú Petriho sieť ktorá znázorňuje spojenie dvoch prvkov vodíka a kyslíka na vytvorenie vody. Máme tri miesta. Dve z nich nám predstavujú jednotlivé prvky a tretie predstavuje molekulu vody H$_{2} $0. Medzi nimi je prechod ktorý v tejto sieti znázorňuje spojenie dvoch prvkov do jednej molekuly. Medzi miestom O a prechodom máme jednoduchú hranu, zatiaľ čo z miesta H do prechodu máme hranu násobnosti dva. Jednotlivé násobnosti znázorňujú, koľko tokenov (prvkov) treba skonzumovať z každého miesta, aby bolo možné prechod spustiť. Na druhej strane vidíme jednoduchú hranu z prechodu do miesta  H$_{2} $0, ktorá nám značí, že po skonzumovaní značiek z miest O a H sa vytvorí práve jedna značka v mieste H$_{2} $0 (vyprodukuje sa práve jedna molekula ). 
@@ -152,7 +151,7 @@ Pre spustenie tohto procesu je potrebné aby bola v mieste ''O'' minimálne jedn
 
 
 
-\subsection{Implementovanie Petriho sietí na workflow management systém}
+\subsection{Implementovanie Petriho sietí na Workflow management systém}
 \label{kap:teoria_petriho_siete_na_workflow}
 V minulosti sa objavilo niekoľko systémov , ktoré sa snažili implementovať WfMS, ale po čase narazili na problémy, lebo ich architektúra nespĺňala náležité požiadavky. Mnohé z nich nedokázali súčasne implementovať paralelné a alternatívne smerovanie, ostatné narazili na problémy, keď ich aplikácia modelovala WfMS len pomocou udalostí (pri vykonaní úlohy sa systém nedostal do určitého stavu, ale na udalosť nasledovalo okamžité spustenie ďalšej udalosti).
 W.M.P. van der Aalst v \cite{workflow_vyhody}
@@ -164,25 +163,29 @@ vysvetlil 3 hlavné výhody použitia Petriho sietí na modelovanie workflow man
 \end{itemize}
 
 Mapovanie WfMS na Petriho siete je možné ľahko ukázať. Úlohy sú mapované na prechody. Závislosti sa mapujú prostredníctvom miest a hrán. Jednotlivé prípady môžu byť odlíšené rôznou farbou tokenov v rozšírených Petriho sieťach. Stav, v akom sa prípad nachádza definuje rozloženie tokenov
-Petriho sieť, ktorá modeluje WfMS sa nazýva WorkFlow sieť (WF-sieť). Aby Petriho sieť bola súčasne WF-sieťou, musí spĺnať tieto podmienky
+Petriho sieť, ktorá modeluje WfMS sa nazýva WorkFlow sieť (WF-sieť). Aby Petriho sieť bola súčasne WF-sieťou, musí podľa \cite{workflow_systemy} spĺňať tieto podmienky
 \begin{itemize}
-	\item PN má dve špeciálne miesta: miesto ''I'' a miesto ''O'', ktoré reprezentujú počiatočný a koncový stav 
-	\item  ak pridáme prechod ''t'' do PN , ktorý spája miesto ''I'' a ''O'', potom je PN silno spojená. To znamená, že pre každý pár uzlov X a Y  existuje priama cesta od X do Y. 
+	\item PN má dve špeciálne miesta: miesto I a miesto O, ktoré reprezentujú počiatočný a koncový stav 
+	\item  ak pridáme prechod t do PN , ktorý spája miesto I a O, potom je PN silno spojená. To znamená, že pre každý pár uzlov X a Y  existuje priama cesta od X do Y. 
 \end{itemize}
 
 \subsubsection{Smerovacie konštrukcie}
+
+Smerovacia konštrukcia AND sa rozvetví prostredníctvom prechodu, ktorý smeruje do viacerých nezávislých miest a na konci sa rovnaký počet miest spojí do koncového prechodu (AND-join )
 \begin{figure}[h]
 	\centerline{\includegraphics[width=0.7\textwidth]{images/and}}
 	\caption[and]{AND konštrukcia v Petriho sieti}
 	\label{obr:cursus}
 \end{figure}
 
+Smerovacia konštrukcia OR funguje opačne. Pre rozvetvenie (OR-split) sa použije spojenie spojenie jedného miesta s viacerými prechodmi , pričom jednotlivé vetvy sa následne spoja prostredníctvom prechodov do miesta.
 \begin{figure}[h]
 	\centerline{\includegraphics[width=0.7\textwidth]{images/or}}
 	\caption[or]{OR konštrukcia v Petriho sieti}
 	\label{obr:cursus}
 \end{figure}
 
+Ako sekvenčné smerovanie sa používa jednoduché striedanie miest a prechodov, pokiaľ sa chceme v procese vrátiť spať a použiť iteračné smerovanie, vytvoríme spojenie prostredníctvom jedného prechodu medzi miestom, v ktorom sa chceme vrátiť a miestom do ktorého sa chceme vrátiť. 
 \begin{figure}[h]
 	\centerline{\includegraphics[width=0.7\textwidth]{images/iteracia}}
 	\caption[sekvencne a iteračné]{Iteračné (vľavo) a sekvenčné(vpravo) konštrukcie v Petriho sieti}
@@ -211,9 +214,9 @@ V nasledovnej sekcii rozoberieme princíp a pravidlá riadenia prístupu podľa 
 V roku 1975 Salzer a Schroeder \cite{saltzer} popísali ochranné mechanizmy, ktoré musí dobrý dizajn prístupových práv obsahovať. V skutočnosti však niektoré z nich siahajú do 19-teho storočia, kedy ich popísal Auguste Kerchoffs. 
 
 \begin{description}
-	\item[Minimálne oprávnenia] : Hlavnou požiadavkou autorizácie je potreba vymedziť používateľovi minimálne oprávnenia, teda také, ktoré mu vymedzia prístup iba k úlohám, ktoré potrebuje na vykonávanie svojej práce. Tým sa predíde problémom, kedy jednotlivý používateľ môže svojou aktivitou vykonať nežiaduce operácie. Je potrebné si uvedomiť, že že práva používateľa sa môžu meniť v závislosti od  času, úlohy alebo samotnej funkcie. 
-	\item[Jednoduchosť mechanizmu] Dizajn by mal byť dostatočne zrozumiteľný , aby bolo možné dokázať jeho správne fungovanie. Taktiež by mal byť dostatočne jednoduchý, aby prípadné bolo možné chyby ľahko identifikovať a opraviť.
-	\item[Protiporuchové princípy] Prístupové oprávnenia by mali byť založené na inklúzii. Subjekt má mať explicitne definované práva. Na začiatku by mali byť jeho práva k objektu nulové. Tento princíp zabezpečí v prípade poruchy mechanizmu, aby bol zamietnutý prístup oprávnenému ako aj neoprávnenému prístupu. 
+	\item[Minimálne oprávnenia] : Hlavnou požiadavkou autorizácie je potreba vymedziť používateľovi minimálne oprávnenia, teda také, ktoré mu vymedzia prístup iba k úlohám, ktoré potrebuje na vykonávanie svojej práce. Tým sa predíde problémom, kedy jednotlivý používateľ môže svojou aktivitou vykonať nežiaduce operácie. Je potrebné si uvedomiť, že práva používateľa sa môžu meniť v závislosti od  času, úlohy alebo samotnej operácie. 
+	\item[Jednoduchosť mechanizmu] Dizajn by mal byť dostatočne zrozumiteľný , aby bolo možné dokázať jeho správne fungovanie. Taktiež by mal byť dostatočne jednoduchý, aby  bolo možné prípadné chyby ľahko identifikovať a opraviť.
+	\item[Protiporuchové princípy] Prístupové oprávnenia by mali byť založené na inklúzii. Subjekt má mať explicitne definované práva . Na začiatku by mali byť jeho práva k objektu nulové. Systém teda priraďuje právomoci len subjektom, ktoré majú priamo zadefinované prístupové práva. Tento princíp zabezpečí v prípade poruchy mechanizmu, aby bol zamietnutý prístup oprávnenému ako aj neoprávnenému prístupu. 
 	\item[Pravidelná autorizácia] Každá požiadavka na prístup k objektu by mala požadovať autorizáciu subjektu. Žiadne ukladanie výsledkov prístupu by nemalo byť povolené.
 	\item[Verejne známy príncíp autorizácie (Kerckhoffov princíp)] Bezpečnosť autorizácie by nemala závisieť od utajenia princípu. Ak je dizajn správny, jeho odhalenie by nemalo narušiť bezpečnosť.
 	\item[Oddelenie právomocí] Ak je to možné, ochranný mechanizmus by mal závisieť od čo najviac nezávislých podmienok. Príkladom môže byť vyžiadanie spolupráce dvoch nezávislých entít. 
@@ -228,14 +231,18 @@ V roku 1975 Salzer a Schroeder \cite{saltzer} popísali ochranné mechanizmy, kt
 %Bedford, MA, March–December 1973.
 \subsection{Model Bell-LaPadula} 
 V 70-tych rokoch vznikla potreba formálne popísať model, ktorý bude spĺňať bezpečnostné požiadavky pre potreby viacúrovňovej bezpečnostnej politiky pre Ministerstvo Obrany USA.
-V roku 1973 tak vznikol model Bell-LaPadula \cite{bell-lapadula} . Princíp tohto modelu je jednoduchý  a matematicky jasne zadefinovaný. Určuje 3 pravidlá: 
+V roku 1973 tak vznikol model Bell-LaPadula \cite{bell-lapadula} (obrázok \ref{obr:belapadula}). Princíp tohto modelu je jednoduchý  a matematicky jasne zadefinovaný. Určuje 3 pravidlá: 
 \begin{enumerate}
 	\item Prvé pravidlo definuje,že subjekt nesmie čítať dokumenty, pokiaľ pre ne nedosahuje dostatočnú úroveň bezpečnostnej klasifikácie. Používateľ teda nie je oprávnený čítať dokumenty, ktoré majú vyššiu úroveň bezpečnosti. Napríklad používateľ s klasifikáciou  \emph{secret} môže čítať súbory s bezpečnosťou \emph{secret} a  \emph{regular}, ale nesmie čítať dokumenty s úrovňou  \emph{Top secret}
-	\item Druhé pravidlo definuje, že subjekt nie je oprávnený zapisovať do objektov s nižšou úrovňou bezpečnosti. Toto pravidlo zabezpečuje aby nebolo možné neúmyselne kompromitovať informácie do nižšej bezpečnostnej úrovne. Naopak zapisovanie do vyššej úrovne bezpečnosti je povolené. Môžeme si napríklad predstaviť, že chceme poslať tajný dopis prezidentovi. 
+	\item Druhé pravidlo definuje, že subjekt nie je oprávnený zapisovať do objektov s nižšou úrovňou bezpečnosti. Toto pravidlo zabezpečuje aby nebolo možné neúmyselne kompromitovať informácie do nižšej bezpečnostnej úrovne. Naopak zapisovanie do vyššej úrovne bezpečnosti je povolené. Môžeme si napríklad predstaviť, že chceme poslať tajný dopis prezidentovi. Chceme aby iba prezident mohol dopis prečítať (pošleme mu ho), ale neoprávňuje nás to čítať prísne tajné dokumenty.
 	\item Tretie pravidlo pridáva extra úroveň bezpečnosti nezávislú od ostatných. Zabezpečuje aby bolo možné rozdeliť riadenie prístupu na základe toho, kto sa snaží pristupovať k akému objektu. Napríklad úradník z ministerstva vnútra môže mať prístup k niektorým dokumentom s klasifikáciou \emph{Top secret} , ale nesmie mať prístup ku každému takémuto dokumentu, ako napríklad dokument s pozíciu jadrových hlavíc. Pridáva sa tak  takzvaný "Access Control Matrix", čiže sa dá vyhľadať v matici podľa používateľa a objektu, aké má daný používateľ nad objektom právomoci.
 \end{enumerate}
 
-
+\begin{figure}[h]
+	\centerline{\includegraphics[width=0.7\textwidth]{images/belapadula}}
+	\caption{model Bell-LaPadula}
+	\label{obr:belapadula}
+\end{figure}
 
 %---------------------------------- Koniec sekcie Riadenie prístupu ----------------------------------------
 
@@ -244,7 +251,7 @@ V roku 1973 tak vznikol model Bell-LaPadula \cite{bell-lapadula} . Princíp toht
 
 
 
-%---------------------------------- Koniec sekcie RBAC ----------------------------------------
+%---------------------------------- Začiatok sekcie RBAC ----------------------------------------
 \section{RBAC}
 \subsection{Popis modelu}
 Vo WfMS sa ako najlepší model riadenia prístupu preukázal systém rolí RBAC (role-based access control). RBAC poskytuje abstraktný a všeobecný model. Sám o sebe však neposkytuje striktné riešenia bezpečnosti prístupu a nie je ani priamo zadefinované ako musí byť tento model implementovaný. V \cite{ekonomika} je RBAC popísaný ako model , ktorý dokáže zabezpečiť schopnosť vizualizovať a centrálne riadiť práva používateľov. Zároveň poskytuje možnosť zadefinovať, vymedziť a kontrolovať prístupové práva medzi používateľom a rolou, rolou a rolou alebo rolou a právomocami. RBAC ako model neurčuje konkrétnu politiku riadenia a môže implementovať tradičný princíp riadenia ako DAC, MAC a iné. 
@@ -252,6 +259,12 @@ Vo WfMS sa ako najlepší model riadenia prístupu preukázal systém rolí RBAC
 Výhodou tohto modelu je možnosť priradiť viacerým používateľom rovnaké práva na základe určitých spoločných vlastností. Vo WfMS je táto vlastnosť veľmi cenená pokiaľ chceme oddeliť návrh procesu od používateľského riešenia. 
 
 
+%users<->roles<->premissions
+\begin{figure}[H]
+	\centerline{\includegraphics[width=0.7\textwidth]{images/rbac_kuhn}}
+	\caption{Vzťahy RBAC podľa \cite{kuhn}}
+	\label{obr:rbac_kuhn}
+\end{figure}
 
 %NIST RBAC MODELS
 % Sandhu, R., Ferraiolo, D.F. and Kuhn, D.R. (July 2000). "The NIST Model for Role Based Access Control: Toward a Unified Standard" (PDF). 5th ACM Workshop Role-Based Access Control. pp. 47–63.
@@ -273,30 +286,25 @@ Definovali sa 3  pravidlá:
 		\item Autorizácia operácie: subjekt s aktívnou rolou je oprávnený spúšťať iba také operácie, pre ktoré má daná rola oprávnenia ich spúšťať. Spolu s prvým a druhým pravidlom sa tak zabezpečí, že subjekt môže vykonávať iba povolené operácie
 \end{enumerate}
 
-V nasledujúcej publikácii \cite{NIST95} NIST rozobrala RBAC viac do detailov , navrhla prídavné funkcionality a zahrnula špecifické formy vzťahov , tak aby spĺňali požiadavky na oddelenie právomocí (SoD). V roku 1996 Sandhu a spol. \cite{sandhu96} predstavili framework RBAC96 založený na RBAC a rozložil tak RBAC do štyroch koncepčných modelov. Ponúkli tak riešenie pre komerčnú implementáciu RBAC.
+V nasledujúcej publikácii \cite{NIST95} NIST rozobrala RBAC viac do detailov , navrhla prídavné funkcionality a zahrnula špecifické formy vzťahov , tak aby spĺňali požiadavky na oddelenie právomocí. V roku 1996 Sandhu a spol. \cite{sandhu96} predstavili framework RBAC96 založený na RBAC a rozložil tak RBAC do štyroch koncepčných modelov (obrázok \ref{obr:roly_rbac0_rbac1}). Ponúkli tak riešenie pre komerčnú implementáciu RBAC.
 Základný model RBAC0 predstavuje jadro,v ktorom sú obsiahnuté všetky 3 spomenuté pravidlá. Nadväzujúci model RBAC1 pridáva ku základnému modelu hierarchický systém, čím umožňuje pre jednotlivú rolu zdediť právomoci inej roly. Celý systém sa tak dokáže sprehľadniť a ak je jedna rola nadradená iným, stačí, aby bol používateľ priradený k nadradenej role a automaticky dostane právomoci všetkých podradených rolí. RBAC2 pridáva obmedzenia ako napríklad oddelenie právomocí (ak chceme aby dve úlohy nemohol vykonať rovnaký používateľ z rovnakej role). 
 
 %rbac0->rbac1->rbac2->rbac3
-\begin{figure}[h]
+\begin{figure}[H]
 	\centerline{\includegraphics[width=0.7\textwidth]{images/rbac012}}
-	\caption{Framework RBAC96 podľa Sandhu a spol.}
-	\label{obr:roly_rbac0_rbac1_...}
+	\caption{Framework RBAC96 podľa Sandhu a spol. \cite{sandhu96}}
+	\label{obr:roly_rbac0_rbac1}
 \end{figure}
 
 
 
 \subsubsection{Jadro RBAC}
-Jadro RBAC , taktiež značené ako RBAC0 poskytuje základ pre riadenie prístupu na základe rol. Rozlišuje päť základných administratívnych prvkov: používateľov, roly a oprávnenia, pričom oprávnenia pozostávajú z operácii aplikovaných na objekty. Základ RBAC pozostáva z definovania oprávnení pre roly a používatelia sú priradení k roliam a tým nadobúdajú právomoci patriace rolám. Obrázok \ref{obr:rbac_kuhn} ukazuje vzťah užívateľov, rolí a oprávnení. Dvojitá šípka značí vzťah m:n. Teda napríklad jeden používateľ môže byť priradený k viacerým roliam a zároveň jedna rola môže pozostávať z mnohých používateľov. Tento princíp predstavuje flexibilné riešenie priradenia práv rolám a užívateľov k rolám, čím podporuje princíp minimálnych oprávnení. Každé oprávnenie predstavuje kombináciu objektov a operácii. Celý systém oprávnenia na základe rol môžeme vidieť na obrázku \ref{obr:rbac_kuhn_full}.
+Jadro RBAC , taktiež značené ako RBAC0 poskytuje základ pre riadenie prístupu na základe rol. Rozlišuje päť základných administratívnych prvkov: používateľov, roly a oprávnenia, pričom oprávnenia pozostávajú z operácii aplikovaných na objekty. Základ RBAC pozostáva z definovania oprávnení pre roly, pričom používatelia sú priradení k rolám a tým nadobúdajú právomoci patriace rolám. Obrázok \ref{obr:rbac_kuhn} ukazuje vzťah užívateľov, rolí a oprávnení. Dvojitá šípka značí vzťah m:n. Teda napríklad jeden používateľ môže byť priradený k viacerým roliam a zároveň jedna rola môže pozostávať z mnohých používateľov. Tento princíp predstavuje flexibilné riešenie priradenia práv rolám a užívateľov k rolám, čím podporuje princíp minimálnych oprávnení. Každé oprávnenie predstavuje kombináciu objektov a operácii. Celý systém oprávnenia na základe rol môžeme vidieť na obrázku \ref{obr:rbac_kuhn_full}.
 
-%users<->roles<->premissions
-\begin{figure}[h]
-	\centerline{\includegraphics[width=0.7\textwidth]{images/rbac_kuhn}}
-	\caption{Vzťahy RBAC podľa \cite{kuhn}}
-	\label{obr:rbac_kuhn}
-\end{figure}
+
 
 %users<->roles<->(objescts, operations)
-\begin{figure}[h]
+\begin{figure}[H]
 	\centerline{\includegraphics[width=0.7\textwidth]{images/rbac_kuhn_full}}
 	\caption{Rozšírené vzťahy RBAC podľa \cite{kuhn}}
 	\label{obr:rbac_kuhn_full}
@@ -330,38 +338,6 @@ Do modelu RBAC je možné pridať ďalšie obmedzenia, ktoré bližšie definuj�
 Okrem modelu RBAC existuje na trhu mnoho alternatívnych riešení riadenia prístupu. Zatiaľ čo RBAC rieši politiku prístupu na základe organizačnej štruktúry , ostatné metódy sa viac zameriavajú na bezpečnosť prístupu z pohľadu používateľa alebo administrátora. Zabezpečenie práv je definované až k používateľom.
 V tejto časti si ukážeme tri časté modely: access control list (ACL), DAC (discretionary access control) a MAC (mandatory access control) .
 
-	\begin{table}[h]%[17] R. Sandhu. Roles Versus Groups, 1996. http://www.list.gmu.edu/confrnc/rbac/rolegroup.	pdf
-		\centering
-		\begin{tabularx}{\textwidth}{>{\setlength\hsize{1\hsize}\setlength\linewidth{\hsize}}X>{\setlength\hsize{1\hsize}\setlength\linewidth{\hsize}}X>{\setlength\hsize{.7\hsize}\setlength\linewidth{\hsize}}X}
-			RBAC & Štandardné systémy riadenia \\
-			
-			\begin{itemize}
-				\item Rola nemusí obsahovať žiadnych používateľov
-				\item Rola sa ľahko mapuje na štruktúru organizácie
-				\item Prístupové práva sa mapujú na roly
-				\item Používateľom sú priradené role
-			\end{itemize}
-			
-			
-			&
-			
-			\begin{itemize}
-				\item Prístupové práva sú naviazané na používateľov 
-				\item Používatelia sú rozdelení do skupín 
-				\item Skupina je pomenovaná množina
-				používateľov, práv a ďalších skupín,
-				ktorá spravidla obsahuje aspoň dvoch
-				používateľov
-				\item Skupiny sa neviažu na štruktúru organizácie
-			\end{itemize}
-			
-			
-			
-		\end{tabularx}
-		\caption{Porovnanie RBAC so štandardnými prístupmi riadenia}
-		\label{tab:1}
-	\end{table}
-
 
 \subsubsection{ACL}
 Tento prístup definuje ku každému objektu zoznam používateľov a ich právomocí. Administrátor v systéme ľahko vyhľadá kto má k akému objektu aké právomoci. Problém nastáva , ak chceme zistiť všetky právomoci , ktoré prináležia konkrétnemu používateľovi. Ešte väčšie komplikácie nastávajú pri potrebe upraviť alebo vymazať používateľovi  právomoci, pretože treba prejsť všetky možné objekty v danom systéme. 
@@ -379,6 +355,40 @@ Podľa \cite{TSCES} DAC predstavuje riadenie prístupu k objektu založené na i
 Ako riešenie pre hlavný problém DAC architektúry, povinné riadenie prístupu MAC definuje hierarchické úrovne bezpečnosti. Vychyľuje sa tak od štandartných prístupov a implementuje MLS (multilevel security).  Iba administrátori sú oprávnení  spravovať a priraďovať prístupové práva. Ku každému objektu ako aj subjektu sa priradí určitá bezpečnostnú úroveň. Riadenie prístupu je následne automaticky riadené pomocou dvoch pravidiel. Prvé z nich povoľuje  čítať v rovnakej a nižšej bezpečnostnej úrovni, zatiaľ čo druhé zabezpečuje zapisovanie do rovnakej alebo vyššej bezpečnostnej úrovne. \cite{MAC}
 
  % MAC (Mandatory access control) predstavuje tyký typ riadenia, v ktorom môžu iba administrátori spravovať a priraďovať prístupové práva. Nad každým objektom administrátor definuje politiku prístupu pre každý subjekt samostatne. 
+
+\subsubsection{Porovnanie}
+\begin{table}[h]%[17] R. Sandhu. Roles Versus Groups, 1996. http://www.list.gmu.edu/confrnc/rbac/rolegroup.	pdf
+	\centering
+	\begin{tabularx}{\textwidth}{>{\setlength\hsize{1\hsize}\setlength\linewidth{\hsize}}X>{\setlength\hsize{1\hsize}\setlength\linewidth{\hsize}}X>{\setlength\hsize{.7\hsize}\setlength\linewidth{\hsize}}X}
+		RBAC & Štandardné systémy riadenia \\
+		
+		\begin{itemize}
+			\item Rola nemusí obsahovať žiadnych používateľov
+			\item Rola sa ľahko mapuje na štruktúru organizácie
+			\item Prístupové práva sa mapujú na roly
+			\item Používateľom sú priradené role
+		\end{itemize}
+		
+		
+		&
+		
+		\begin{itemize}
+			\item Prístupové práva sú naviazané na používateľov 
+			\item Používatelia sú rozdelení do skupín 
+			\item Skupina je pomenovaná množina
+			používateľov, práv a ďalších skupín,
+			ktorá spravidla obsahuje aspoň dvoch
+			používateľov
+			\item Skupiny sa neviažu na štruktúru organizácie
+		\end{itemize}
+		
+		
+		
+	\end{tabularx}
+	\caption{Porovnanie RBAC so štandardnými prístupmi riadenia}
+	\label{tab:1}
+\end{table}
+
 
 
 \subsection{Výhody RBAC}

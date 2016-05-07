@@ -44,7 +44,7 @@ V našej aplikácii nechceme aby bol používateľ viazaný len na jednu firmu. 
 Priradenie práv k roliam je definované nepriamo prostredníctvom jednotlivých prechodov. Hlavnou úlohou roly v procese je zadefinovať práva na vytváranie nových prípadov a takisto určiť právomoci na spúšťanie prechodov v procese. Schopnosť spustiť nový prechod je však vymedzená referenciami, návrhom Petriho siete a stave v akom sa tokeny momentálne nachádzajú.  
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{images/roles_permissions}
 	\caption{ Právomoci rolí v sieti }
@@ -72,7 +72,7 @@ Ak má prechod nastavenú referenciu na prvého používateľa, overí sa ,či s
 Práva, ktoré rola nad prechodom získa sú zadefinované operáciami v konkrétnom prechode. Tieto operácie sa určia pri vytváraní formulára k danému prechodu.  
 Vo formulári je možné nastaviť aké dáta budú používateľovi prístupné, či ich bude môcť používateľ iba zobrazovať, alebo aj editovať. Takisto sa definuje, ktoré údaje je potrebné vyplniť, aby mohol používateľ tento prechod dokončiť.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{images/formulare_opravnenia}
 	\caption{ Právomoci definované v prechodoch }
@@ -86,7 +86,7 @@ Vo formulári je možné nastaviť aké dáta budú používateľovi prístupné
 \section{Implementácia}
 
 \subsection{Modul na priraďovanie používateľov k rolám}
-Vo WfMS treba zabezpečiť používateľsky ľahko zrozumiteľnú a jednoduchú administráciu rol vo firme. Priraďovanie rol vo firme je realizovaná na dvoch úrovniach: \emph{priradenie jednej role pre viacero používateľov} a \emph{priradenie viacero rolí pre jedného používateľa}. Pre tieto účeli sme vytvorili tabuľku, kde sa zobrazia jednotliví používatelia. Zoznam používateľov sa vytvorí na základe vybranej sekcie. Tieto sekcie delíme podľa filtra na všeobecné - všetci používatelia a takí, ktorí nemajú priradenú rolu a potom sekcia s filtrami podľa rol vo firme - každá rola vo firme obsahuje priradených používateľov. Používateľov je možné usporiadať v každej sekcii podľa ich ID, mena, priezviska alebo e-mailu. Zároveň je možné v každej sekcii na základe týchto rolí vyhľadávať ľudí.
+Vo WfMS treba zabezpečiť používateľsky ľahko zrozumiteľnú a jednoduchú administráciu rol vo firme. Priraďovanie rol vo firme je realizovaná na dvoch úrovniach: \emph{priradenie jednej role pre viacero používateľov} a \emph{priradenie viacero rolí pre jedného používateľa}. Pre tieto účeli sme vytvorili tabuľku, kde sa zobrazia jednotliví používatelia. Zoznam používateľov sa vytvorí na základe vybranej sekcie. Tieto sekcie delíme podľa filtra na všeobecné a podľa rol vo firme. V prvej kategórii sú všetci používatelia a takí, ktorí nemajú priradenú rolu. V druhej zobrazujeme používateľov ktorí sú v danej roli priradení. Používateľov je možné usporiadať v každej sekcii podľa ich ID, mena, priezviska alebo e-mailu. Zároveň je možné v každej sekcii na základe týchto kritérií vyhľadávať ľudí.
 
 \begin{figure}[h]
 	\centering
@@ -106,7 +106,7 @@ Priradenie a vyradenie viacerých používateľov je založené na dvoch krokoch
 \end{figure}
 
 \subsubsection{Priradenie a vyradenie jednotlivca}
-Správa samotného používateľa je realizovaná viacerými spôsobmi. Prvý spôsob je rovnaký ako pri správe viacerých používateľov ( označíme ale iba jedného ). Druhý spôsob je detailná správa používateľa. Po kliknutí na podrobnosti konkrétneho používateľa sa zobrazí okno pre konkrétneho používateľa. V ňom sú všetky role do ktorých je možné používateľa priradiť. Jednoduchým kliknutím na tlačítkom sa používateľ priradí alebo odstráni z role. takisto je možné odstrániť používateľa z role priamo z tabuľky kliknutím na ikonu smetného koša.
+Správa samotného používateľa je realizovaná viacerými spôsobmi. Prvý spôsob je rovnaký ako pri správe viacerých používateľov ( označíme ale iba jedného používateľa ). Druhý spôsob je detailná správa používateľa. Po kliknutí na podrobnosti konkrétneho používateľa sa zobrazí okno pre konkrétneho používateľa. V ňom sú všetky role do ktorých je možné používateľa priradiť. Jednoduchým kliknutím na tlačítko sa používateľ priradí alebo odstráni z role. takisto je možné odstrániť používateľa z role priamo z tabuľky kliknutím na ikonu smetného koša.
 
 \begin{figure}[h]
 	\centering
@@ -209,7 +209,7 @@ Tabuľka \emph{TRANSITIONS\_X\_ROLE} ukladá právomoci rolí na spustenie konkr
 
 
 
-Druhým krokom je návrh databázového modelu, ktorý bude umožňovať konkrétnym používateľom vo firme priradiť rolu. Priradených používateľov vo firme zaznamenávame v tabuľke USERS\_X\_FIRM.
+Druhým krokom je návrh databázového modelu, ktorý bude umožňovať konkrétnym používateľom vo firme priradiť rolu. Priradených používateľov vo firme zaznamenávame v tabuľke USERS\_X\_FIRM. Ich priradenie vo firme je uložené v tabuľke USERS\_X\_ROLES. Priradenie rolí do firmy je zabezpečené prostredníctvom tabuľky ROLES\_X\_FIRM
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{images/users_to_roles_diagram}
@@ -217,39 +217,29 @@ Druhým krokom je návrh databázového modelu, ktorý bude umožňovať konkré
 	\label{fig:Priradenie používateľov do rol vo firmách}
 \end{figure}
 
-\begin{figure}[h]
+Do tabuľky ROLES budeme ukladať role a ich názov. Táto tabuľka má unikátny atribút \emph{názov roly}. Samotná rola sa neviaže na firmu ani na proces. Bolo by tak nežiaduce mať duplicitné záznamy. Vyrieši sa tak aj ukladanie roly do databázy, pretože z XML súboru sa nedá zistiť, či už neexistuje rola rovnaká rola inak ako podľa názvu roly. \\
+
+Nakoniec na obrázku \ref{fig:tabulky_pre_role} môžeme vidieť spojenú  relačnú databázu pre potreby serverovej častí rolí.
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{images/database_diagram}
 	\caption{ Hlavné tabuľky pre prácu s rolami }
-	\label{fig:Hlavné tabuľky pre prácu s rolami}
+	\label{fig:tabulky_pre_role}
 \end{figure}
 
+\section{Možné rozšírenia}
+Ako hlavné rozšírenia sa ponúkajú dve dôležité časti. Doimplementovať hierarchiu rolí a pridať obmedzenia na kvalitatívnejšie oddelenie právomocí.
+\\
 
+Hierarchia rolí by mala umožňovať jasne definovať štruktúru rolí, tak aby verne odzrkadľovala štruktúru v organizácii. Určia sa tak nadradené a podradené roly. Nadradené roly budú automaticky dediť právomoci podradených rolí. Zjednoduší sa tak organizácia štruktúry v podniku. V aktuálnej verzii aplikácie je potrebné používateľa prideliť do každej roly osobitne. Možným riešením bude vytvoriť v databáze novú tabuľku kde budú priradené vzťahy medzi jednotlivými rolami v konkrétnej firme. K tomu bude treba vytvoriť nástroj na definovanie organizačnej štruktúry a zároveň bude potrebné predefinovať procesnú logiku systému. 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\linewidth]{images/roles_table}
-	\caption{ Hlavné tabuľky pre prácu s rolami }
-	\label{fig:Hlavné tabuľky pre prácu s rolami}
-\end{figure}
-Do tabuľky ROLES budeme ukladať role a ich názov. Táto tabuľka má unikátny atribút \emph{názov roly}. Samotná rola sa neviaže na firmu ani na proces. Bolo by tak nežiaduce mať duplicitné záznamy. Vyrieši sa tak aj ukladanie roly do databázy, pretože z XML súboru sa nedá zistiť, či už neexistuje rola rovnaká rola inak ako podľa názvu roly. \\
+Ako súčasť tohto rozšírenia bude možnosť zjednotiť vo firme viacero rolí do jednej. V aktuálnej verzii vzniká problém pri priradení procesu do firmy, pretože firma musí automaticky prebrať všetky role v procese. Môže tak nastať situácia, keď bude vo firme veľa rolí s rovnakou funkcionalitou, ale odlišným názvom. Ako príklad si môžeme zobrať rôzne synonymá. Rola programátor sa dá nazvať ako  ''programátor'', ''vývojár'', ''developer'' a takisto problém môžu spôsobovať viacjazyčné preklady.\\
 
+Ďalším rozšírením bude pridanie obmedzení právomocí pre jedného používateľa. Pri modelovaní návrhu rolí v editore ( \ref{Editor manažmentu rolí a organizačnej štruktúry}) chceme pridať ku prechodu možnosť zápornej referencie. To bude znamenať, že jeden používateľ nebude môcť spustiť dva prechody ktoré sa vylučujú. Znamená to teda, že pokiaľ používateľ spustí prvý prechod, nebude schopný vykonať aj druhý prechod, ak obsahuje danú zápornú referenciu. Za zváženie taktiež stojí obmedzenie štruktúry rolí pomocou statického vylúčenia práv. Znamenalo by to tak, že budú existovať určité obmedzenia pri priraďovaní používateľov k rolám. Administrátor by tak nebol schopný priradiť jednému používateľovi dve navzájom sa vylučujúce role.
 
- V tabuľke TRANSITIONS\_X\_ROLE sa roly viažu  na prechody v Petriho sieti. Každý prechod bude mať v tejto tabuľke presne určené , ktorá roľa ho môže spustiť. \\
- 
-V tabuľke ROLES\_START\_CASES priradíme k Petriho sieti rolu, ktorá môže spustiť nový prípad.\\
- 
-V tabuľke REFERENCES definujeme , či má prechod v sieti referenciu. Atribút  \emph{value} typu boolean v tejto tabuľke definuje, či má prechod referenciu. Ak má referenciu, v atribúte \emph{referenced\_transition\_id} sa skontroluje,či obsahuje referenciu na konkrétny prechod. V prípade , že tento atribút má hodnotu NULL, referencia odkazuje na prvý prechod spustený danou rolou v prípade.V prípade , že má nastavenú hodnotu, odkazuje tento atribút na primárny kľúč referencovaného prechodu. \\
-  
-  
-  V tabuľke USERS budú uložený jednotlivý používatelia, ich prihlasovacie a osobné údaje.\\
-  
-  V tabuľke USERS\_X\_FIRM priraďujeme používateľov ku firmám.\\
-  
-  V tabuľke USERS\_X\_ROLE priraďujeme používateľom roly v jednotlivých firmách. V tejto tabuľke sme zvolili ako primárny kľúč kombináciu cudzích kľúčov odkazujúcich na id používateľa, role a firmy . 
+Tretie rozšírenie by mohlo definovať štruktúru zamestnancov vo firme z hľadiska ich organizačnej a geografickej odlišnosti. Väčšie firmy majú viacero oddelení, ktoré môžu znázorňovať isté pracovné alebo geografické odlišnosti. Príkladom môžu byť rôzne oddelenia, ktoré v rámci firmy pracujú na odlišných objednávkach (odlišných prípadoch ). V našom systéme by sa tak mali dať priradiť isté organizačné jednotky pri samotnom vytváraní nového prípadu, prípadne inak ošetriť, aby sa zamedzil prístup v rámci jednotlivých oddelení.
 
- 
-\subsection{Použité technológie}
 
 \section{Overenie riešenia}
 TODO
