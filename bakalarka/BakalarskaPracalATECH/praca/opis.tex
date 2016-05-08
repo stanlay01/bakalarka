@@ -36,7 +36,7 @@ V biznis procesoch väčšinu úloh vykonávajú fyzické osoby. V každej firme
 
 \begin{figure}[h]
 	\centerline{\includegraphics[width=0.9\textwidth]{images/vyvoj_role}}
-	\caption{Príklad priradenia rolí k prechodom (vytvorenie novej aplikácie zjednodušene)}
+	\caption[Príklad priradenia rolí k prechodom]{Príklad priradenia rolí k prechodom (vytvorenie novej aplikácie zjednodušene)}
 	\label{obr:role_na prechody}
 \end{figure}
 
@@ -60,7 +60,7 @@ V procese však môžu existovať úlohy, ktoré sa v určitom prípade nikdy ne
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/referencia}
-	\caption{Referencia na prechod}
+	\caption{Referencia na prvého z role}
 	\label{fig:referencia na prvého z role}
 \end{figure}
 
@@ -76,7 +76,7 @@ Procesný portál slúži na zjednotenie všetkých častí dohromady. Základno
 
 \begin{figure}[h]
 	\centering
-%	\includegraphics[width=0.7\linewidth]{images/martin}
+	\includegraphics[width=0.7\linewidth]{images/martin}
 	\caption{Procesný portál}
 	\label{fig:procesný portál}
 \end{figure}
@@ -88,7 +88,7 @@ Procesný editor ponúka možnosť modelovať Petriho sieť a navrhnúť tak wor
 
 \begin{figure}[h]
 	\centering
-%	\includegraphics[width=0.7\linewidth]{images/tomas}
+	\includegraphics[width=0.7\linewidth]{images/tomas}
 	\caption{Procesný editor}
 	\label{fig:Procesný editor}
 \end{figure}
@@ -98,11 +98,18 @@ Procesný editor ponúka možnosť modelovať Petriho sieť a navrhnúť tak wor
 \label{editor formulárov}
 Po tom, ako sa workflow sieť nakreslí v procesnom editore je potrebné k prechodom priradiť formuláre, ktoré sa budú neskôr zobrazovať pri spracovaní úloh v prípadoch. Editor formulárov a dátového modelu umožňuje navrhnúť dátový model pre formuláre. Modelovanie formulárov je realizované cez vytváranie, editovanie, prípadne mazanie vstupných polí. Tie môžu byť pridané v podobe \emph{krátkej odpovede}, \emph{dlhej odpovede} , \emph{výberu z viacerých} (select boxu ) 	alebo \emph{zaškrtávacích možností } (checkboxy) . Ku každému sa dá pridať otázka a popis. Pre jednotlivý vstup definujeme , či je povinný, viditeľný a upraviteľný. Pre potreby prepoužívania formulárov a ich ukladania do databázy sa vytvorí dataset, ktorý reprezentuje premenné, do ktorých sa ukladajú hodnoty z vstupných polí. Editor dokáže načítať a uložiť Petriho sieť cez formát SVG. Jednotlivé formuláre a dátové typy je možné uložiť vo formáte XML a následne spätne nahrať na načítanú sieť (napr. prostredníctvom SVG). Editor spolupracuje so \emph{serverom formulárov a dátového modelu}. Prostredníctvom JSON dát sú formuláre priebežne ukladané na server.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/jan1}
+	\caption{Editor formulárov a dátového modelu}
+	\label{fig:editor formulárov a dátového modelu}
+\end{figure}
+
 
 \begin{figure}[h]
 	\centering
-%	\includegraphics[width=0.7\linewidth]{images/jan}
-	\caption{editor formulárov a dátového modelu}
+	\includegraphics[width=0.7\linewidth]{images/jan}
+	\caption{Editor formulárov a dátového modelu}
 	\label{fig:editor formulárov a dátového modelu}
 \end{figure}
 
@@ -113,7 +120,7 @@ Podobne ako pri editore formulárov, \emph{Editor manažmentu rolí a organizač
 
 \begin{figure}[h]
 	\centering
-%	\includegraphics[width=0.7\linewidth]{images/kristian}
+	\includegraphics[width=0.7\linewidth]{images/kristian}
 	\caption{Editor manažmentu rolí a organizačnej štruktúry}
 	\label{fig:Editor manažmentu rolí a organizačnej štruktúry}
 \end{figure}
@@ -124,9 +131,9 @@ Procesný server zabezpečuje správne fungovanie Workflow systému po jeho namo
 %cancel čo? 
 Ukladá históriu vykonaných prípadov a úloh. Umožňuje vizualizáciu stavu, v akom sa prípad nachádza. Okrem toho spracováva workflow siete vytvorené v \emph{procesnom editore} a ukladá vytvorenú sieť do databázy. Po prebratí úlohy používateľovi zobrazí možnosť túto úlohu vykonať. To ho presmeruje na \emph{server formulárov a dátového modelu} kde sa používateľovi zobrazí formulár patriaci danej úlohe. Ak je formulár vyplnení, odošle sa naspať potvrdenie. Procesný server tak dokončí úlohu a zabezpečí posunutie prípadu do nového stavu. Procesný portál nanovo vypočíta aktívne prechody na spustenie.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{images/anicka}
+	\includegraphics[width=0.7\linewidth]{images/anicka}
 	\caption{Procesný server}
 	\label{fig:Procesný server}
 \end{figure}
@@ -139,7 +146,7 @@ Serverová strana formulárov a dátového modelu rieši zobrazovanie formuláro
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{images/kubko}
+	\includegraphics[width=0.4\linewidth]{images/kubko}
 	\caption{Server formulárov a dátového modelu- Jakub Kováčik}
 	\label{fig:Server formulárov a dátového modelu- Jakub Kováčik}
 \end{figure}

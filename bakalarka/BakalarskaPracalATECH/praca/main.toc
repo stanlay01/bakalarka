@@ -37,26 +37,26 @@
 \contentsline {section}{\numberline {2.2}N\IeC {\'a}vrh}{23}
 \contentsline {subsection}{\numberline {2.2.1}Procesn\IeC {\'y} port\IeC {\'a}l - Martin Kov\IeC {\'a}\IeC {\v c}ik}{23}
 \contentsline {subsection}{\numberline {2.2.2}Procesn\IeC {\'y} editor - Tom\IeC {\'a}\IeC {\v s} Prieboj}{24}
-\contentsline {subsection}{\numberline {2.2.3}Editor formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu - J\IeC {\'a}n Pola\IeC {\v c}ek}{24}
-\contentsline {subsection}{\numberline {2.2.4}Editor mana\IeC {\v z}mentu rol\IeC {\'\i } a organiza\IeC {\v c}nej \IeC {\v s}trukt\IeC {\'u}ry- Kristi\IeC {\'a}n Stroka}{25}
-\contentsline {subsection}{\numberline {2.2.5}Procesn\IeC {\'y} server - Anna Demeterov\IeC {\'a}}{25}
-\contentsline {subsection}{\numberline {2.2.6}Server formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu- Jakub Kov\IeC {\'a}\IeC {\v c}ik}{26}
-\contentsline {subsection}{\numberline {2.2.7}Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{27}
-\contentsline {chapter}{Opis rie\IeC {\v s}enia - Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{28}
-\contentsline {section}{\numberline {3.1}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{28}
-\contentsline {section}{\numberline {3.2}N\IeC {\'a}vrh}{28}
-\contentsline {subsection}{\numberline {3.2.1}Popis architekt\IeC {\'u}ry}{29}
-\contentsline {subsubsection}{Prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k roliam}{29}
-\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{30}
-\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{31}
-\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{31}
-\contentsline {section}{\numberline {3.3}Implement\IeC {\'a}cia}{32}
-\contentsline {subsection}{\numberline {3.3.1}Modul na prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k rol\IeC {\'a}m}{32}
-\contentsline {subsubsection}{Priradenie a vyradenie viacer\IeC {\'y}ch pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov z role}{33}
-\contentsline {subsubsection}{Priradenie a vyradenie jednotlivca}{33}
-\contentsline {subsubsection}{Spr\IeC {\'a}va rol\IeC {\'\i } vo firme}{34}
-\contentsline {subsection}{\numberline {3.3.2}Ukladanie rol\IeC {\'\i } a referencii z editoru do datab\IeC {\'a}zy}{35}
-\contentsline {subsection}{\numberline {3.3.3}D\IeC {\'a}tov\IeC {\'y} model}{36}
-\contentsline {section}{\numberline {3.4}Mo\IeC {\v z}n\IeC {\'e} roz\IeC {\v s}\IeC {\'\i }renia}{38}
-\contentsline {section}{\numberline {3.5}Overenie rie\IeC {\v s}enia}{39}
-\contentsline {chapter}{Z\IeC {\'a}ver}{40}
+\contentsline {subsection}{\numberline {2.2.3}Editor formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu - J\IeC {\'a}n Pola\IeC {\v c}ek}{25}
+\contentsline {subsection}{\numberline {2.2.4}Editor mana\IeC {\v z}mentu rol\IeC {\'\i } a organiza\IeC {\v c}nej \IeC {\v s}trukt\IeC {\'u}ry- Kristi\IeC {\'a}n Stroka}{26}
+\contentsline {subsection}{\numberline {2.2.5}Procesn\IeC {\'y} server - Anna Demeterov\IeC {\'a}}{27}
+\contentsline {subsection}{\numberline {2.2.6}Server formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu- Jakub Kov\IeC {\'a}\IeC {\v c}ik}{28}
+\contentsline {subsection}{\numberline {2.2.7}Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{29}
+\contentsline {chapter}{Opis rie\IeC {\v s}enia - Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{30}
+\contentsline {section}{\numberline {3.1}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{30}
+\contentsline {section}{\numberline {3.2}N\IeC {\'a}vrh}{30}
+\contentsline {subsection}{\numberline {3.2.1}Popis architekt\IeC {\'u}ry}{31}
+\contentsline {subsubsection}{Prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k roliam}{31}
+\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{32}
+\contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{33}
+\contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{33}
+\contentsline {section}{\numberline {3.3}Implement\IeC {\'a}cia}{34}
+\contentsline {subsection}{\numberline {3.3.1}Modul na prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k rol\IeC {\'a}m}{34}
+\contentsline {subsubsection}{Priradenie a vyradenie viacer\IeC {\'y}ch pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov z role}{35}
+\contentsline {subsubsection}{Priradenie a vyradenie jednotlivca}{35}
+\contentsline {subsubsection}{Spr\IeC {\'a}va rol\IeC {\'\i } vo firme}{36}
+\contentsline {subsection}{\numberline {3.3.2}Ukladanie rol\IeC {\'\i } a referencii z editoru do datab\IeC {\'a}zy}{37}
+\contentsline {subsection}{\numberline {3.3.3}D\IeC {\'a}tov\IeC {\'y} model}{38}
+\contentsline {section}{\numberline {3.4}Mo\IeC {\v z}n\IeC {\'e} roz\IeC {\v s}\IeC {\'\i }renia}{40}
+\contentsline {section}{\numberline {3.5}Overenie rie\IeC {\v s}enia}{41}
+\contentsline {chapter}{Z\IeC {\'a}ver}{42}

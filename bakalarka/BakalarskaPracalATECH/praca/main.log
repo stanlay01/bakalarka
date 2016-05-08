@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  6 MAY 2016 23:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  8 MAY 2016 14:59
 entering extended mode
 **./main.tex
 (main.tex
@@ -431,6 +431,10 @@ LaTeX Warning: Label `obr:cursus' multiply defined.
 LaTeX Warning: Label `obr:cursus' multiply defined.
 
 
+LaTeX Warning: Label `fig:editor formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}
+ho modelu' multiply defined.
+
+
 LaTeX Warning: Label `fig:roles_permissions' multiply defined.
 
 
@@ -537,12 +541,12 @@ Overfull \hbox (4.82378pt too wide) in paragraph at lines 183--184
 \openout3 = `main.toc'.
 
  [7]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--289
+Underfull \hbox (badness 10000) in paragraph at lines 278--293
 
  []
 
@@ -723,23 +727,67 @@ File: images/referencia.png Graphic file (type png)
 <use images/referencia.png>
 Package pdftex.def Info: images/referencia.png used on input line 62.
 (pdftex.def)             Requested size: 308.71106pt x 123.7022pt.
- [23] [24]
-<images/anicka.png, id=165, 1371.1225pt x 672.5125pt>
+
+<images/martin.png, id=159, 681.29532pt x 843.90282pt>
+File: images/martin.png Graphic file (type png)
+ <use images/martin.png>
+Package pdftex.def Info: images/martin.png used on input line 79.
+(pdftex.def)             Requested size: 308.71106pt x 382.39252pt.
+
+[23] [24 <./images/martin.png>]
+<images/tomas.png, id=167, 648.17157pt x 401.24907pt>
+File: images/tomas.png Graphic file (type png)
+ <use images/tomas.png>
+Package pdftex.def Info: images/tomas.png used on input line 91.
+(pdftex.def)             Requested size: 308.71106pt x 191.10957pt.
+
+<images/jan1.png, id=168, 650.43pt x 404.26031pt>
+File: images/jan1.png Graphic file (type png)
+ <use images/jan1.png>
+Package pdftex.def Info: images/jan1.png used on input line 103.
+(pdftex.def)             Requested size: 308.71106pt x 191.8776pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/jan.png, id=169, 671.50874pt x 210.7875pt>
+File: images/jan.png Graphic file (type png)
+ <use images/jan.png>
+Package pdftex.def Info: images/jan.png used on input line 111.
+(pdftex.def)             Requested size: 308.71106pt x 96.90553pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25 <./images/tomas.png>]
+<images/kristian.png, id=174, 672.26157pt x 455.45157pt>
+File: images/kristian.png Graphic file (type png)
+
+<use images/kristian.png>
+Package pdftex.def Info: images/kristian.png used on input line 123.
+(pdftex.def)             Requested size: 308.71106pt x 209.14888pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26 <./images/jan1.png> <./images/jan.png>]
+<images/anicka.png, id=181, 1371.1225pt x 672.5125pt>
 File: images/anicka.png Graphic file (type png)
  <use images/anicka.png>
-Package pdftex.def Info: images/anicka.png used on input line 129.
-(pdftex.def)             Requested size: 441.01773pt x 216.3064pt.
+Package pdftex.def Info: images/anicka.png used on input line 136.
+(pdftex.def)             Requested size: 308.71106pt x 151.41139pt.
 
-[25] <images/kubko.png, id=169, 584.1825pt x 702.625pt>
+[27 <./images/kristian.png>]
+<images/kubko.png, id=186, 584.1825pt x 702.625pt>
 File: images/kubko.png Graphic file (type png)
  <use images/kubko.png>
-Package pdftex.def Info: images/kubko.png used on input line 142.
-(pdftex.def)             Requested size: 308.71106pt x 371.31735pt.
+Package pdftex.def Info: images/kubko.png used on input line 149.
+(pdftex.def)             Requested size: 176.40439pt x 212.17215pt.
+)
+(opisroli.tex [28 <./images/anicka.png> <./images/kubko.png (PNG copy)>]
+[29] [30
 
-[26 <./images/anicka.png>]) (opisroli.tex [27 <./images/kubko.png (PNG copy)>]
-[28
-
-] <images/roles_in_petri_model.jpg, id=181, 762.85pt x 401.5pt>
+] <images/roles_in_petri_model.jpg, id=197, 762.85pt x 401.5pt>
 File: images/roles_in_petri_model.jpg Graphic file (type jpg)
 
 <use images/roles_in_petri_model.jpg>
@@ -751,37 +799,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[29 <./images/roles_in_petri_model.jpg>]
-<images/user_to_roles.png, id=185, 833.1125pt x 441.65pt>
+[31 <./images/roles_in_petri_model.jpg>]
+<images/user_to_roles.png, id=201, 833.1125pt x 441.65pt>
 File: images/user_to_roles.png Graphic file (type png)
 
 <use images/user_to_roles.png>
 Package pdftex.def Info: images/user_to_roles.png used on input line 32.
 (pdftex.def)             Requested size: 396.91325pt x 210.41264pt.
 
-<images/roles_permissions.png, id=186, 742.775pt x 301.125pt>
+<images/roles_permissions.png, id=202, 742.775pt x 301.125pt>
 File: images/roles_permissions.png Graphic file (type png)
 
 <use images/roles_permissions.png>
 Package pdftex.def Info: images/roles_permissions.png used on input line 49.
 (pdftex.def)             Requested size: 396.91325pt x 160.91418pt.
- [30 <./images/user_to_roles.png>]
-<images/formulare_opravnenia.png, id=190, 296.60812pt x 134.75343pt>
+ [32 <./images/user_to_roles.png>]
+<images/formulare_opravnenia.png, id=207, 296.60812pt x 134.75343pt>
 File: images/formulare_opravnenia.png Graphic file (type png)
 
 <use images/formulare_opravnenia.png>
 Package pdftex.def Info: images/formulare_opravnenia.png used on input line 77.
 
 (pdftex.def)             Requested size: 176.40439pt x 80.14536pt.
- [31 <./images/roles_permissions.png (PNG copy)>] <images/server_roli_screen.pn
-g, id=194, 673.01437pt x 414.79968pt>
+ [33 <./images/roles_permissions.png (PNG copy)>] <images/server_roli_screen.pn
+g, id=211, 673.01437pt x 414.79968pt>
 File: images/server_roli_screen.png Graphic file (type png)
 
 <use images/server_roli_screen.png>
 Package pdftex.def Info: images/server_roli_screen.png used on input line 93.
 (pdftex.def)             Requested size: 396.91325pt x 244.62842pt.
- [32 <./images/formulare_opravnenia.png> <./images/server_roli_screen.png>]
-<images/role_actions_screen.png, id=201, 398.23781pt x 99.37125pt>
+ [34 <./images/formulare_opravnenia.png> <./images/server_roli_screen.png>]
+<images/role_actions_screen.png, id=217, 398.23781pt x 99.37125pt>
 File: images/role_actions_screen.png Graphic file (type png)
 
 <use images/role_actions_screen.png>
@@ -789,14 +837,14 @@ Package pdftex.def Info: images/role_actions_screen.png used on input line 103.
 
 (pdftex.def)             Requested size: 220.50887pt x 55.0228pt.
 
-<images/user_detail_screen.png, id=202, 306.39468pt x 342.5297pt>
+<images/user_detail_screen.png, id=218, 306.39468pt x 342.5297pt>
 File: images/user_detail_screen.png Graphic file (type png)
 
 <use images/user_detail_screen.png>
 Package pdftex.def Info: images/user_detail_screen.png used on input line 113.
 (pdftex.def)             Requested size: 220.50887pt x 246.51665pt.
 
-<images/one_user_screen2.png, id=203, 657.95813pt x 78.2925pt>
+<images/one_user_screen2.png, id=219, 657.95813pt x 78.2925pt>
 File: images/one_user_screen2.png Graphic file (type png)
 
 <use images/one_user_screen2.png>
@@ -806,8 +854,8 @@ Package pdftex.def Info: images/one_user_screen2.png used on input line 120.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33 <./images/role_actions_screen.png> <./images/user_detail_screen.png>]
-<images/firm_administration_screen.png, id=209, 302.63063pt x 350.05782pt>
+[35 <./images/role_actions_screen.png> <./images/user_detail_screen.png>]
+<images/firm_administration_screen.png, id=225, 302.63063pt x 350.05782pt>
 File: images/firm_administration_screen.png Graphic file (type png)
 
 <use images/firm_administration_screen.png>
@@ -828,12 +876,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 137.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 137.
- [34 <./images/one_user_screen2.png> <./images/firm_administration_screen.png>]
+ [36 <./images/one_user_screen2.png> <./images/firm_administration_screen.png>]
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
-) [35]
-<images/roles_permissions_diagram.png, id=219, 447.92343pt x 453.19313pt>
+) [37]
+<images/roles_permissions_diagram.png, id=235, 447.92343pt x 453.19313pt>
 File: images/roles_permissions_diagram.png Graphic file (type png)
 
 <use images/roles_permissions_diagram.png>
@@ -841,25 +889,25 @@ Package pdftex.def Info: images/roles_permissions_diagram.png used on input lin
 e 204.
 (pdftex.def)             Requested size: 308.71106pt x 312.35092pt.
 
-<images/users_to_roles_diagram.png, id=220, 626.34pt x 481.8pt>
+<images/users_to_roles_diagram.png, id=236, 626.34pt x 481.8pt>
 File: images/users_to_roles_diagram.png Graphic file (type png)
 
 <use images/users_to_roles_diagram.png>
 Package pdftex.def Info: images/users_to_roles_diagram.png used on input line 2
 15.
 (pdftex.def)             Requested size: 441.01773pt x 339.25734pt.
- [36 <./images/roles_permissions_diagram.png>]
+ [38 <./images/roles_permissions_diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
-<images/database_diagram.png, id=225, 727.21687pt x 480.29437pt>
+<images/database_diagram.png, id=242, 727.21687pt x 480.29437pt>
 File: images/database_diagram.png Graphic file (type png)
 
 <use images/database_diagram.png>
 Package pdftex.def Info: images/database_diagram.png used on input line 226.
 (pdftex.def)             Requested size: 441.01773pt x 291.27887pt.
- [37 <./images/users_to_roles_diagram.png>]
+ [39 <./images/users_to_roles_diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 232--234
 
  []
@@ -869,19 +917,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-[38 <./images/database_diagram.png>]) (zaver.tex [39]
+[40 <./images/database_diagram.png>]) (zaver.tex [41]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) [40
+)) [42
 
 ] (main.bbl
-[41
+[43
 
 
 
-]) [42] [43
+]) [44] [45
 
 ] (main.aux)
 
@@ -889,10 +937,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5149 strings out of 493634
- 68408 string characters out of 3141314
- 210218 words of memory out of 3000000
- 8409 multiletter control sequences out of 15000+200000
+ 5174 strings out of 493634
+ 68873 string characters out of 3141314
+ 210500 words of memory out of 3000000
+ 8429 multiletter control sequences out of 15000+200000
  17254 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  28i,11n,51p,1594b,2174s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -915,9 +963,9 @@ ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (54 pages, 989610 bytes).
+Output written on main.pdf (56 pages, 1288833 bytes).
 PDF statistics:
- 817 PDF objects out of 1000 (max. 8388607)
+ 833 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
