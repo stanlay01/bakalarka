@@ -2,6 +2,12 @@
   \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
 \begin{thebibliography}{10}
 
+\bibitem{sandhu96}
+
+
+\bibitem{title={Secure}
+
+
 \bibitem{telecom}
 Alfred.
 \newblock {\em American National Standard for}.
@@ -12,20 +18,10 @@ Alfred.
 \newblock {\em dopln.. toto nie je kniha :D}.
 \newblock dfgd, 2000.
 
-\bibitem{bell-lapadula}
-E.~Bell and L.~J.~La Padula.
-\newblock {\em dopln}.
-\newblock dopln, 1973.
-
 \bibitem{MAC}
 Mark. CURPHEY.
 \newblock {\em Mandatory Access Control}.
 \newblock online, 2002.
-
-\bibitem{desel}
-W.~DESEL, J.~REISIG.
-\newblock {\em Lectures on Petri nets I: Basic models}.
-\newblock Germany: Universtit ät Karlsruhe: Springer, 1998.
 
 \bibitem{gabova_kniha}
 Hartmut Ehrig, Gabriel Juhás, Julia Padberg, and Grzegorz~Rozenberg (Eds.).
@@ -33,14 +29,14 @@ Hartmut Ehrig, Gabriel Juhás, Julia Padberg, and Grzegorz~Rozenberg (Eds.).
 \newblock Springer, 2003.
 
 \bibitem{kuhn}
-David~F. Ferraiolo, D.~Richard Kuhn, and Ramaswamy Chandramouli.
-\newblock {\em ROLE-BASED ACCESS CONTROL}.
-\newblock Artech Print on Demand; 2 edition, 2007.
+D.~Ferraiolo, D.R. Kuhn, and R.~Chandramouli.
+\newblock {\em Role-based Access Control}.
+\newblock Artech House Computing Library. Artech House, 2007.
 
 \bibitem{NIST95}
-J.~Cugini Ferraiolo, D.~F. and D.~R. Kuh.
-\newblock {\em Role-Based Access Control (RBAC): Features and Motivations}.
-\newblock dopln, 2151.
+D.Richard Kuhn David~F. Ferraiolo.
+\newblock Role-based access control (rbac): Features and motivations.
+\newblock 1995.
 
 \bibitem{ekonomika}
 Michael~P. Gallaher, Alan~C. O’Connor, and Brian Kropp.
@@ -57,26 +53,26 @@ C.A.~REISIG PETRI.
 \newblock {\em Petri net}.
 \newblock Germany: Universtit ät Karlsruhe: Springer, 1998.
 
+\bibitem{desel}
+W.~Reisig and G.~Rozenberg.
+\newblock {\em Lectures on Petri Nets I: Basic Models: Advances in Petri Nets}.
+\newblock Lecture Notes in Computer Science. Springer Berlin Heidelberg, 1998.
+
 \bibitem{saltzer}
 J.~H. Saltzer and M.~D. Schroeder.
 \newblock {\em The Protection of Information in Computer Systems}.
 \newblock zmen toto este, 1975.
 
-\bibitem{sandhu96}
-R.~a~kolektív Sandhu.
-\newblock {\em Role-Based Access Control Models}.
-\newblock IEEE Computer, 1996.
+\bibitem{aalst}
+W.~van~der Aalst and K.M. van Hee.
+\newblock {\em Workflow Management: Models, Methods, and Systems}.
+\newblock Cooperative information systems. MIT Press, 2004.
 
 \bibitem{workflow_vyhody}
 W.~M. Van Der~Aalst.
 \newblock {\em Three good reasons for using a petri-net-based workflow
   management system}.
 \newblock MIT press., 1996.
-
-\bibitem{aalst}
-Wil Van Der~Aalst and Kees~Max Van~Hee.
-\newblock {\em Workflow management: models, methods, and systems}.
-\newblock MIT press., dopln rok.
 
 \bibitem{workflow_systemy}
 W.M.P. van~der Aalst.

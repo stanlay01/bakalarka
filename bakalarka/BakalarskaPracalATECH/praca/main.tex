@@ -13,6 +13,9 @@
 \usepackage{color}
 
 
+
+
+
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -79,7 +82,6 @@ literate=
 
 
 
-
 %moje funkcie 
 \newcommand{\mychapter}[2]{
 	\stepcounter{chapter}
@@ -89,6 +91,18 @@ literate=
 	\markboth{chapter name}{}
 	\addcontentsline{toc}{chapter}{#2}
 }
+
+\newcounter{listOfAppendix}
+
+
+\def\@zoznamPri{Pr\'{i}lohy}
+
+
+
+
+
+
+
 
 \begin{document}     
 
@@ -186,13 +200,35 @@ Evidenčné číslo: \mfevidenceneCislo
 
 \frontmatter
 
+
+%---------------
+% Čestné vyhlásenie
+% ----------------
+\setcounter{page}{3}
+\newpage 
+\noindent
+\vfill
+\begin{center}
+	\LARGE \textbf{Vyhlásenie autora}  \\
+\end{center}
+Podpísaný Pavol Martiš čestne vyhlasujem, že som Bakalársku prácu Workflow manažment systém – server manažmentu rolí a užívateľov vypracoval na základe poznatkov získaných počas štúdia a informácií z dostupnej literatúry uvedenej v práci.\\
+Uvedenú prácu som vypracoval pod vedením Prof. RNDr. Gabriela Juhása, PhD.
+V Bratislave dňa 15.05.2016 \\\\\\
+
+
+
+..................................................\\\\
+\indent podpis autora
+
+\vfill
+
 % -------------------
 %   Poďakovanie - nepovinné
 % -------------------
-\setcounter{page}{3}
+\setcounter{page}{4}
 \newpage 
 \begin{center}
-	\bf Poďakovanie: \\
+	\LARGE \textbf{Poďakovanie}  \\
 \end{center}
 \indent Chcel by som poďakovať všetkým, ktorí mi akýmkoľvek spôsobom pomohli pri spracovaní
 tejto bakalárskej práce. Moje poďakovanie patrí najmä vedúcemu práce, prof. RNDr. Gabrielovi Juhásovi, PhD., za
@@ -209,27 +245,70 @@ vedenie a celému tímu študentov, ktorí sa spoločne podieľali na tvorbe Wor
 % -------------------
 %   Abstrakt - Slovensky
 % -------------------
-\newpage 
-\section*{Abstrakt}
+%\newpage 
+%\section*{Abstrakt}
 
 
-Slovenský abstrakt v rozsahu 100-500 slov, jeden odstavec. Abstrakt
-stručne sumarizuje výsledky práce. Mal by byť pochopiteľný pre bežného
-informatika. Nemal by teda využívať skratky, termíny alebo označenie
-zavedené v práci, okrem tých, ktoré sú všeobecne známe.
+%Slovenský abstrakt v rozsahu 100-500 slov, jeden odstavec. Abstrakt
+%stručne sumarizuje výsledky práce. Mal by byť pochopiteľný pre bežného
+%informatika. Nemal by teda využívať skratky, termíny alebo označenie
+%zavedené v práci, okrem tých, ktoré sú všeobecne známe.
 
-\paragraph*{Kľúčové slová:} užívateľ, rola , workflow, Petriho sieť, RBAC , workflow
+%\%paragraph*{Kľúčové slová:} užívateľ, rola , workflow, Petriho sieť, RBAC , workflow
 % --- Koniec Abstrakt - Slovensky
 
+
+\newpage
+\pagestyle{empty}	
+\section*{\fontsize{22pt}{1.3}\selectfont S\'{U}HRN}
+\noindent SLOVENSKÁ TECHNICKÁ UNIVERZITA V BRATISLAVE
+\newline
+FAKULTA ELEKTROTECHNIKY A INFORMATIKY \\
+\begin{tabbing}	
+	\hspace*{7cm}\= \kill
+	\v{S}tudijný 	program:\> Aplikovaná informatika\\
+	Autor:\> \mfautor\\
+	Bakalárska práca  :\>
+	\begin{minipage}[t]{20em}
+		Bakalárska práca: Workflow manažment systém - server manažmentu rolí a užívateľov
+	\end{minipage} \\
+	Vedúci záverečnej práce :\> prof. RNDr. Gabriel Juhás, PhD.\\
+	
+	Miesto a rok predlo\v{z}enia pr\a'ace :\>Bratislava 2016
+\end{tabbing}
+Práca sa zaoberá návrhom serveru rolí pre Workflow manažment systém. Je rozdelená do troch častí. V prvej časti analyzuje problematiku Petriho sietí , Workflow manažmentu a metód riadenia prístupu. V druhej sa zaoberá architektúrou Workflow systému a bližšie rozoberá ich jednotlivé časti.
+\\ \\
+\paragraph*{Kľúčové slová:} 
+ Workflow manažment systém, Petriho siete, server manažmentu rolí, rola
 
 % -------------------
 % --- Abstrakt - Anglicky 
 % -------------------
-\newpage 
-\section*{Abstract}
+\newpage
+\pagestyle{empty}	
+\section*{\fontsize{21pt}{1.3}\selectfont ABSTRACT}
+ 
+	\noindent SLOVAK UNIVERSITY OF TECHNOLOGY IN BRATISLAVA
+	\newline
+	{\fontsize{11pt}{1.3}\selectfont FACULTY OF ELECTRICAL ENGINEERING AND INFORMATION TECHNOLOGY\\ }
+	
 
-Abstract in the English language (translation of the abstract in the
-Slovak language).
+
+\begin{tabbing}	
+	\hspace*{7cm}\= \kill
+	Study Programme :\> Applied Informatics\\
+	Author :\> \mfautor\\
+	Bachelor Thesis :\>
+	\begin{minipage}[t]{20em}
+	Workflow management system - server of role management
+	and organizational structure
+	\end{minipage} \\
+	Supervisor :\> prof. RNDr. Gabriel Juhás, PhD.\\
+	
+	Place and year of submission :\>Bratislava 2016
+\end{tabbing}
+gfdsgdfs
+\\ \\
 
 
 \paragraph*{Keywords:} 
@@ -278,20 +357,18 @@ Slovak language).
 \noindent
 WFMS – Workflow management system\\
 RBAC – Role-based access control\\
-MVC\\
-DAC\\
-MAC\\
-WF-sieť\\
-ACL\\
-NIST\\
-MLS\\
-SVG\\
-XML\\
-JSON\\
-CSS - Cascading Style Sheets\\
+MVC - Model-view-controller\\
+DAC - Discretionary Access Control\\
+MAC - Mandatory access control\\
+ACL - Access control list\\
+NIST - National Institute of Standards and Technology\\
+MLS - Multilevel security\\
+SVG - Scalable Vector Graphics\\
 XML - Extensible Markup Language\\
-
-
+JSON - JavaScript Object Notation\\
+CSS - Cascading Style Sheets\\
+PHP - 
+MySQL - 
 
 \listoffigures
 
@@ -325,14 +402,75 @@ XML - Extensible Markup Language\\
 \nocite{*}
 \clearpage
 
-\bibliographystyle{plain}
+%\bibliographystyle{plain}
 
-\bibliography{literatura} 
+%\bibliography{literatura} 
 
 %Prípadne môžete napísať literatúru priamo tu
 \begin{thebibliography}{5}
  
 \bibitem{gabova_kniha} MOLINA H. G. - ULLMAN J. D. - WIDOM J., 2002, Database Systems, Upper Saddle River : Prentice-Hall, 2002, 1119 s., Pearson International edition, 0-13-098043-9
+
+\bibitem{workflow_systemy}
+AALST, W.: \textit{The Application of Petri Nets to Workflow Management}. Dostupné
+na internete: http://wwwis.win.tue.nl/ wvdaalst/publications/p53.pdf
+
+\bibitem{autorizacia}
+Shengli Wu - Amit Sheth - John Miller - Zongwei Luo:\textit{ Authorisation and Access Control of Application Data
+	in Workflow Systems}: Journal of Intelligent Information Systems, 2002, č.18, s.71-94
+
+\bibitem{ekonomika}Michael P. Gallaher - Alan C. O'Connor - Brian Kropp, \textit{ The Economic Impact
+of Role-Based Access Control}, National Institute of Standards and Technology,
+2002.Dostupné na internete: http://www.nist.gov/director/planning/upload/report02-1.pdf
+
+\bibitem{kuhn}D. Ferraiolo - D.R. Kuhn - R. Chandramouli: \textit{Role-based Access Control}. Artech
+House Computing Library. Artech House, 2007, 405 s., ISBN 9781596931138
+
+
+\bibitem{aalst}AALST, W. - HEE, K.: \textit{Workflow Management Models, methods and systems}. Cambridge,
+Massachusetts: The MIT Press, 2004, ISBN 0-262-01189-1, p.
+267-268
+
+\bibitem{workflow_vyhody}W. M. Van Der Aalst: \textit{Three good reasons for using a petri-net-based workflow
+management system}. Medzinárodná vedecká konferencia o informáciach a integrácii procesov v podnikoch (IPIC’96)
+s. 179–201 , 1996.
+
+\bibitem{saltzer}J. H. Saltzer - M. D. Schroeder: \textit{The Protection of Information in Computer
+Systems}.  IEEE, č.63, September 1975, s.1278–1308.
+
+\bibitem{belapadula}
+D. E. Bell - L. J. La Padula: Secure computer systems: Vol. I—mathematical
+foundations,  Vol. II—a mathematical model,  Vol. III—a refinement of the mathematical
+model. Technical Report MTR-2547 (tri zväzky). Bedford: Mitre Corporation, MA, 1973.
+
+\bibitem{sandhu96}Sandhu, R. a kol.: \textit{Role-Based Access Control Models}. IEEE Computer, zväzok.
+29, č. 2, 1996.
+
+\bibitem{NIST95}Ferraiolo, D. F. -  J. Cugini, - D. R. Kuhn:\textit{ Role-Based Access Control
+(RBAC): Features and Motivations}.  New Orleans, LA : Konferencia o bezpečnosti aplikácii
+, December 11–15, 1995,
+s. 241–248.
+
+\bibitem{telecom}Telecom Glossary 2000, American National Standard for Telecommunications, American National Standards Institute
+
+\bibitem{TSCES}DoD, Trusted Computer System Evaluation Criteria (TCSEC), DoD 5200.28-STD.
+
+\bibitem{MAC}CURPHEY, Mark:\textit{ Mandatory Access Control} [online]. 2002 [cit. 2008-10-22] .
+ Dostupné na internete: <http://www.cgisecurity.com/owasp/html/ch08s02.html>
+
+\bibitem{Modelovacie_formalizmy}JUHÁS, G.: \textit{Modelovacie formalizmy udalostných systémov}. Bratislava: RT systems
+s.r.o., 2011, ISBN 978-80-970519-1-4, p. 29-45	
+
+\bibitem{desel}DESEL, J. - REISIG, W.: Lectures on Petri nets I: Basic models. Germany: Universtit
+ät Karlsruhe: Springer, 1998, ISBN 3-540-65306-6
+
+\bibitem{petri}PETRI, C.A. - REISIG, W. 2008 Petri net. [online] [cit. 27.04.2016]. Dostupné na internete:
+ <http://www.scholarpedia.org/article/Petri\_net>
+ 
+ \bibitem{page_speed}PageSpeed Insights [online] . Dostupné na internete:  <https//developers.google.com/speed/pagespeed/>
+ 
+  \bibitem{attensee}Attensee [online] . Dostupné na internete> <http://www.attensee.com/ >
+
 
 
 \end{thebibliography}
@@ -352,6 +490,20 @@ XML - Extensible Markup Language\\
 %\addcontentsline{toc}{chapter}{Appendix B}
 %\input AppendixB.tex
 
+\newpage
+\renewcommand \thesection{\Alph{section}}
+\setcounter{section}{0}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\renewcommand \thetable{\Alph{section}}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\setcounter{page}{1}  
+\pagenumbering{Roman}
+\cleardoublepage
+\addcontentsline{toc}{section}{\@zoznamPri}
+
+\section{Štruktúra elektronického nosiča}
 
 \end{document}
 

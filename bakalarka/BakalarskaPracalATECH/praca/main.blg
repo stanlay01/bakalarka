@@ -1,8 +1,24 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: literatura.bib
-Name 1 in "Ferraiolo, D. F., J. Cugini, AND D. R. Kuh" has a comma at the end for entry NIST95
-while executing---line 1049 of file plain.bst
-Name 1 in "Ferraiolo, D. F., J. Cugini, AND D. R. Kuh" has a comma at the end for entry NIST95
-while executing---line 1090 of file plain.bst
+I was expecting a `,' or a `}'---line 110 of file literatura.bib
+ :   title={Secure 
+ :                 Computer Systems: Mathematical Foundations and Model},
+I'm skipping whatever remains of this entry
+"," immediately follows a field name---line 124 of file literatura.bib
+ :  citeulike:714395
+ :                  ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "bell-lapadula"
+Warning--to sort, need author or key in sandhu96
+Warning--to sort, need author, editor, or key in title={Secure
+Warning--empty author in sandhu96
+Warning--empty title in sandhu96
+Warning--empty journal in sandhu96
+Warning--empty year in sandhu96
+Warning--empty author and editor in title={Secure
+Warning--empty title in title={Secure
+Warning--empty publisher in title={Secure
+Warning--empty year in title={Secure
+Warning--empty journal in NIST95
 (There were 2 error messages)

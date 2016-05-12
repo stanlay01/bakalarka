@@ -1,36 +1,24 @@
 \mychapter{0}{Úvod}
-Systém vývoja aplikačných programov sa veľmi rýchlo mení. So stúpajúcou zložitosťou počítačových systémov a zvyšovaním počtu užívateľov sa vynára potreba rozložiť aplikácie do viacerých navzájom nezávislých modulov. Najprv sa vytvorili databázy , ktoré umožnili oddeliť dáta od aplikácie. Následne sa v 80-tych rokoch analogickým spôsobom  oddelilo používateľské rozhranie od samotnej aplikácie. Vznikla tak MVC (model-view-controller) architektúra. Ďalším stupňom vývoja je potreba oddeliť všeobecnú funkcionalitu od aplikácie. Odčlení sa tak procesná, aplikačná a dátová časť. Túto myšlienku poskytuje workflow management systém (WfMS).
+Zámerom bakalárskej práce je navrhnúť a implementovať server manažmentu rolí vhodný pre komplexný \emph{Workflow manažment systém}, ktorý by fungoval na princípe Petriho sietí.
 
-Workflow management systém umožňuje  ľahko oddeliť procesy od vizuálnej a dátovej časti, vďaka čomu je upravenie a znovupoužitie týchto procesov jednoduchšie. Je možné si  predstaviť, že dve rôzne firmy pôsobiace v rovnakej oblasti by využívali rovnaké procesy, pričom by mali osobitnú databázovú aj vizuálnu stránku.
+Workflow manažment systém ponúka možnosť automatizovať procesy, ktoré sa riadia určitou logickou postupnosťou. Vo firemnej oblasti dokáže zrýchliť a zefektívniť vykonávanie určitej logistiky. WfMS oddeľuje procesnú časť od aplikačnej a dátovej časti, vďaka čomu sa zjednodušuje návrh, úprava a implementovanie procesov.
 
-Dôležitou otázkou pri tvorbe workflow management systémou je správa zdrojov. Treba určiť kto môže a naopak kto nesmie pristupovať ku konkrétnym prostriedkom, aby sa zachovala dôvernosť informácii a nemohol byť narušený systém.
-Vo WFSM je najpoužívanejší spôsob správa zdrojov založená na základe systému rolí Role-based access control (RBAC). Tento model sa využíva najmä vďaka tomu, že je založený na organizačnej štruktúre podnikov a poskytuje efektívne riadenie a údržbu právomocí. Vo WfMS je potreba oddeliť  tvorbu procesov od jej používania. RBAC to umožňuje oddelením používateľov od aplikácie. Okrem toho má RBAC ďalšie výhody ako napríklad uľahčenie administrácie priradením používateľov k jednotlivým roliam v porovnaní so správou práv pre každého jednotlivého používateľa osobitne. 
+Dôležitou otázkou pri vytváraní WfMS je správa zdrojov.
+Treba určiť, kto môže a naopak kto nesmie pristupovať ku konkrétnym prostriedkom,
+aby sa zachovala dôvernosť informácii a nemohol byť narušený systém. Vo WFSM je
+najpoužívanejší spôsob správa zdrojov založená na základe systému rolí.
+ 
+Bakalárska práca pozostáva z troch hlavných kapitol. V prvej kapitole rozoberáme problematiku Workflow manažmentu, Petriho sietí a riadenia prístupu. Sústreďujeme sa najmä na riadenie prístupu na základe rolí RBAC - Role Based Access Control, ktoré je najviac využívané vo Workflow systémoch, a to najmä vďaka tomu, že je založený na
+organizačnej štruktúre podnikov a poskytuje efektívne riadenie a údržbu právomocí. 
 
-Jedna z možností ako modelovať WFMS je prostredníctvom Petriho sietí. Petriho sieť je matematický nástroj na modelovanie a simulovanie diskrétnych procesov.  Hlavné výhody Petriho sietí sú:
+V druhej kapitole prezentujeme návrh aplikácie Workflow  manažment systému a jej architektúru. Systém pozostáva z viacerých častí, ktoré dokopy utvárajú komplexný celok. Každú časť podrobne vysvetľujeme s ohľadom na vzájomnú integráciu.
 
-%copy - paste?
-\begin{itemize}
-	\item formálna sémantika – proces špecifikovaný Petriho sieťou má precíznu definíciu
-	\item grafické zobrazenie – Petriho sieť je grafický jazyk. Dôsledkom tohto Petriho siete
-	sú intuitívne a ľahko pochopiteľné, preto sú vhodné aj pri komunikácii
-	s koncovými užívateľmi.
-	\item expresivita – Petriho siet podporuje všetky primitíva potrebné pre modelovanie
-	workflow procesov. Keďže stavy sú reprezentované explicitne, umožňujú
-	modelovanie závislostí a implicitné voľby.
-	\item analýza – Umožňujú overiť vlastnosti (bezpečnosť, invariantnosť, deadlocky, atď.)
-	a vyčísliť výkonové merania (čas odozvy, čas čakania, podiel obsadenosti, atď.)
-\end{itemize}
+V tretej kapitole sa zaoberáme  implementáciou serveru manažmentu rolí a používateľov. V tejto časti WfMS rozoberáme serverové riešenie riadenia prístupu na základe rolí. Aplikácia poskytuje dve hlavné funkcionality - mapovanie používateľov na roly vo firme a komunikačné rozhranie pre ukladanie rolí a referencií do databázy. Na konci tejto kapitoly testujeme efektívnosť a funkcionalitu aplikácie.
+
+Na základe praktickej časti a jej testovania sme prišli na viaceré možné vylepšenia, ktoré bude možné aplikovať v budúcom vývoji Workflow manažment systému. 
 
 
 
-Cieľom tejto práce je na základe štúdia a analýzy workflow managemantu  a Petriho sietí vytvoriť modul na správu rolí a užívateľov pre webovú aplikáciu, ktorá bude poskytovať WfMS na základe Petriho sietí. 
-
-Bakalárska práca pozostáva z 3 hlavných kapitol. Prvá kapitola je zameraná na analýzu workflow systému, Petriho siete a riadenie prístupov.
-
-Druhá kapitola je zameraná na opis riešenia celého Workflow systému, pričom bližšie popisuje jednotlivé časti.
-
-
-Tretia kapitola .... 
 
  
 
