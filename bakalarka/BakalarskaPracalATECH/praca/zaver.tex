@@ -1,10 +1,25 @@
 \mychapter{2}{Záver}
-Zámerom práce bolo navrhnúť a implementovať server manažmentu rolí vhodný pre komplexný \emph{Workflow manažment systém}, ktorý by fungoval na princípe Petriho sietí.
+Úlohou bakalárskej práce bolo navrhnúť a implementovať server manažmentu rolí vhodný pre komplexný \emph{Workflow manažment systém}, ktorý by fungoval na základe Petriho sietí.
 
-\noindent Na začiatku sme analyzovali problematiku Workflow manažmentu, Petriho sietí a používané metódy riadenia prístupu. Rozhodli sme sa následne aplikovať naše vedomosti v aplikácii a využiť pre naše potreby metódu riadenia rolí RBAC, ktorú sme prispôsobili pre náš systém a navrhli spôsob jej implementácie. Následne sme nad danou architektúrou vytvorili aplikáciu pre správu rolí vo firmách a ich  priraďovanie jednotlivým používateľom. Aplikácia je vo forme webovej služby a takisto poskytuje aplikačné rozhranie pre \emph{editor manažmentu rolí a organizačnej štruktúry} pre ukladanie do databázy.
+\noindent Na začiatku sme analyzovali problematiku Workflow manažmentu, Petriho sietí a používané metódy riadenia prístupu. Zistili sme, že Petriho siete poskytujú vhodné riešenie na implementovanie Workflow manažment systému. Ich hlavná výhoda spočíva v grafickej reprezentácii, intuitívnom modelovaní a vďaka jej matematickému základu taktiež jasnej analýze procesov. V porovnaní s konkurenčnými WfMS, rozlišuje v prípadoch medzi stavom, do akého proces dostane a jednotlivými udalosťami, ktoré posúvajú prípad do nového stavu.  Mapovanie Petriho sietí na Workflow systém má určité pravidlá, ktoré sú však ľahko zrozumiteľné.
 
-\noindent Vytvorená aplikácia umožňuje efektívne spravovať role vo firme - pridávať a odoberať roly z firmy, mapovať používateľov na roly jednotlivo ale aj skupinovo. Pre tieto účely sa zobrazuje zoznam používateľov, ktorých je možné zotriediť podľa rôznych parametrov, alebo osobitne vyhľadávať na základe textového vstupu. Aplikácia je kompatibilná s ostatnými časťami Workflow systému - používa rovnakú databázu. 
+Na základe rozboru prístupových práv sme identifikovali systém riadenia rolí RBAC (Role Based Access Control) ako najvhodnejší prístup pre správu zdrojov vo WfMS. Tento model zabezpečuje prepojenie práv používateľov prostredníctvom rolí, a tak umožňuje modelovať procesy nezávisle od používateľskej časti aplikácie. Okrem toho zabezpečuje rýchlu a efektívnu administráciu a vďaka tomu, že je postavený na základoch organizačnej štruktúry, je zrozumiteľný širšej verejnosti. Z dlhodobého hľadiska prevyšuje konkurenčné systémy najmä pre firmy s veľkým počtom zamestnancov a zložitou organizačnou štruktúrou. 
+ 
+Pri návrhu Workflow systému sme sa vzhľadom k predošlej analýze rozhodli použiť práve Petriho siete ako základ pre logiku WfMS. Každý prechod v Petriho sieti reprezentuje úlohu ktorú treba vykonať. Ku každej úlohe priraďujeme formulár a rolu, ktorá je oprávnená ju spustiť. Po namodelovaní procesov  ich môžu následne paralelne využívať na portáli viaceré firmy. 
 
-\noindent V budúcnosti bude potrebné vylepšiť model referencii, pridať možnosť vytvárať vo firme hierarchie rolí, prípadne obmedzenia ako statické a dynamické vylúčenie práv  a zabezpečiť bezpečnosť aplikácie tak, aby používateľ upravením klientskej časti skriptu nebol schopný vykonať neoprávnené operácie. 
+Pre tento systém sme vytvorili aplikáciu pre správu rolí vo firmách a ich  priraďovanie jednotlivým používateľom. Aplikácia je vo forme webovej služby a takisto poskytuje aplikačné rozhranie pre \emph{editor manažmentu rolí a organizačnej štruktúry} pre ukladanie do databázy. Vytvorená aplikácia umožňuje efektívne spravovať role vo firme - pridávať a odoberať roly z firmy, mapovať používateľov na roly jednotlivo ale aj skupinovo. Pre tieto účely sa zobrazuje zoznam používateľov, ktorých je možné zotriediť podľa rôznych parametrov, alebo osobitne vyhľadávať na základe textového vstupu. Aplikácia je kompatibilná s ostatnými časťami Workflow systému - používa rovnakú databázu. 
 
 
+V priebehu testovania sme zistili, že v budúcnosti bude  potrebné vylepšiť model referencii, pridať možnosť vytvárať vo firme hierarchie rolí, prípadne obmedzenia ako statické a dynamické vylúčenie práv  a zabezpečiť bezpečnosť aplikácie tak, aby používateľ upravením klientskej časti skriptu nebol schopný vykonať neoprávnené operácie. 
+
+
+
+
+
+
+%analyzovanie celku ->
+
+% popis celku (implementácia)
+
+%analýza svojho ->
+% implementácia   a z toho nejaké závery a výhody, čo to moje ponúka
