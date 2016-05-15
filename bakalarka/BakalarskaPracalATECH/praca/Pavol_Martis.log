@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  13 MAY 2016 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.15)  14 MAY 2016 22:34
 entering extended mode
-**./main.tex
-(main.tex
+**./Pavol_Martis.tex
+(Pavol_Martis.tex
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9n> and hyphenation patterns for 69 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
@@ -439,12 +439,8 @@ Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
 )
 \c@listOfAppendix=\count108
 
-(main.aux
-
-LaTeX Warning: Label `fig:roles_permissions' multiply defined.
-
-)
-\openout1 = `main.aux'.
+(Pavol_Martis.aux)
+\openout1 = `Pavol_Martis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
 LaTeX Font Info:    ... okay on input line 134.
@@ -545,6 +541,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--245
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 242--245
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 248--250
 
  []
@@ -567,36 +568,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--333
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--351
+Underfull \hbox (badness 10000) in paragraph at lines 349--358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--351
+Underfull \hbox (badness 10000) in paragraph at lines 349--358
 
  []
 
-[7] (main.toc [8
+[7] (Pavol_Martis.toc [8
 
 ])
 \tf@toc=\write3
-\openout3 = `main.toc'.
+\openout3 = `Pavol_Martis.toc'.
 
  [9]
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
-[10] (main.lof [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--419
+
+ []
+
+[10] (Pavol_Martis.lof [1
 
 
 ])
 \tf@lof=\write4
-\openout4 = `main.lof'.
+\openout4 = `Pavol_Martis.lof'.
 
- (main.lot)
+ (Pavol_Martis.lot)
 \tf@lot=\write5
-\openout5 = `main.lot'.
+\openout5 = `Pavol_Martis.lot'.
 
  [2] (uvod.tex
 Overfull \hbox (5.17746pt too wide) in paragraph at lines 2--3
@@ -655,27 +661,19 @@ File: images/vojvoda2.png Graphic file (type png)
 <use images/vojvoda2.png>
 Package pdftex.def Info: images/vojvoda2.png used on input line 147.
 (pdftex.def)             Requested size: 396.91325pt x 115.66016pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./images/vojvoda.png>] <images/and.png, id=100, 437.635pt x 126.874pt>
+ [7 <./images/vojvoda.png>]
+<images/and.png, id=100, 437.635pt x 126.874pt>
 File: images/and.png Graphic file (type png)
-
-<use images/and.png>
+ <use images/and.png>
 Package pdftex.def Info: images/and.png used on input line 178.
 (pdftex.def)             Requested size: 308.71106pt x 89.49843pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/or.png, id=101, 455.301pt x 122.859pt>
+ [8 <./images/vojvoda2.png>] <images/or.png, id=105, 455.301pt x 122.859pt>
 File: images/or.png Graphic file (type png)
- <use images/or.png>
+
+<use images/or.png>
 Package pdftex.def Info: images/or.png used on input line 185.
 (pdftex.def)             Requested size: 308.71106pt x 83.3049pt.
- [8 <./images/vojvoda2.png>] <images/iteracia.png, id=106, 533.192pt x 109.208p
-t>
+ <images/iteracia.png, id=106, 533.192pt x 109.208pt>
 File: images/iteracia.png Graphic file (type png)
 
 <use images/iteracia.png>
@@ -692,21 +690,24 @@ File: images/belapadula.png Graphic file (type png)
 <use images/belapadula.png>
 Package pdftex.def Info: images/belapadula.png used on input line 244.
 (pdftex.def)             Requested size: 308.71106pt x 177.52159pt.
- [12 <./images/belapadula.png>]
-<images/rbac_kuhn.png, id=123, 592.2125pt x 170.6375pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12] <images/rbac_kuhn.png, id=123, 592.2125pt x 170.6375pt>
 File: images/rbac_kuhn.png Graphic file (type png)
 
 <use images/rbac_kuhn.png>
 Package pdftex.def Info: images/rbac_kuhn.png used on input line 266.
 (pdftex.def)             Requested size: 308.71106pt x 88.95331pt.
- [13 <./images/rbac_kuhn.png (PNG copy)>]
-<images/rbac012.png, id=128, 491.8375pt x 371.3875pt>
+ [13 <./images/belapadula.png> <./images/rbac_kuhn.png (PNG copy)>] <images/rba
+c012.png, id=128, 491.8375pt x 371.3875pt>
 File: images/rbac012.png Graphic file (type png)
- <use images/rbac012.png>
+
+<use images/rbac012.png>
 Package pdftex.def Info: images/rbac012.png used on input line 296.
 (pdftex.def)             Requested size: 308.71106pt x 233.11398pt.
-
-[14 <./images/rbac012.png (PNG copy)>]
+ [14 <./images/rbac012.png (PNG copy)>]
 <images/rbac_kuhn_full.png, id=132, 732.7375pt x 240.9pt>
 File: images/rbac_kuhn_full.png Graphic file (type png)
 
@@ -720,8 +721,12 @@ File: images/hierarchia_priklad.png Graphic file (type png)
 <use images/hierarchia_priklad.png>
 Package pdftex.def Info: images/hierarchia_priklad.png used on input line 322.
 (pdftex.def)             Requested size: 164.57562pt x 198.45662pt.
- [15 <./images/rbac_kuhn_full.png (PNG copy)> <./images/hierarchia_priklad.png 
-(PNG copy)>] [16] [17]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./images/rbac_kuhn_full.png (PNG copy)>] [16 <./images/hierarchia_priklad.
+png (PNG copy)>] [17]
 <images/rbac_net_cash.png, id=143, 1174.3875pt x 721.69624pt>
 File: images/rbac_net_cash.png Graphic file (type png)
 
@@ -843,11 +848,11 @@ Package pdftex.def Info: images/kubko.png used on input line 149.
 File: images/roles_in_petri_model.jpg Graphic file (type jpg)
 
 <use images/roles_in_petri_model.jpg>
-Package pdftex.def Info: images/roles_in_petri_model.jpg used on input line 19.
+Package pdftex.def Info: images/roles_in_petri_model.jpg used on input line 41.
 
 (pdftex.def)             Requested size: 396.91325pt x 208.8976pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
@@ -856,21 +861,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 File: images/user_to_roles.png Graphic file (type png)
 
 <use images/user_to_roles.png>
-Package pdftex.def Info: images/user_to_roles.png used on input line 32.
+Package pdftex.def Info: images/user_to_roles.png used on input line 54.
 (pdftex.def)             Requested size: 396.91325pt x 210.41264pt.
 
 <images/roles_permissions.png, id=201, 742.775pt x 301.125pt>
 File: images/roles_permissions.png Graphic file (type png)
 
 <use images/roles_permissions.png>
-Package pdftex.def Info: images/roles_permissions.png used on input line 49.
+Package pdftex.def Info: images/roles_permissions.png used on input line 71.
 (pdftex.def)             Requested size: 396.91325pt x 160.91418pt.
  [30 <./images/user_to_roles.png>]
 <images/formulare_opravnenia.png, id=205, 296.60812pt x 134.75343pt>
 File: images/formulare_opravnenia.png Graphic file (type png)
 
 <use images/formulare_opravnenia.png>
-Package pdftex.def Info: images/formulare_opravnenia.png used on input line 77.
+Package pdftex.def Info: images/formulare_opravnenia.png used on input line 99.
 
 (pdftex.def)             Requested size: 176.40439pt x 80.14536pt.
  [31 <./images/roles_permissions.png (PNG copy)>] <images/server_roli_screen.pn
@@ -878,14 +883,14 @@ g, id=210, 667.74469pt x 448.67625pt>
 File: images/server_roli_screen.png Graphic file (type png)
 
 <use images/server_roli_screen.png>
-Package pdftex.def Info: images/server_roli_screen.png used on input line 93.
+Package pdftex.def Info: images/server_roli_screen.png used on input line 115.
 (pdftex.def)             Requested size: 396.91325pt x 266.7021pt.
  [32 <./images/formulare_opravnenia.png> <./images/server_roli_screen.png>]
 <images/role_actions_screen.png, id=216, 398.23781pt x 99.37125pt>
 File: images/role_actions_screen.png Graphic file (type png)
 
 <use images/role_actions_screen.png>
-Package pdftex.def Info: images/role_actions_screen.png used on input line 103.
+Package pdftex.def Info: images/role_actions_screen.png used on input line 125.
 
 (pdftex.def)             Requested size: 220.50887pt x 55.0228pt.
 
@@ -893,14 +898,14 @@ Package pdftex.def Info: images/role_actions_screen.png used on input line 103.
 File: images/user_detail_screen.png Graphic file (type png)
 
 <use images/user_detail_screen.png>
-Package pdftex.def Info: images/user_detail_screen.png used on input line 113.
+Package pdftex.def Info: images/user_detail_screen.png used on input line 135.
 (pdftex.def)             Requested size: 220.50887pt x 246.51665pt.
 
 <images/one_user_screen2.png, id=218, 657.95813pt x 78.2925pt>
 File: images/one_user_screen2.png Graphic file (type png)
 
 <use images/one_user_screen2.png>
-Package pdftex.def Info: images/one_user_screen2.png used on input line 120.
+Package pdftex.def Info: images/one_user_screen2.png used on input line 142.
 (pdftex.def)             Requested size: 441.01773pt x 52.47958pt.
 
 
@@ -912,7 +917,7 @@ File: images/firm_administration_screen.png Graphic file (type png)
 
 <use images/firm_administration_screen.png>
 Package pdftex.def Info: images/firm_administration_screen.png used on input li
-ne 130.
+ne 152.
 (pdftex.def)             Requested size: 220.50887pt x 255.07002pt.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
@@ -925,9 +930,9 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 137.
+(Font)              <7> on input line 159.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 137.
+(Font)              <5> on input line 159.
  [34 <./images/one_user_screen2.png> <./images/firm_administration_screen.png>]
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
@@ -938,7 +943,7 @@ File: images/roles_permissions_diagram.png Graphic file (type png)
 
 <use images/roles_permissions_diagram.png>
 Package pdftex.def Info: images/roles_permissions_diagram.png used on input lin
-e 204.
+e 226.
 (pdftex.def)             Requested size: 308.71106pt x 312.35092pt.
 
 <images/users_to_roles_diagram.png, id=235, 626.34pt x 481.8pt>
@@ -946,61 +951,61 @@ File: images/users_to_roles_diagram.png Graphic file (type png)
 
 <use images/users_to_roles_diagram.png>
 Package pdftex.def Info: images/users_to_roles_diagram.png used on input line 2
-15.
+37.
 (pdftex.def)             Requested size: 441.01773pt x 339.25734pt.
  [36 <./images/roles_permissions_diagram.png>] <images/database_diagram.png, id
 =240, 727.21687pt x 480.29437pt>
 File: images/database_diagram.png Graphic file (type png)
 
 <use images/database_diagram.png>
-Package pdftex.def Info: images/database_diagram.png used on input line 226.
+Package pdftex.def Info: images/database_diagram.png used on input line 248.
 (pdftex.def)             Requested size: 441.01773pt x 291.27887pt.
  [37 <./images/users_to_roles_diagram.png>]
 <images/heatmap.png, id=246, 858.95906pt x 584.1825pt>
 File: images/heatmap.png Graphic file (type png)
 
 <use images/heatmap.png>
-Package pdftex.def Info: images/heatmap.png used on input line 241.
+Package pdftex.def Info: images/heatmap.png used on input line 263.
 (pdftex.def)             Requested size: 308.71106pt x 209.95789pt.
  [38 <./images/database_diagram.png>]
 <images/path.png, id=251, 829.59938pt x 572.89032pt>
 File: images/path.png Graphic file (type png)
  <use images/path.png>
-Package pdftex.def Info: images/path.png used on input line 248.
+Package pdftex.def Info: images/path.png used on input line 270.
 (pdftex.def)             Requested size: 308.71106pt x 213.18117pt.
 
 <images/mobil.png, id=252, 832.10875pt x 1636.1125pt>
 File: images/mobil.png Graphic file (type png)
  <use images/mobil.png>
-Package pdftex.def Info: images/mobil.png used on input line 263.
+Package pdftex.def Info: images/mobil.png used on input line 285.
 (pdftex.def)             Requested size: 308.71106pt x 606.99985pt.
 
 [39 <./images/heatmap.png> <./images/path.png>] [40 <./images/mobil.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
 [41]) (zaver.tex [42] [43
 
 ]) [44]
-Underfull \hbox (badness 10000) in paragraph at lines 467--470
+Underfull \hbox (badness 10000) in paragraph at lines 475--478
 []\T1/cmr/m/n/12 Michael P. Gal-la-her - Alan C. O'Connor - Brian Kropp,  \T1/c
 mr/m/it/12 The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--470
+Underfull \hbox (badness 10000) in paragraph at lines 475--478
 \T1/cmr/m/it/12 Eco-no-mic Im-pact of Role-Based Ac-cess Con-trol\T1/cmr/m/n/12
  , Na-ti-onal Ins-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--470
+Underfull \hbox (badness 10000) in paragraph at lines 475--478
 \T1/cmr/m/n/12 tute of Stan-dards and Tech-no-logy, 2002.Do-stupné na in-ter-ne
 te:
  []
@@ -1010,7 +1015,7 @@ te:
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 []\T1/cmr/m/n/12 PageSpeed In-sights [on-line] . Do-stupné na in-ter-nete: <htt
 p-s//de-ve-lo-
  []
@@ -1018,27 +1023,24 @@ p-s//de-ve-lo-
 [46] [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 554--559
+Underfull \hbox (badness 10000) in paragraph at lines 562--567
 
  []
 
-[2] (main.aux)
+[2] (Pavol_Martis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.26pt have occurred.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 5613 strings out of 493634
- 74420 string characters out of 3141314
- 219392 words of memory out of 3000000
- 8857 multiletter control sequences out of 15000+200000
+ 5614 strings out of 493634
+ 74575 string characters out of 3141314
+ 219353 words of memory out of 3000000
+ 8858 multiletter control sequences out of 15000+200000
  17667 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 28i,11n,51p,1607b,2175s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,11n,51p,1615b,2175s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ecrm1000.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ecbx1440.pk> <C:\Users\palko\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
@@ -1058,9 +1060,9 @@ ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (60 pages, 2498962 bytes).
+Output written on Pavol_Martis.pdf (60 pages, 2487715 bytes).
 PDF statistics:
- 875 PDF objects out of 1000 (max. 8388607)
+ 876 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

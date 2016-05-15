@@ -11,7 +11,7 @@ Petriho siete sú dobrým nástrojom na modelovanie procesov vo WfMS, nedokážu
 %---------------------------------- začiatok sekcie Workflow management systém ----------------------------------------
 
 \section{Workflow management systém}
-V každom podniku je zaužívaná určitá logistika, nastavenie procesov, na základe ktorých prebieha celé riadenie a manažment práce. Cieľom workflow manažmentu (WfM) je zaistiť, aby bola táto logistika správne vykonávaná, čo znamená určiť, kto má v danom momente spustiť ktorú úlohu. S narastajúcou veľkosťou podniku alebo zložitosťou procesov, manažment riadenia príde do bodu, kedy je len veľmi ťažko ovládateľný. Naskytuje sa tak potreba, aby sa celý manažment zautomatizoval. Vzniká tak workflow management systém (WfMS). Workflow Management Coalition definoval termín WfMS ako systém, ktorý kompletne určí, manažuje a vykonáva workflow cez softvér, ktorý má určené vykonávanie jednotlivých úloh na základe počítačovej reprezentácie workflow logiky. \cite{aalst}\\
+V každom podniku je zaužívaná určitá logistika, nastavenie procesov, na základe ktorých prebieha celé riadenie a manažment práce. Cieľom Workflow manažmentu (WfM) je zaistiť, aby bola táto logistika správne vykonávaná, čo znamená určiť, kto má v danom momente spustiť ktorú úlohu. S narastajúcou veľkosťou podniku alebo zložitosťou procesov, manažment riadenia príde do bodu, kedy je len veľmi ťažko ovládateľný. Naskytuje sa tak potreba, aby sa celý manažment zautomatizoval. Vzniká tak Workflow management systém (WfMS). Workflow Management Coalition definoval termín WfMS ako systém, ktorý kompletne určí, manažuje a vykonáva workflow cez softvér, ktorý má určené vykonávanie jednotlivých úloh na základe počítačovej reprezentácie workflow logiky. \cite{aalst}\\
 
 %Základom každého WfMS je zabezpečiť  kontrolu a koordináciu nad procesmi, ktoré zahrňujú ľudskú prácu v organizovanom prostredí.  
 %pre automatizáciu firemných procesov , v priebehu ktorého informácia putuje z jednej aktivity na ďalšiu, od jedného účastníka k druhému za určitých zadefinovaných pravidiel .
@@ -31,7 +31,7 @@ Každý prípad vo WfMS má svoj začiatok a koniec. Medzitým sa proces nachád
 \end{itemize}
 
 \subsection{Úloha}
-Úloha je základnou logickou jednotkou workflow systému. Definuje nám, čo treba vykonať aby sa prípad posunul.Ako taká je nedeliteľná a v systéme sa musí vždy vykonať ako celok. V prípade neúspechu úlohy tak treba úlohu spustiť celú odznova. Je však možné rozlišovať medzi spustením a ukončením úlohy. 
+Úloha je základnou logickou jednotkou workflow systému. Definuje nám, čo treba vykonať aby sa prípad posunul. Ako taká je nedeliteľná a v systéme sa musí vždy vykonať ako celok. V prípade neúspechu úlohy tak treba úlohu spustiť celú odznova. Je však možné rozlišovať medzi spustením a ukončením úlohy. 
 
 \subsection{Proces}
 Proces definuje spôsob, akým sa vykonajú určité úlohy v konkrétnom prípade. Proces môže byť vo viacerých prípadoch rovnaký, ale môže sa takisto odlišovať. Tieto odlišnosti v procese môžu byť napríklad spôsobené smerovacími konštrukciami, za pomoci ktorých je prípad namodelovaný. V prípade vybavovanie pôžičky môže byť žiadosť pre Ferka zamietnutá, zatiaľ čo taká istá žiadosť bude pre Janka schválená.
@@ -143,7 +143,7 @@ Na obrázku \ref{obr:voda} môžeme vidieť jednoduchú Petriho sieť, ktorá zn
 
 Pre spustenie tohto procesu je potrebné, aby bola v mieste ''O'' minimálne jedna značka a v mieste ''H'' značiek minimálne dve. Po spustení prechodu sa v miestach vstupujúcich do prechodu odoberie počet tokenov daný násobnosťou hrany. Naopak vo výstupnom mieste sa značky podľa násobnosti hrany pridajú.  
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centerline{\includegraphics[width=0.9\textwidth]{images/vojvoda2}}
 	\caption{Spustenie siete s jedným žetónom v mieste O a tromi žetónmi v mieste H}
 	\label{obr:voda2}

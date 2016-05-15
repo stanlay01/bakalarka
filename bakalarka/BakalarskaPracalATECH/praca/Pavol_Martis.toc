@@ -13,17 +13,17 @@
 \contentsline {subsection}{\numberline {1.2.2}Defin\IeC {\'\i }cia Petriho siete}{6}
 \contentsline {subsection}{\numberline {1.2.3}Pravidl\IeC {\'a} pre sp\IeC {\'u}\IeC {\v s}\IeC {\v t}anie prechodov}{7}
 \contentsline {subsection}{\numberline {1.2.4}Pr\IeC {\'\i }klad}{7}
-\contentsline {subsection}{\numberline {1.2.5}Implementovanie Petriho siet\IeC {\'\i } na Workflow management syst\IeC {\'e}m}{7}
-\contentsline {subsubsection}{Smerovacie kon\IeC {\v s}trukcie}{8}
+\contentsline {subsection}{\numberline {1.2.5}Implementovanie Petriho siet\IeC {\'\i } na Workflow management syst\IeC {\'e}m}{8}
+\contentsline {subsubsection}{Smerovacie kon\IeC {\v s}trukcie}{9}
 \contentsline {section}{\numberline {1.3}Riadenie pr\IeC {\'\i }stupu}{9}
 \contentsline {subsection}{\numberline {1.3.1}Princ\IeC {\'\i }py bezpe\IeC {\v c}n\IeC {\'e}ho dizajnu}{10}
-\contentsline {subsection}{\numberline {1.3.2}Model Bell-LaPadula}{11}
-\contentsline {section}{\numberline {1.4}RBAC}{13}
-\contentsline {subsection}{\numberline {1.4.1}Popis modelu}{13}
+\contentsline {subsection}{\numberline {1.3.2}Model Bell-LaPadula}{12}
+\contentsline {section}{\numberline {1.4}RBAC}{12}
+\contentsline {subsection}{\numberline {1.4.1}Popis modelu}{12}
 \contentsline {subsection}{\numberline {1.4.2}Dizajn}{13}
 \contentsline {subsubsection}{Jadro RBAC}{14}
 \contentsline {subsubsection}{Hierarchick\IeC {\'e} \IeC {\v s}trukt\IeC {\'u}ry}{15}
-\contentsline {subsubsection}{Obmedzenia}{16}
+\contentsline {subsubsection}{Obmedzenia}{15}
 \contentsline {subsection}{\numberline {1.4.3}Porovnanie RBAC s alternat\IeC {\'\i }vnymi met\IeC {\'o}dami riadenia}{16}
 \contentsline {subsubsection}{ACL}{16}
 \contentsline {subsubsection}{Volite\IeC {\v l}n\IeC {\'e} riadenie pr\IeC {\'\i }stupu DAC}{16}
@@ -44,9 +44,9 @@
 \contentsline {subsection}{\numberline {2.2.6}Server formul\IeC {\'a}rov a d\IeC {\'a}tov\IeC {\'e}ho modelu- Jakub Kov\IeC {\'a}\IeC {\v c}ik}{27}
 \contentsline {chapter}{Opis rie\IeC {\v s}enia - Server mana\IeC {\v z}mentu rol\IeC {\'\i } a pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov}{28}
 \contentsline {section}{\numberline {3.1}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{28}
-\contentsline {section}{\numberline {3.2}N\IeC {\'a}vrh}{28}
+\contentsline {section}{\numberline {3.2}N\IeC {\'a}vrh}{29}
 \contentsline {subsection}{\numberline {3.2.1}Popis architekt\IeC {\'u}ry}{29}
-\contentsline {subsubsection}{Prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k roliam}{29}
+\contentsline {subsubsection}{Prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k roliam}{30}
 \contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{30}
 \contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{31}
 \contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{31}

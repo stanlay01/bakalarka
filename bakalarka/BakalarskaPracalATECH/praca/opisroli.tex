@@ -3,13 +3,35 @@
 
 %ked vyhladavam užívateľov, nemal by som dať limit... aj ked to mi neotestujú :D
 \section{Určenie požiadaviek}
-Aplikačným výstupom tejto bakalárskej práce je web stránka, ktorej účelom je vytvoriť jednoduché a intuitívne aplikačné rozhranie pre priraďovanie používateľov k roliam. V aplikácii by sa mali dať vyhľadať všetci používatelia vo firme. Pre rýchlejšie vyhľadávanie a prehľadné údaje bude možné používateľov zotriediť do kategórie podľa rolí. Užívatelia, ktorí nemajú priradenú žiadnu rolu, budú mať vlastnú podsekciu. Vďaka tomu bude mať firma každého používateľa pod kontrolou, aby mal priradenú minimálne jednu rolu. Užívatelia sa budú dať zoradiť podľa ich id, mena, priezviska alebo e-mailovej adresy. V každej podsekcii umožníme vyhľadávať konkrétneho používateľa na základe textového vstupu. Vstup sa porovná s id,menom, priezviskom aj emailom každého používateľa z vybranej podsekcie. 
+Aplikačným výstupom tejto bakalárskej práce je web stránka, ktorej účelom je vytvoriť jednoduché a intuitívne aplikačné rozhranie pre priraďovanie používateľov k rolám. 
+Hlavné funkcionality zahŕňajú:
 
-Niektoré firmy majú vo svojej štruktúre niekoľko desiatok zamestnancov.   Každý používateľ sa bude dať jednotne aj skupinovo priradiť k požadovanej role. Zároveň bude možné osobitne spravovať roly pre konkrétneho člena firmy. Ďalšou funkcionalitou aplikácie je manažment rol vo firme. Do firmy bude možné vložiť nové roly, prípadne niektoré roly odstrániť. Pri odstránení roly z firmy, treba dať pozor, aby sme nemohli odstrániť také, ktoré firma práve používa na vykonávanie vlastných procesov. Takisto bude možné do firmy pridať roly z xml súboru vygenerované v editore manažmentu rolí a užívateľov (\ref{Editor manažmentu rolí a organizačnej štruktúry} ) . Túto funkcionalitu bude možné pri integrácii plne odstrániť. Zároveň má aplikácia poskytovať rozhranie pre tento editor, aby bolo možné uložiť do databázy vytvorené roly, referencie a ich mapovanie na Workflow sieť.
+\begin{itemize}
+	\item Zobrazenie všetkých používateľov vo firme
+	\item Zobrazenie takých používateľov, ktorí nemajú vo firme priradenú rolu
+	\item Zatriedenie používateľov podľa príslušnosti k rolám vo firme
+	\item Utriedenie používateľov podľa rôznych kritérií -ID, meno, priezvisko, email
+	\item Priradiť používateľa/ov k role vo firme
+	\item Odobrať používateľov z role vo firme
+	\item Vytvoriť vo firme novú rolu
+	\item Pridať do firmy role prostredníctvom XML súboru
+	\item Odstrániť rolu z firmy -  pri odstránení roly z firmy, treba dať pozor, aby sme nemohli odstrániť také, ktoré firma práve používa na vykonávanie vlastných procesov
+\end{itemize}
+
+\noindent Zároveň má aplikácia poskytovať rozhranie k \emph{editoru rolí a organizačnej štruktúry} pre:
+\begin{itemize}
+	\item Načítanie rolí z firmy 
+	\item Uloženie mapovania rolí ku Petriho sieti - uloženie rolí a referencií 
+\end{itemize}
+
+
+
+
+
 
 
 \section{Návrh}
-V tejto časti sa zameriame na podrobný opis implementácie modulu na správu a priraďovanie rolí k používateľom. Vysvetlíme fungovanie rolí v systéme, databázový model a popíšeme celkovú architektúru a spôsob implementácie rolí v našom systéme. Rozoberieme možné bezpečnostné riziká a spôsob ich riešenia. Navrhneme možné rozšírenia našej aplikácie, aby sme tak zabránili vzniknutým problémom.
+V tejto časti sa zameriame na podrobný opis implementácie modulu na správu a priraďovanie rolí k používateľom. Vysvetlíme fungovanie rolí v systéme, databázový model a popíšeme celkovú architektúru a spôsob implementácie rolí v našom systéme. Rozoberieme možné bezpečnostné riziká a spôsob ich riešenia. Navrhneme možné rozšírenia , ktoré vylepšia funkcionalitu a bezpečnosť.
 
 \subsection{Popis architektúry} 
 Základnou myšlienkou RBAC architektúry je odstrániť priame priraďovanie práv k používateľom. Tento výsledok sa zabezpečí pridaním medzikroku, a teda rolí medzi samotných používateľov a ich právomoci. Samotná implementácia RBAC značne závisí od konkrétneho systému. Naša aplikácia sa zameriava na vytvorenie WfMS za pomoci Petriho sietí. \\Ako prvé si definujeme základnú architektúru. Na obrázku \ref{fig:model_rbac_v_aplikacii} môžeme zreteľne vidieť dve nezávislé časti fungovania Workflow systému. V ľavej časti ilustrácie vidíme sekciu, ktorá sa zaoberá  prideľovaním  používateľov k roliam, zatiaľ čo pravá časť znázorňuje proces samotný. Vo firme je vďaka tomu zabezpečené, aby sa procesy mohli vytvárať nezávisle od používateľov. Priraďovanie práv je zabezpečené väzbou medzi rolami a procesmi. Pre správnu funkcionalitu je však potrebné, aby firma mala priradené tie role, ktoré sú použité v jednotlivých procesoch, ktoré firma využíva. Definovanie prístupových práv je zabezpečené nad samotnými prechodmi v sieti.
@@ -48,7 +70,7 @@ Priradenie práv k roliam je definované nepriamo prostredníctvom jednotlivých
 	\centering
 	\includegraphics[width=0.9\linewidth]{images/roles_permissions}
 	\caption{ Právomoci rolí v sieti }
-	\label{fig:roles_permissions}
+	\label{fig:roles and permissions}
 \end{figure}
 
 \subsubsection{Definovanie prístupových práv ku prechodu}
@@ -62,9 +84,9 @@ Osoba môže v jednotlivom prípade spustiť prechod, ak spĺňa nasledovné po�
 
 Spustiteľnosť prechodu je zadefinovaná prostredníctvom Petriho siete. Prechod v sieti je spustiteľný len vtedy, ak každé  miesto vstupujúce do prechodu obsahuje minimálne toľko tokenov, aká je násobnosť hrany medzi daným miestom a prechodom.
 V aplikácii máme dva typy referencií: \textbf{referenciu na prechod} a \textbf{referenciu na prvú rolu} .
-Ak má prechod nastavenú referenciu na prechod, v databáze sa porovná používateľove id s id používateľa , ktorý spustil referovaný prechod. V prípade, že tieto dáta súhlasia, používateľ je oprávnený spustiť prechod.
+Ak má prechod nastavenú \emph{referenciu na prechod}, v databáze sa porovná používateľove ID s používateľom , ktorý spustil referovaný prechod. V prípade, že tieto dáta súhlasia, používateľ je oprávnený spustiť prechod.
 
-Ak má prechod nastavenú referenciu na prvého používateľa, overí sa ,či sa v procese už daná rola nevyskytla. Ak prechod s danou rolou v danom prípade ešte nebol spustený, používateľ je oprávnený tento prechod spustiť. V opačnom prípade je potrebné overiť id používateľa s používateľom, ktorý ako prvý spustil prechod s touto rolou. Ak sa zistí zhoda, používateľ môže daný prechod spustiť.
+Ak má prechod nastavenú \emph{referenciu na prvého používateľa}, overí sa ,či sa v procese už daná rola nevyskytla. Ak prechod s danou rolou v danom prípade ešte nebol spustený, používateľ je oprávnený tento prechod spustiť. V opačnom prípade je potrebné overiť ID používateľa s používateľom, ktorý ako prvý spustil prechod s touto rolou. Ak sa zistí zhoda, používateľ môže daný prechod spustiť.
 
 
 
@@ -86,7 +108,7 @@ Vo formulári je možné nastaviť, aké dáta budú používateľovi prístupn�
 \section{Implementácia}
 
 \subsection{Modul na priraďovanie používateľov k rolám}
-Vo WfMS treba zabezpečiť používateľsky ľahko zrozumiteľnú a jednoduchú administráciu rol vo firme. Priraďovanie rol vo firme je realizovaná na dvoch úrovniach: \emph{priradenie jednej role pre viacero používateľov} a \emph{priradenie viacero rolí pre jedného používateľa}. Pre tieto účely sme vytvorili tabuľku, kde sa zobrazia jednotliví používatelia. Zoznam používateľov sa vytvorí na základe vybranej sekcie. Tieto sekcie delíme podľa filtra na všeobecné a podľa rol vo firme. V prvej kategórii sú všetci používatelia a takí, ktorí nemajú priradenú rolu. V druhej zobrazujeme používateľov, ktorí sú v danej roli priradení. Používateľov je možné usporiadať v každej sekcii podľa ich ID, mena, priezviska alebo e-mailu. Zároveň je možné v každej sekcii na základe týchto kritérií vyhľadávať ľudí.
+Vo WfMS treba zabezpečiť používateľsky ľahko zrozumiteľnú a jednoduchú administráciu rol vo firme. Priraďovanie rol vo firme je realizovaná na dvoch úrovniach: \emph{priradenie jednej role pre viacero používateľov} a \emph{priradenie viacero rolí pre jedného používateľa}. Pre tieto účely sme vytvorili tabuľku, kde sa zobrazia jednotliví používatelia. Zoznam používateľov sa vytvorí na základe vybranej sekcie. Tieto sekcie delíme podľa filtra na \emph{všeobecné} a \emph{podľa rol vo firme}. V prvej kategórii sú všetci používatelia a takí, ktorí nemajú priradenú rolu. V druhej zobrazujeme používateľov, ktorí sú priradení k určitej role. Používateľov je možné usporiadať v každej sekcii podľa ich ID, mena, priezviska alebo e-mailu. Zároveň je možné v každej sekcii na základe týchto kritérií vyhľadávať ľudí.
 
 \begin{figure}[h]
 	\centering
@@ -123,7 +145,7 @@ Správa samotného používateľa je realizovaná viacerými spôsobmi. Prvý sp
 \end{figure}
 
 \subsubsection{Správa rolí vo firme}
-Firma musí mať vo svojej štruktúre také role, ktoré používa vo svojich procesoch. Preto sa pri priradení procesu do firmy nahrávajú do firmy roly, ktoré sú v procese využívané (viď. \ref{ukladanie rolí}). Okrem toho sa však dajú vo firme vytvoriť roly pred tým, ako sa k nemu priradia procesy. Na to slúži administrácia rolí vo firme. Do firmy je tak možné pridať nové roly, prípadne odstrániť staré. Pri odstraňovaní rolí sa najprv skontrolujú v databáze, či firma nepoužíva danú rolu v niektorej z jej procesov.
+Firma musí mať vo svojej štruktúre také roly, ktoré používa vo svojich procesoch. Preto sa pri priradení procesu do firmy nahrávajú do firmy roly, ktoré sú v procese využívané. Okrem toho sa však dajú vo firme vytvoriť roly pred tým, ako sa k nemu priradia procesy. Na to slúži administrácia rolí vo firme. Do firmy je tak možné pridať nové roly, prípadne odstrániť staré. Pri odstraňovaní rolí sa najprv skontrolujú v databáze, či firma nepoužíva danú rolu v niektorej z jej procesov.
 
 \begin{figure}[h]
 	\centering
@@ -160,7 +182,7 @@ Dôležitou časťou serverovej časti rolí je uložiť výstup z \emph{editora
 	\item Roly použité v sieti sa priradia do firmy, z ktorej sa vykonávalo modelovanie
 \end{enumerate}
 
-Štruktúra XML súboru a jeho uloženie do databázy:
+Príklad XML súboru pre uloženie do databázy:
 
 %\<\!\-\-  \-\-\>
 %referencia na prvého používateľa z roly
@@ -205,11 +227,11 @@ Dátová časť našej aplikácie je implementovaná v databáze MySQL. Na zači
 	\caption{ Priradenie právomocí rolám }
 	\label{fig:Priradenie právomocí rolám}
 \end{figure}
-Tabuľka \emph{TRANSITIONS\_X\_ROLE} ukladá právomoci rolí na spustenie konkrétneho prechodu v sieti, tabuľka \emph{ROLES\_START\_CASES}  ukladá rolu, ktorá môže spustiť nový prípad a tabuľka REFERENCES ukladá jednotlivé referencie ku prechodom. Ak má nastavené \emph{value} na false, prechod nemá referenciu. Ak má hodnotu nastavenú na true , skontroluje sa položka \emph{referenced\_transition\_id}.Pokiaľ má tento atribút číselnú hodnotu, referencia odkazuje na prechod s touto id. Pokiaľ má nastavenú hodnotu na NULL, referencia je nastavená na prvého užívateľa z role.
+Tabuľka \emph{TRANSITIONS\_X\_ROLE} ukladá právomoci rolí na spustenie konkrétneho prechodu v sieti, tabuľka \emph{ROLES\_START\_CASES}  ukladá rolu, ktorá môže spustiť nový prípad a tabuľka REFERENCES ukladá jednotlivé referencie ku prechodom. Ak má nastavené \emph{value} na false, prechod nemá referenciu. Ak má hodnotu nastavenú na true , skontroluje sa položka \emph{referenced\_transition\_id}.Pokiaľ má tento atribút číselnú hodnotu, referencia odkazuje na prechod s touto ID. Pokiaľ má nastavenú hodnotu na NULL, referencia je nastavená na prvého užívateľa z role.
 
 
 
-Druhým krokom je návrh databázového modelu, ktorý bude umožňovať konkrétnym používateľom vo firme priradiť rolu. Priradených používateľov vo firme zaznamenávame v tabuľke USERS\_X\_FIRM. Ich priradenie vo firme je uložené v tabuľke USERS\_X\_ROLES. Priradenie rolí do firmy je zabezpečené prostredníctvom tabuľky ROLES\_X\_FIRM
+Druhým krokom je návrh databázového modelu, ktorý bude umožňovať konkrétnym používateľom vo firme priradiť rolu. Priradených používateľov vo firme zaznamenávame v tabuľke USERS\_X\_FIRM. Ich priradenie vo firme je uložené v tabuľke USERS\_X\_ROLES. Priradenie rolí do firmy je zabezpečené prostredníctvom tabuľky ROLES\_X\_FIRM.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{images/users_to_roles_diagram}

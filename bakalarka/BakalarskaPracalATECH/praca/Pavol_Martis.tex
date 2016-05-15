@@ -11,6 +11,18 @@
 \usepackage{fancyhdr}
 \usepackage{float}
 \usepackage{color}
+\usepackage[toc,page]{appendix}
+\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{empty}}}
+
+
+\usepackage{etoolbox, letltxmacro}
+
+\AtBeginEnvironment{pricelist}{%
+	\LetLtxMacro{\priceitem} {\item}
+	\let\olditem\item
+	\renewcommand\item[1][]{\olditem[{#1}] \dotfill \enspace }}%
+
+\newenvironment{pricelist}{\begin{description}}{\end{description}}
 
 
 
@@ -98,14 +110,29 @@ literate=
 \def\@zoznamPri{Pr\'{i}lohy}
 
 
-
-
+\newcommand\listofappendices{%
+	\@chapteronefalse
+	\if@arabic\relax\else\renewcommand{\thepage}{\roman{page}}\fi
+	\if@twocolumn
+	\@restonecoltrue\onecolumn
+	\else
+	\@restonecolfalse
+	\fi
+	\chapteruaf*{\listappname
+		\@mkboth{\uppercase{\listappname}}%
+		{\uppercase{\listappname}}}%
+	\@chapteronetrue
+	%% get this in contents as a section
+	\addcontentsline{toc}{section}{\listappname}
+	\@starttoc{loa}%
+	\if@restonecol\twocolumn\fi
+	\newpage\renewcommand{\thepage}{\arabic{page}}}
 
 
 
 
 \begin{document}     
-
+\pagestyle{empty}
 % -------------------
 % --- Obalka ------
 % -------------------
@@ -206,13 +233,14 @@ Evidenčné číslo: \mfevidenceneCislo
 % ----------------
 \setcounter{page}{3}
 \newpage 
+\pagestyle{empty}
 \noindent
 \vfill
 \begin{center}
 	\LARGE \textbf{Vyhlásenie autora}  \\
 \end{center}
 Podpísaný Pavol Martiš čestne vyhlasujem, že som Bakalársku prácu Workflow manažment systém – server manažmentu rolí a užívateľov vypracoval na základe poznatkov získaných počas štúdia a informácií z dostupnej literatúry uvedenej v práci.\\
-Uvedenú prácu som vypracoval pod vedením Prof. RNDr. Gabriela Juhása, PhD.
+Uvedenú prácu som vypracoval pod vedením Prof. RNDr. Gabriela Juhása, PhD.\\\\
 V Bratislave dňa 15.05.2016 \\\\\\
 
 
@@ -227,6 +255,7 @@ V Bratislave dňa 15.05.2016 \\\\\\
 % -------------------
 \setcounter{page}{4}
 \newpage 
+\pagestyle{empty}
 \begin{center}
 	\LARGE \textbf{Poďakovanie}  \\
 \end{center}
@@ -270,16 +299,26 @@ FAKULTA ELEKTROTECHNIKY A INFORMATIKY \\
 	Autor:\> \mfautor\\
 	Bakalárska práca  :\>
 	\begin{minipage}[t]{20em}
-		Bakalárska práca: Workflow manažment systém - server manažmentu rolí a užívateľov
+		 Workflow manažment systém - server manažmentu rolí a užívateľov
 	\end{minipage} \\
 	Vedúci záverečnej práce :\> prof. RNDr. Gabriel Juhás, PhD.\\
 	
 	Miesto a rok predlo\v{z}enia pr\a'ace :\>Bratislava 2016
 \end{tabbing}
-Práca sa zaoberá návrhom serveru rolí pre Workflow manažment systém. Je rozdelená do troch častí. V prvej časti analyzuje problematiku Petriho sietí , Workflow manažmentu a metód riadenia prístupu. V druhej sa zaoberá architektúrou Workflow systému a bližšie rozoberá ich jednotlivé časti.
-\\ \\
+
+
+
+\noindent Práca sa zaoberá návrhom riešenia jednej z častí Workflow manažment systému, a to konkrétne serverovej časti rolí a používateľov.
+
+\noindent Na začiatku práce je analyzovaný Workflow manažment, Workflow manažment systém, Petriho siete a metóda riadenia prístupu na základe rolí role-based access control (RBAC).
+
+\noindent Následne sa práca sústreďuje na celkový opis fungovania tímovej aplikácie Workflow manažment systému a jej architektúry. V tejto časti sa bližšie rozoberajú jednotlivé časti systému. 
+
+ \noindent Na záver je venovaná pozornosť návrhu a implementácii serverovej časti rolí a používateľov. Opisuje sa v nej riešenie aplikácie na správu rolí vo firme. Na konci tejto časti sa testuje navrhnuté riešenie a rozoberajú sa možné vylepšenia do budúcnosti.
+
+ 
 \paragraph*{Kľúčové slová:} 
- Workflow manažment systém, Petriho siete, server manažmentu rolí, rola
+ Workflow manažment, Workflow manažment systém, Petriho siete, server manažmentu rolí, rola, riadenie prístupu
 
 % -------------------
 % --- Abstrakt - Anglicky 
@@ -307,11 +346,18 @@ Práca sa zaoberá návrhom serveru rolí pre Workflow manažment systém. Je ro
 	
 	Place and year of submission :\>Bratislava 2016
 \end{tabbing}
-gfdsgdfs
-\\ \\
+This thesis is about finding solution to the server part of roles and structure management
+in the complex of Workflow management system.
+In the beginning, there is an analyse of Workflow management, Workflow management system, Petri nets 
+and methods of access control, especially Role-based access control- RBAC.
+In the middle section, the thesis contains an overview of the team project Workflow management system,
+its architecture and individual parts.
+The last part of the thesis describes the design of the server part of 
+mapping users into roles and implementation of the application to manage users and roles in firms. 
+In the end, there are tests of implemented solution and the suggestions for future development.\\ \\
 
 
-\paragraph*{Keywords:} 
+\paragraph*{Keywords:}  Workflow management, Workflow management system, Petri nets, roles, access control, management of roles
 
 % --- Koniec Abstrakt - Anglicky
 
@@ -351,11 +397,11 @@ gfdsgdfs
 % -------------------
 
 \newpage 
-
 {\LARGE Zoznam skratiek}\\
 
 \noindent
-WFMS – Workflow management system\\
+WfM - Workflow management\\
+WfMS – Workflow management system\\
 RBAC – Role-based access control\\
 MVC - Model-view-controller\\
 DAC - Discretionary Access Control\\
@@ -367,17 +413,24 @@ SVG - Scalable Vector Graphics\\
 XML - Extensible Markup Language\\
 JSON - JavaScript Object Notation\\
 CSS - Cascading Style Sheets\\
-PHP - 
-MySQL - 
-
+PHP - Hypertext Preprocessor\\
+WWW - World wide web \\
+ID - identifikačné číslo\\ 
+\clearpage
+\pagenumbering{gobble}
 \listoffigures
+\begingroup
+\let\clearpage\relax
+\listoftables
+\endgroup
+
 
 
 
 % ---  Koniec Zoznamov
 
 \mainmatter
-
+\pagestyle{plain}
 
 \input uvod.tex 
 
@@ -438,7 +491,7 @@ s. 179–201 , 1996.
 \bibitem{saltzer}J. H. Saltzer - M. D. Schroeder: \textit{The Protection of Information in Computer
 Systems}.  IEEE, č.63, September 1975, s.1278–1308.
 
-\bibitem{belapadula}
+\bibitem{bell-lapadula}
 D. E. Bell - L. J. La Padula: Secure computer systems: Vol. I—mathematical
 foundations,  Vol. II—a mathematical model,  Vol. III—a refinement of the mathematical
 model. Technical Report MTR-2547 (tri zväzky). Bedford: Mitre Corporation, MA, 1973.
@@ -490,20 +543,29 @@ s.r.o., 2011, ISBN 978-80-970519-1-4, p. 29-45
 %\addcontentsline{toc}{chapter}{Appendix B}
 %\input AppendixB.tex
 
-\newpage
-\renewcommand \thesection{\Alph{section}}
-\setcounter{section}{0}
-\setcounter{subsection}{0}
-\setcounter{subsubsection}{0}
-\renewcommand \thetable{\Alph{section}}
-\setcounter{table}{0}
-\setcounter{figure}{0}
-\setcounter{page}{1}  
-\pagenumbering{Roman}
-\cleardoublepage
-\addcontentsline{toc}{section}{\@zoznamPri}
 
-\section{Štruktúra elektronického nosiča}
+
+
+
+
+\mychapter{3}{Zoznam príloh}
+\pagenumbering{roman}
+\begin{pricelist}
+	\item[A Štruktúra elektronického nosiča] II
+
+\end{pricelist}
+
+\newpage
+\addtocounter{section}{1}
+\addcontentsline{toc}{section}{Štruktúra elektronického nosiča}
+\section*{A Štruktúra elektronického nosiča}
+\textbackslash \\
+\textbf{\textbackslash application} - obsahuje aplikáciu\\
+\textbf{\textbackslash document} - textová časť bakalárskej práce vo formáte pdf \\
+\textbackslash database.sql - obsahuje exportovanú databázu \\
+\textbackslash instructions.pdf - v súbore sú inštrukcie pre spustenie aplikácie \\
+
+
 
 \end{document}
 
