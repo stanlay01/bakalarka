@@ -240,13 +240,15 @@ Evidenčné číslo: \mfevidenceneCislo
 	\LARGE \textbf{Vyhlásenie autora}  \\
 \end{center}
 Podpísaný Pavol Martiš čestne vyhlasujem, že som Bakalársku prácu Workflow manažment systém – server manažmentu rolí a užívateľov vypracoval na základe poznatkov získaných počas štúdia a informácií z dostupnej literatúry uvedenej v práci.\\
-Uvedenú prácu som vypracoval pod vedením Prof. RNDr. Gabriela Juhása, PhD.\\\\
-V Bratislave dňa 15.05.2016 \\\\\\
+Prácu som vypracoval pod vedením Prof. RNDr. Gabriela Juhása, PhD.\\\\
+V Bratislave dňa 15.05.2016 \\\\
 
 
 
-..................................................\\\\
-\indent podpis autora
+\begin{flushright}
+	 ..................................................\\
+	 \indent podpis autora
+\end{flushright}
 
 \vfill
 
@@ -263,7 +265,7 @@ V Bratislave dňa 15.05.2016 \\\\\\
 tejto bakalárskej práce. Moje poďakovanie patrí najmä vedúcemu práce, prof. RNDr. Gabrielovi Juhásovi, PhD., za
 vedenie a celému tímu študentov, ktorí sa spoločne podieľali na tvorbe Workflow manažment systému.
 
-\noindent Osobitné poďakovanie patrí mojej rodine, ktorá ma psychicky podporovala.
+\noindent Osobitné poďakovanie patrí mojej rodine, ktorá ma psychicky podporovala a kamarátovi Jakubovi Slávikovi za motiváciu k práci.  
 \noindent  
 
 \vfill
@@ -309,16 +311,13 @@ FAKULTA ELEKTROTECHNIKY A INFORMATIKY \\
 
 
 \noindent Práca sa zaoberá návrhom riešenia jednej z častí Workflow manažment systému, a to konkrétne serverovej časti rolí a používateľov.
-
-\noindent Na začiatku práce je analyzovaný Workflow manažment, Workflow manažment systém, Petriho siete a metóda riadenia prístupu na základe rolí role-based access control (RBAC).
-
-\noindent Následne sa práca sústreďuje na celkový opis fungovania tímovej aplikácie Workflow manažment systému a jej architektúry. V tejto časti sa bližšie rozoberajú jednotlivé časti systému. 
-
- \noindent Na záver je venovaná pozornosť návrhu a implementácii serverovej časti rolí a používateľov. Opisuje sa v nej riešenie aplikácie na správu rolí vo firme. Na konci tejto časti sa testuje navrhnuté riešenie a rozoberajú sa možné vylepšenia do budúcnosti.
+ Na začiatku práce je analyzovaný workflow manažment, workflow manažment systém, Petriho siete a metódy riadenia prístupu, pričom analyzujeme hlavne metódu na základe rolí role-based access control (RBAC) so zameraním na jej architektúru a výhody oproti štandardným modelom.
+Následne sa práca sústreďuje na celkový opis fungovania tímovej aplikácie Workflow manažment systému a jej architektúry. V tejto časti sa bližšie rozoberajú jednotlivé časti systému a poukazuje sa na význam rolí a referencií v aplikácii.
+ Na záver je venovaná pozornosť návrhu a implementácii serverovej časti rolí a používateľov. Opisuje sa v nej riešenie aplikácie na správu rolí pre používateľov vo firme a rozhranie pre ukladanie rolí a referencií do databázy. Na konci tejto časti sa testuje navrhnuté riešenie a rozoberajú sa možné vylepšenia do budúcnosti.
 
  
 \paragraph*{Kľúčové slová:} 
- Workflow manažment, Workflow manažment systém, Petriho siete, server manažmentu rolí, rola, riadenie prístupu
+ workflow manažment, workflow manažment systém, Petriho siete, server manažmentu rolí, rola, riadenie prístupu
 
 % -------------------
 % --- Abstrakt - Anglicky 
@@ -346,18 +345,52 @@ FAKULTA ELEKTROTECHNIKY A INFORMATIKY \\
 	
 	Place and year of submission :\>Bratislava 2016
 \end{tabbing}
-This thesis is about finding solution to the server part of roles and structure management
+This thesis deals finding solution to the server part of roles and structure management
 in the complex of Workflow management system.
-In the beginning, there is an analyse of Workflow management, Workflow management system, Petri nets 
-and methods of access control, especially Role-based access control- RBAC.
+In the beginning, there is an analyse of workflow management, workflow management system, Petri nets 
+and methods of access control, especially focusing on the architecture of Role-based access control-RBAC, comparing it to standard access models. 
 In the middle section, the thesis contains an overview of the team project Workflow management system,
-its architecture and individual parts.
+its architecture and the purpose of roles and references in it. This section individually characterizes each part of complex application. 
 The last part of the thesis describes the design of the server part of 
 mapping users into roles and implementation of the application to manage users and roles in firms. 
 In the end, there are tests of implemented solution and the suggestions for future development.\\ \\
 
 
-\paragraph*{Keywords:}  Workflow management, Workflow management system, Petri nets, roles, access control, management of roles
+\paragraph*{Keywords:}  workflow management, workflow management system, Petri nets, roles, access control, management of roles
+
+
+
+
+\newpage
+\pagestyle{empty}	
+\section*{\fontsize{21pt}{1.3}\selectfont ABSTRACT}
+
+\noindent L’UNIVERSITÉ TECHNIQUE SLOVAQUE
+\newline
+{\fontsize{11pt}{1.3}\selectfont FACULTÉ DE GÉNIE ÉLECTRIQUE ET INFORMATIQUE\\ }
+
+
+
+\begin{tabbing}	
+	\hspace*{7cm}\= \kill
+	Programme d'étude :\> Informatique appliquée \\
+	Auteur :\> \mfautor\\
+	Titre :\>
+	\begin{minipage}[t]{20em}
+	Le système de gestion de flux de travail - partie serveur de gestion des rôles et de la structure organisationnelle
+	\end{minipage} \\
+	Superviseur :\> prof. RNDr. Gabriel Juhás, PhD.\\
+	
+	Place et année de soumission :\>Bratislava 2016
+\end{tabbing}
+Cette thèse est consacrée à la partie serveur de gestion des rôles et de la structure organisationnelle dans le système complexe de gestion de flux de travail.
+En première partie, nous analyserons la gestion de flux de travail (workflow management), mais aussi les systèmes concernants la gestion de flux de travail (workflow management system), des réseaux de Petri et des méthodes de contrôle d'accès. En particulier, cette analyse met l'accent sur l'architecture d'accès basé sur les rôles - RBAC, en le comparant aux modèles d'accès standard.
+En seconde partie, cette thèse contient une vue d'ensemble du projet d'équipe : nous verrons le système de gestion du flux de travail, mais aussi son architecture et le but des rôles et des références dans le système. Cette section décrit individuellement chaque partie d'application.
+La dernière partie de la thèse décrit la conception de la partie serveur d'assignation des utilisateurs aux rôles et la mise en œuvre de l'application pour gérer les utilisateurs et les rôles dans les entreprises. En conclusion, cette étude contient des tests de solution mises en oeuvre et quelques suggestions en vue d'améliorations futures.
+
+
+
+\paragraph*{Mots clés:}  gestion de flux de travail, réseau de Petri, rôles, contrôle d'accès, RBAC
 
 % --- Koniec Abstrakt - Anglicky
 
@@ -468,9 +501,9 @@ ID - identifikačné číslo\\
 AALST, W.: \textit{The Application of Petri Nets to Workflow Management}. Dostupné
 na internete: http://wwwis.win.tue.nl/ wvdaalst/publications/p53.pdf
 
-\bibitem{autorizacia}
-Shengli Wu - Amit Sheth - John Miller - Zongwei Luo:\textit{ Authorisation and Access Control of Application Data
-	in Workflow Systems}: Journal of Intelligent Information Systems, 2002, č.18, s.71-94
+%\bibitem{autorizacia}
+%Shengli Wu - Amit Sheth - John Miller - Zongwei Luo:\textit{ Authorisation and Access Control of Application Data
+%	in Workflow Systems}: Journal of Intelligent Information Systems, 2002, č.18, s.71-94
 
 \bibitem{ekonomika}Michael P. Gallaher - Alan C. O'Connor - Brian Kropp, \textit{ The Economic Impact
 of Role-Based Access Control}, National Institute of Standards and Technology,

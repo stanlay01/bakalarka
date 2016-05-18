@@ -1,15 +1,15 @@
 \select@language {slovak}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Smerovacie kon\IeC {\v s}trukcie vo Workflow syst\IeC {\'e}moch pod\IeC {\v l}a \cite {workflow_systemy}}}{4}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Smerovacie kon\IeC {\v s}trukcie vo workflow syst\IeC {\'e}moch pod\IeC {\v l}a \cite {workflow_systemy}}}{4}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Petriho sie\IeC {\v t} na ''vytvorenie'' vody}}{7}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Spustenie siete s jedn\IeC {\'y}m \IeC {\v z}et\IeC {\'o}nom v mieste O a tromi \IeC {\v z}et\IeC {\'o}nmi v mieste H}}{8}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces AND kon\IeC {\v s}trukcia v Petriho sieti}}{9}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces OR kon\IeC {\v s}trukcia v Petriho sieti}}{9}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces XOR kon\IeC {\v s}trukcia v Petriho sieti}}{9}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Sekven\IeC {\v c}n\IeC {\'e} a itera\IeC {\v c}n\IeC {\'e} kon\IeC {\v s}trukcie v Petriho sieti}}{9}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Model Bell-LaPadula}}{13}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Model Bell-LaPadula}}{12}
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Vz\IeC {\v t}ahy RBAC pod\IeC {\v l}a \cite {kuhn}}}{13}
 \contentsline {figure}{\numberline {1.9}{\ignorespaces Framework RBAC96 pod\IeC {\v l}a Sandhu a spol. \cite {sandhu96}}}{14}
 \contentsline {figure}{\numberline {1.10}{\ignorespaces Roz\IeC {\v s}\IeC {\'\i }ren\IeC {\'e} vz\IeC {\v t}ahy RBAC pod\IeC {\v l}a \cite {kuhn}}}{15}
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Pr\IeC {\'\i }klad hierarchie rol}}{16}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Pr\IeC {\'\i }klad hierarchie rol\IeC {\'\i }}}{15}
 \contentsline {figure}{\numberline {1.12}{\ignorespaces Ekonomick\IeC {\'a} n\IeC {\'a}vratnos\IeC {\v t} RBAC pod\IeC {\v l}a \cite {ekonomika}}}{18}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Model Workflow syst\IeC {\'e}mu}}{20}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Pr\IeC {\'\i }klad priradenia rol\IeC {\'\i } k prechodom}}{20}

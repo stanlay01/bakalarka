@@ -11,24 +11,23 @@
 \contentsline {section}{\numberline {1.2}Petriho siete}{5}
 \contentsline {subsection}{\numberline {1.2.1}Hist\IeC {\'o}ria}{5}
 \contentsline {subsection}{\numberline {1.2.2}Defin\IeC {\'\i }cia Petriho siete}{6}
-\contentsline {subsection}{\numberline {1.2.3}Pravidl\IeC {\'a} pre sp\IeC {\'u}\IeC {\v s}\IeC {\v t}anie prechodov}{7}
-\contentsline {subsection}{\numberline {1.2.4}Pr\IeC {\'\i }klad}{7}
-\contentsline {subsection}{\numberline {1.2.5}Implementovanie Petriho siet\IeC {\'\i } na Workflow management syst\IeC {\'e}m}{8}
+\contentsline {subsection}{\numberline {1.2.3}Pr\IeC {\'\i }klad}{7}
+\contentsline {subsection}{\numberline {1.2.4}Implementovanie Petriho siet\IeC {\'\i } na Workflow management syst\IeC {\'e}m}{8}
 \contentsline {subsubsection}{Smerovacie kon\IeC {\v s}trukcie}{9}
-\contentsline {section}{\numberline {1.3}Riadenie pr\IeC {\'\i }stupu}{9}
-\contentsline {subsection}{\numberline {1.3.1}Princ\IeC {\'\i }py bezpe\IeC {\v c}n\IeC {\'e}ho dizajnu}{10}
+\contentsline {section}{\numberline {1.3}Riadenie pr\IeC {\'\i }stupu}{10}
+\contentsline {subsection}{\numberline {1.3.1}Princ\IeC {\'\i }py bezpe\IeC {\v c}n\IeC {\'e}ho dizajnu}{11}
 \contentsline {subsection}{\numberline {1.3.2}Model Bell-LaPadula}{12}
-\contentsline {section}{\numberline {1.4}RBAC}{12}
-\contentsline {subsection}{\numberline {1.4.1}Popis modelu}{12}
+\contentsline {section}{\numberline {1.4}RBAC}{13}
+\contentsline {subsection}{\numberline {1.4.1}Popis modelu}{13}
 \contentsline {subsection}{\numberline {1.4.2}Dizajn}{13}
 \contentsline {subsubsection}{Jadro RBAC}{14}
 \contentsline {subsubsection}{Hierarchick\IeC {\'e} \IeC {\v s}trukt\IeC {\'u}ry}{15}
-\contentsline {subsubsection}{Obmedzenia}{15}
+\contentsline {subsubsection}{Obmedzenia}{16}
 \contentsline {subsection}{\numberline {1.4.3}Porovnanie RBAC s alternat\IeC {\'\i }vnymi met\IeC {\'o}dami riadenia}{16}
 \contentsline {subsubsection}{ACL}{16}
 \contentsline {subsubsection}{Volite\IeC {\v l}n\IeC {\'e} riadenie pr\IeC {\'\i }stupu DAC}{16}
 \contentsline {subsubsection}{Povinn\IeC {\'e} riadenie pr\IeC {\'\i }stupu MAC}{17}
-\contentsline {subsubsection}{Porovnanie}{17}
+\contentsline {subsubsection}{Porovnanie RBAC so \IeC {\v s}tandardn\IeC {\'y}mi syst\IeC {\'e}mami riadenia}{17}
 \contentsline {subsection}{\numberline {1.4.4}V\IeC {\'y}hody RBAC}{17}
 \contentsline {chapter}{Opis rie\IeC {\v s}enia - Workflow syst\IeC {\'e}m}{19}
 \contentsline {section}{\numberline {2.1}\IeC {\v S}pecifik\IeC {\'a}cia po\IeC {\v z}iadaviek}{19}
@@ -46,8 +45,8 @@
 \contentsline {section}{\numberline {3.1}Ur\IeC {\v c}enie po\IeC {\v z}iadaviek}{28}
 \contentsline {section}{\numberline {3.2}N\IeC {\'a}vrh}{29}
 \contentsline {subsection}{\numberline {3.2.1}Popis architekt\IeC {\'u}ry}{29}
-\contentsline {subsubsection}{Prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k roliam}{30}
-\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k roliam}{30}
+\contentsline {subsubsection}{Prira\IeC {\v d}ovanie pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}ov k rol\IeC {\'a}m}{29}
+\contentsline {subsubsection}{Priradenie pr\IeC {\'a}v k rol\IeC {\'a}m}{30}
 \contentsline {subsubsection}{Definovanie pr\IeC {\'\i }stupov\IeC {\'y}ch pr\IeC {\'a}v ku prechodu}{31}
 \contentsline {subsubsection}{Oper\IeC {\'a}cie nad prechodom}{31}
 \contentsline {section}{\numberline {3.3}Implement\IeC {\'a}cia}{32}
@@ -59,8 +58,9 @@
 \contentsline {subsection}{\numberline {3.3.3}D\IeC {\'a}tov\IeC {\'y} model}{36}
 \contentsline {section}{\numberline {3.4}Testovanie rie\IeC {\v s}enia}{38}
 \contentsline {subsection}{\numberline {3.4.1}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} sk\IeC {\'u}senos\IeC {\v t}}{38}
-\contentsline {subsection}{\numberline {3.4.2}Bezpe\IeC {\v c}nos\IeC {\v t}}{41}
-\contentsline {subsection}{\numberline {3.4.3}Mo\IeC {\v z}n\IeC {\'e} roz\IeC {\v s}\IeC {\'\i }renia}{41}
+\contentsline {subsection}{\numberline {3.4.2}Google testovanie}{39}
+\contentsline {subsection}{\numberline {3.4.3}Bezpe\IeC {\v c}nos\IeC {\v t}}{41}
+\contentsline {subsection}{\numberline {3.4.4}Mo\IeC {\v z}n\IeC {\'e} roz\IeC {\v s}\IeC {\'\i }renia}{41}
 \contentsline {chapter}{Z\IeC {\'a}ver}{43}
 \contentsline {chapter}{Zoznam pr\IeC {\'\i }loh}{i}
 \contentsline {section}{\IeC {\v S}trukt\IeC {\'u}ra elektronick\IeC {\'e}ho nosi\IeC {\v c}a}{ii}

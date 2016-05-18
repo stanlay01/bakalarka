@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="11.4">
+<diagram program="umlet" version="14.2">
   <zoom_level>10</zoom_level>
   <element>
-    <type>com.umlet.element.UseCase</type>
+    <type>com.baselet.element.old.element.UseCase</type>
     <coordinates>
       <x>340</x>
       <y>300</y>
       <w>120</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>Používateľia
+    <panel_attributes>Používatelia
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.UseCase</type>
+    <type>com.baselet.element.old.element.UseCase</type>
     <coordinates>
       <x>510</x>
       <y>300</y>
@@ -26,7 +26,7 @@
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.UseCase</type>
+    <type>com.baselet.element.old.element.UseCase</type>
     <coordinates>
       <x>690</x>
       <y>260</y>
@@ -37,7 +37,7 @@
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.UseCase</type>
+    <type>com.baselet.element.old.element.UseCase</type>
     <coordinates>
       <x>730</x>
       <y>310</y>
@@ -49,7 +49,7 @@
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.UseCase</type>
+    <type>com.baselet.element.old.element.UseCase</type>
     <coordinates>
       <x>870</x>
       <y>310</y>
@@ -61,7 +61,7 @@
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.custom.Text</type>
+    <type>com.baselet.element.old.element.Text</type>
     <coordinates>
       <x>810</x>
       <y>280</y>
@@ -72,7 +72,7 @@
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.Relation</type>
+    <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
       <x>600</x>
       <y>330</y>
@@ -83,7 +83,7 @@
     <additional_attributes>30;30;90;30</additional_attributes>
   </element>
   <element>
-    <type>com.umlet.element.Relation</type>
+    <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
       <x>430</x>
       <y>330</y>
